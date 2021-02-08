@@ -24,5 +24,26 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-// routes 1e setup for tests
 
+/*
+******************************
+// routes 1e setup for tests !
+******************************
+*/
+
+// admin basic views setup
+Route::get('/admin/dashboard', function () {
+    return view('app/admin/dashboard');
+});
+
+Route::get('/admin/announcements', function () {
+    return view('app/admin/announcements');
+});
+
+Route::get('/admin/products', function () {
+    return view('app/admin/products');
+});
+
+Route::get('/admin/users', function () {
+    return view('app/admin/users');
+});

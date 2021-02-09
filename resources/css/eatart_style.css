@@ -1,0 +1,20 @@
+/* ---------------------------------------------- */
+/* ---- Eat Art style for Eat Art webshop --------*/
+/* ---------------------------------------------- */
+
+/* ---- Eat Art custom fonts ----*/
+    /* 1 = oswald*/
+        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/oswald/Oswald-VariableFont_wght.ttf*/
+    /* 2 = abril_fatface*/
+        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/abril_fatface/AbrilFatface-Regular.ttf */
+    /* 3 = ibm_plex_sans*/
+        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/ibm_plex_sans/IBMPlexSans-Regular.ttf */
+    /* 4 = special_elite*/
+        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/special_elite/SpecialElite-Regular.ttf */
+
+:root {
+    --eatart-logo-color-0: black;
+    --eatart-logo-color-1: whitesmoke;
+    --eatart-logo-color-1: yellow;
+
+}

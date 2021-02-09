@@ -9,9 +9,9 @@ class CreateUsersTable extends Migration
     /**
      * Run the migrations.
      * BOSMA NOTES:
-     * Timestamps takes care of created/updated_at
+     * Timestamps takes care of created/updated_at, softDeletes of deleted_at.
      * ForeignId's commented out for now because tables don't exist yet.
-     * Still need reference to user_id for created/updated/deleted_by. Do we really need this? Repro-man will do most of the creating/updating and deleting anyways...
+     * created/updated/deleted_by will be integers, in models/controllers/validation we will check this works properly (the authenticated user who does the CUD'ing).
      * :BOSMA NOTES
      * @return void
      */
@@ -27,15 +27,17 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('street');
-            $table->string('house_num', 45);
+            $table->string('house_num', 5);
+            $table->string('house_num_addition', 5)->nullable();
             $table->string('postal_code', 7);
             $table->string('city');
+            $table->string('country')->default('Nederland');
             // $table->foreignId('role_id')->constrained();
             // $table->foreignId('usergroups_id')->constrained();
 
-            $table->unsignedBigInteger('created_by');
-            $table->unsignedBigInteger('updated_by');
-            $table->unsignedBigInteger('deleted_by');
+            $table->integer('created_by');
+            $table->integer('updated_by')->nullable();
+            $table->integer('deleted_by')->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes('deleted_at');

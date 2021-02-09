@@ -7,13 +7,17 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Wildside\Userstamps\Userstamps;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable, SoftDeletes;
+    use HasFactory, Notifiable, SoftDeletes, Userstamps;
 
     /**
      * The attributes that are mass assignable.
+     * BOSMA NOTES:
+     * I added created_by etc as fillables, think that's what the docs want me to do.
+     * :BOSMA NOTES
      *
      * @var array
      */
@@ -21,8 +25,18 @@ class User extends Authenticatable
         'first_name',
         'insertion',
         'last_name',
+        'birthday',
         'email',
         'password',
+        'street',
+        'house_num',
+        'house_num_addition',
+        'postal_code',
+        'city',
+        'country',
+        'created_by',
+        'updated_by',
+        'deleted_by',
     ];
 
     /**

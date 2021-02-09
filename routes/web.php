@@ -47,3 +47,53 @@ Route::get('/admin/products', function () {
 Route::get('/admin/users', function () {
     return view('app/admin/users');
 });
+
+
+// public basic views setup
+Route::get('/about', function () {
+    return view('app/public/about');
+});
+
+Route::get('/contact', function () {
+    return view('app/public/contact');
+});
+
+Route::get('/home', function () {
+    return view('app/public/home');
+});
+
+Route::get('/current', function () {
+    return view('app/public/product_current');
+});
+
+Route::get('/history', function () {
+    return view('app/public/product_history');
+});
+
+Route::get('/current', function () {
+    return view('app/public/product_upcomming');
+});
+
+
+// shop basic views setup
+Route::get('/shop', function () {
+    return view('app/shop/shop');
+});
+
+Route::get('/shop/product_detail', function () {
+    return view('app/shop/product_detail');
+});
+
+Route::get('/shop/shoppingcart', function () {
+    return view('app/shop/shoppingcart');
+});
+
+Route::get('/shop/order', function () {
+    return view('app/shop/order');
+});
+
+
+// user basic views setup
+Route::get('/user/profile', function () {
+    return view('app/user/profile');
+});

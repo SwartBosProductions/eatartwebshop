@@ -32,8 +32,8 @@ class CreateUsersTable extends Migration
             $table->string('postal_code', 7);
             $table->string('city');
             $table->string('country')->default('Nederland');
-            // $table->foreignId('role_id')->constrained();
-            // $table->foreignId('usergroups_id')->constrained();
+            $table->foreignId('role_id')->constrained();
+            $table->foreignId('usergroup_id')->constrained();
 
             $table->integer('created_by');
             $table->integer('updated_by')->nullable();

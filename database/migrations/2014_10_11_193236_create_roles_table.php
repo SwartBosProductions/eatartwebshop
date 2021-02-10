@@ -8,14 +8,24 @@ class CreateRolesTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * BOSMA NOTES:
+     * Issue: timestamps() only works with Eloquent, not while seeding.
+     * Is this a problem? If so, this might work but it is verbose:
+     * $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
+     * $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+     * :BOSMA
      * @return void
      */
     public function up()
     {
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
+            $table->string('rolename', 45);
+            $table->integer('created_by')->default(1);
+            $table->integer('updated_by')->nullable();
+            $table->integer('deleted_by')->nullable();
             $table->timestamps();
+            $table->softDeletes('deleted_at');
         });
     }
 

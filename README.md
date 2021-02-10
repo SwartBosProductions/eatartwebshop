@@ -19,12 +19,12 @@ Om het project op een lokale machine te installeren zijn er flink wat stappen no
 6. Nu moet je de database-connectie instellen, dat is het blokje waar de keys met 'DB' beginnen. Vooral je DB_USERNAME en DB_PASSWORD moet je hier invoeren, zodat je op je eigen machine een database aan kunt maken. Gebruik hiervoor je eigen mysql inloggegevens. Ben je hier niet mee bekend, dan kun je 'root' laten staan en het wachtwoord leeglaten, meestal werkt dat. Denk er wel om dat iedere gebruiker op jouw computer daar makkelijk toegang toe heeft.
 7. Nu moeten we de APP_KEY genereren. In je terminal type je het volgende commando in: "php artisan key:generate".
 8. Open nu je database-programma. Ik gebruik Sequel Ace op de Mac, een ander voorbeeld is phpMyAdmin of MySQL Workbench. Log in als de gebruiker die je in de .env-file hebt opgegeven. Maak een database aan (Add database) met de naam 'eatartwebshop'.
-9. We zijn er bijna! Nu gaan we de database vullen door te migreren. Ga terug naar Terminal en type het volgende commando in: "php artisan migrate". Als het goed is zie je nu dat de tabellen gegenereerd en gemigreerd worden.
+9. We zijn er bijna! Nu gaan we de database vullen door te migreren. Ga terug naar Terminal en type het volgende commando in: "php artisan migrate" of "php artisan migrate --seed" als je ook onze testdata wilt gebruiken.
 10. Als je Laravel Valet gebruikt om te testen, dan moet je nog zorgen dat Valet toegang heeft tot de projectfolder. Vanuit 'eatartwebshop' in Terminal, of in de bovenliggende folder als je dat wilt, type je het commando 'valet park' in. Is de bovenliggende folder al 'geparkeerd' dan is deze stap niet nodig.
 11. In je browser type je nu 'eatartwebshop.test' en je kunt gaan testen!
 12. In plaats van Valet kun je ook localhost gebruiken, type dan in Terminal "php -S localhost:8080" en in je browser "localhost:8080" (of kies een ander poortnummer, als ze maar overeenkomen en werken).
 13. Een derde optie is "php artisan serve" in Terminal en "localhost:8000" in de browser. Wil je een ander poortje, voeg dat dan is als optie "php artisan serve --port=8080" (of een ander poortnummer naar keuze).
-14. Dertien stappen brengen ongeluk. Happy testing!
+14. Dertien stappen brengen ongeluk. Nog een tip voor als je testdata verandert in de seeders en opnieuw wilt seeden, type dan "php artisan migrate:fresh --seed" (anders krijg je een foutmelding over duplicatie).
 
 Mocht je er niet uitkomen, neem dan contact met ons op via bosma.jorrit@gmail.com. 
 

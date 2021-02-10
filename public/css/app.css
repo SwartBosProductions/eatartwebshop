@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10276,4 +10276,68 @@ h3 {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+/* ----------------------------------------------- --*/
+/* ---- Eat Art style for Eat Art webshop -----------*/
+/* ---------------------------------------------- ---*/
+/* ---- - only additionals for global elements-! 1---*/
+/* ---- - use id/class not html tag's ----------- ---*/
+/* ---- - in case of use elsewhere in app make var --*/
+/* --------------------------------------------------*/
+/* ------------------------------------------------- */
+/* ---- NHL STENDEN style for Eat Art webshop -------*/
+/* ---------------------------------------------- ---*/
+/* ---- - only additionals for global elements-! 1---*/
+/* ---- - use id/class not html tag's ----------- ---*/
+/* ---- - in case of use elsewhere in app make var --*/
+/* --------------------------------------------------*/
+/* ---- NHL STENDEN custom fonts ----*/
+/* 1 = CeraPro*/
+/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/cerapro/stylesheet.css */
+/* 2 = CeraStencilPro*/
+/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/cerastencilpro/stylesheet.css */
+/* 3 = CeraBrush*/
+/* commercial font */
+:root {
+  --nhlstenden-color-1: rgb(0, 90, 170);
+  --nhlstenden-color-3: rgb(0, 155, 170);
+  --nhlstenden-color-4: rgb(230, 35, 40);
+}
+
+/* ----------------------------------------------- --*/
+/* ---- Eat Art style for Eat Art webshop -----------*/
+/* ---------------------------------------------- ---*/
+/* ---- - only additionals for global elements-! 1---*/
+/* ---- - use id/class not html tag's ----------- ---*/
+/* ---- - in case of use elsewhere in app make var --*/
+/* --------------------------------------------------*/
+/* ---- Eat Art custom fonts ----*/
+/* 1 = oswald*/
+/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/oswald/Oswald-VariableFont_wght.ttf*/
+/* 2 = abril_fatface*/
+/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/abril_fatface/AbrilFatface-Regular.ttf */
+/* 3 = ibm_plex_sans*/
+/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/ibm_plex_sans/IBMPlexSans-Regular.ttf */
+/* 4 = special_elite*/
+/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/special_elite/SpecialElite-Regular.ttf */
+@font-face {
+  font-family: "abril_fatfaceregular";
+  src: url(/fonts/abrilfatface-regular-webfont.woff2?3c5a0f48cb6fb4b713e34115493c5f6d) format("woff2"), url(/fonts/abrilfatface-regular-webfont.woff?f783eb623e6adde82018b85046481429) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --eatart-logo-color-0: black;
+  --eatart-logo-color-1: whitesmoke;
+  --eatart-logo-color-1: yellow;
+}
+
+a.eatart-a1 {
+  color: var(--eatart-logo-color-1);
+  font-family: "abril_fatfaceregular";
+}
+
+body {
+  background-image: url(/images/osb_unsplash.jpg?f34abd17d0579d035ad3dc4661a0e191);
 }

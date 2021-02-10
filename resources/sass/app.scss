@@ -1,5 +1,11 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+    // ->fonts in .css files @font face
+
+// Images
+    // mix.copy(from, to);
+    // copy static images for blade functionaliy to image maps
+    // mix.copyDirectory{'../images/logo', 'public/images'};
+    // copy custom images map
 
 // Variables
 @import 'variables';
@@ -20,3 +26,17 @@
 
 // Custom
 @import "custom";
+
+// Branding style sheets
+@import "../css/branding/forestblack_style";
+@import "../css/branding/nhlstenden_style";
+@import "../css/branding/eatart_style";
+
+// APP style sheets
+@import "../css/app/basic_all_style";
+@import "../css/app/public_style";
+@import "../css/app/user_style";
+@import "../css/app/admin_style.css";
+
+
+// mix.version(); // Enable versioning.

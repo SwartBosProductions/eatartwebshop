@@ -1,6 +1,11 @@
-/* ---------------------------------------------- */
-/* ---- NHL STENDEN style for Eat Art webshop ----*/
-/* ---------------------------------------------- */
+/* ------------------------------------------------- */
+/* ---- NHL STENDEN style for Eat Art webshop -------*/
+/* ---------------------------------------------- ---*/
+/* ---- - only additionals for global elements-! 1---*/
+/* ---- - use id/class not html tag's ----------- ---*/
+/* ---- - in case of use elsewhere in app make var --*/
+/* --------------------------------------------------*/
+
 
 /* ---- NHL STENDEN custom fonts ----*/
     /* 1 = CeraPro*/
@@ -12,8 +17,6 @@
 
 :root {
     --nhlstenden-color-1: rgb(0, 90, 170);
-
     --nhlstenden-color-3: rgb(0, 155, 170);
     --nhlstenden-color-4: rgb(230, 35, 40);
-
 }

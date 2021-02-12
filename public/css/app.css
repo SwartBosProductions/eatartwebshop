@@ -10340,4 +10340,26 @@ a.eatart-a1 {
 
 body {
   background-image: url(/images/osb_unsplash.jpg?f34abd17d0579d035ad3dc4661a0e191);
+  background-repeat: no-repeat;
+}
+
+main.main-public {
+  position: relative;
+  top: 168px;
+}
+
+main.main-shop {
+  position: relative;
+  top: 248px;
+}
+
+div.nav-sale {
+  position: fixed;
+  top: 168px;
+}
+
+div.main-shop-content {
+  height: 524px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }

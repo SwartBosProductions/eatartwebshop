@@ -9,7 +9,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         {{-- dynamischmaken op basis van route name denk ik zo --}}
-        <title> Eat-Art - HOME - </title>
+        <title>@yield('title')</title>
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -20,15 +20,36 @@
 
         <header>
 
-            <div class="container-fluid fixed-fixed py-4 pr-0 mt-4 mb-2 mr-4">
+            <div class="container-fluid fixed-top py-4 pr-0 mt-4 mb-2 mr-4">
 
                 <div class="row bg-dark p-2 pl-4 mr-4">
 
                     <div class="col-6 pl-4">
-                            <img src="{{url('images/eat art logo_vrijstaand_tn.png')}}"
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{{url('images/eat art logo_vrijstaand_tn.png')}}"
                                 class="" alt="eat-art logo small">
+                            </div>
+                            <div class="col-6">
+                                <h1 class="">Webshop</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="btn-group justify-content-center">
+                                    <a href="#" type="button" class="btn btn-outline-secondary my-auto">
+                                        About
+                                    </a>
+                                    <a href="#" type="button" class="btn btn-outline-secondary my-auto">
+                                        Contact
+                                    </a>
+                                </div>
 
-                            {{-- picto's eat-art sociale media --}}
+                                    sociale media picto's
+                            </div>
+
+                        </div>
+
                     </div>
 
                     <div class="col-6 pr-2 my-auto">
@@ -37,11 +58,10 @@
                                 <div class="brand-a1">
                                     @auth
                                         <a href="{{ url('/dashboard') }}" class="eatart-a1 mx-2">Username Profile page</a>
-                                        {{-- fix logout link  --}}
+                                        {{-- route logout link  --}}
                                         <a href="{{ route('logout') }}" class="eatart-a1 mx-2">Logout</a>
                                     @else
                                         <a href="{{ route('login') }}" class="eatart-a1 mx-2">Login</a>
-
                                         @if (Route::has('register'))
                                             <a href="{{ route('register') }}" class="eatart-a1 mx-2">Register</a>
                                         @endif
@@ -57,17 +77,47 @@
 
         </header>
 
+        <main class="main-public container-fluid mx-auto">
 
-        <main class="main-public" >
+            <div class="container">
+                <nav class="row navbar navbar-light bg-light justify-content-center">
+                    <div class="btn-group justify-content-center">
+                        <a href="/news" type="button" class="btn btn-outline-secondary my-auto">
+                            News
+                        </a>
+                        <a href="/shop" type="button" class="btn btn-outline-secondary btn-lg my-auto">
+                            {{-- make nice effect for button when in active as Shop is closed --}}
+                            Shop
+                        </a>
+                        <a href="/museum" type="button" class="btn btn-outline-secondary my-auto">
+                            Museum
+                        </a>
+                    </div>
+                </nav>
+            </div>
 
-            <div class="container-fluid p-2 my-2 mx-auto">
-
+            <div class="content-main-home container-fluid p-2 my-2 mx-auto">
                 <div class="row justify-content-center">
                     <div class=" col-10 col-lg-8 bg-light text-center">
-                        <h1>Content</h1>
+                        <h2>Content</h2>
+                        <article>
+                            <h3>
+                                Wervende welkomstekst
+                            </h3>
+                            <p>
+                                wat is eatart plus call to action
+                            </p>
+                        </article>
+                        <article>
+                            <h3>
+                                Twee smaken Shop open of dicht
+                            </h3>
+                            <p>
+                                in 2 zinnen toelichting
+                            </p>
+                        </article>
                     </div>
                 </div>
-
             </div>
 
         </main>
@@ -83,6 +133,7 @@
                         <img src="{{url('images/NHL_Stenden_logo_NL_white_RGB.png')}}"
                         class=" pl-2 m-1" alt="nhl-stenden logo small" height="56">
 
+                        links naar opleidings?
 
                     </div>
 

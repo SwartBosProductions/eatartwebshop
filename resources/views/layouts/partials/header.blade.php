@@ -6,25 +6,29 @@
 
             <div class="col-6 pl-4">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 pr-0">
                         <img src="{{url('images/eat art logo_vrijstaand_tn.png')}}"
-                        class="" alt="eat-art logo small">
+                        class="d-flex mx-auto" alt="eat-art logo small">
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 pl-0">
                         <h1 class="">Webshop</h1>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mx-2 my-2">
                     <div class="col-12">
-                        <div class="btn-group justify-content-center">
-                            <a href="/about" type="button" class="btn btn-outline-secondary my-auto">
+                        <div class="btn-group justify-content-center mx-auto">
+                            <a href="/news" type="button" class="btn btn-sm btn-outline-secondary my-auto">
+                                Nieuws
+                            </a>
+                            <a href="/about" type="button" class="btn btn-sm btn-outline-secondary my-auto">
                                 About
                             </a>
-                            <a href="/contact" type="button" class="btn btn-outline-secondary my-auto">
+                            <a href="/contact" type="button" class="btn btn-sm btn-outline-secondary my-auto">
                                 Contact
                             </a>
-                        </div>
                             sociale media picto's
+                        </div>
+
                     </div>
                 </div>
             </div>

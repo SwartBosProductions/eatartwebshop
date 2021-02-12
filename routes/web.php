@@ -50,6 +50,10 @@ Route::get('/admin/users', function () {
 
 
 // public basic views setup
+Route::get('/news', function () {
+    return view('app/public/news');
+});
+
 Route::get('/about', function () {
     return view('app/public/about');
 });
@@ -63,15 +67,15 @@ Route::get('/home', function () {
 });
 
 Route::get('/current', function () {
-    return view('app/public/product_current');
+    return view('app/public/current');
 });
 
-Route::get('/history', function () {
-    return view('app/public/product_history');
+Route::get('/museum', function () {
+    return view('app/public/museum');
 });
 
-Route::get('/current', function () {
-    return view('app/public/product_upcomming');
+Route::get('/upcomming', function () {
+    return view('app/public/upcomming');
 });
 
 

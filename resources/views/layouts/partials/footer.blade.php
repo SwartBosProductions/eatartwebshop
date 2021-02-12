@@ -14,7 +14,7 @@
                 <div class="text-sm text-muted d-flex justify-content-end  align-items-center pr-2">
                     <div class="vers-pwdby pb-2">
                         <div class="d-flex justify-content-end">
-                            Laravel v{{ Illuminate\Foundation\Application::VERSION }}
+                            {{config('app.name')}}
                         </div>
                         <div class="d-flex justify-content-end ">
                             <sub>

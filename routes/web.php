@@ -16,3 +16,84 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+
+
+/*
+******************************
+// routes 1e setup for tests !
+******************************
+*/
+
+// admin basic views setup
+Route::get('/admin/dashboard', function () {
+    return view('app/admin/dashboard');
+});
+
+Route::get('/admin/announcements', function () {
+    return view('app/admin/announcements');
+});
+
+Route::get('/admin/products', function () {
+    return view('app/admin/products');
+});
+
+Route::get('/admin/users', function () {
+    return view('app/admin/users');
+});
+
+
+// public basic views setup
+Route::get('/about', function () {
+    return view('app/public/about');
+});
+
+Route::get('/contact', function () {
+    return view('app/public/contact');
+});
+
+Route::get('/home', function () {
+    return view('app/public/home');
+});
+
+Route::get('/current', function () {
+    return view('app/public/product_current');
+});
+
+Route::get('/history', function () {
+    return view('app/public/product_history');
+});
+
+Route::get('/current', function () {
+    return view('app/public/product_upcomming');
+});
+
+
+// shop basic views setup
+Route::get('/shop', function () {
+    return view('app/shop/shop');
+});
+
+Route::get('/shop/product_detail', function () {
+    return view('app/shop/product_detail');
+});
+
+Route::get('/shop/shoppingcart', function () {
+    return view('app/shop/shoppingcart');
+});
+
+Route::get('/shop/order', function () {
+    return view('app/shop/order');
+});
+
+
+// user basic views setup
+Route::get('/user/profile', function () {
+    return view('app/user/profile');
+});

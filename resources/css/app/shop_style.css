@@ -1,0 +1,17 @@
+main.main-shop {
+    position: relative;
+    top: 248px;
+}
+
+div.nav-sale {
+    position: fixed;
+    top: 168px;
+}
+
+div.main-shop-content {
+    height:524px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+

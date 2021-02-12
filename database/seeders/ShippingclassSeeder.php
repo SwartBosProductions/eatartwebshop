@@ -17,22 +17,22 @@ class ShippingclassSeeder extends Seeder
         DB::table('shippingclasses')->insert([
             [
                 'shippingclass_name' => 'brief',
-                'price' => '0,96',
+                'price' => 0.96,
                 'created_by' => 1,
             ],
             [
                 'shippingclass_name' => 'Brievenbuspakket',
-                'price' => '3,95',
+                'price' => 3.95,
                 'created_by' => 1,
             ],
             [
                 'shippingclass_name' => 'Pakket',
-                'price' => '5,75',
+                'price' => 5.75,
                 'created_by' => 1,
             ],
             [
                 'shippingclass_name' => 'Zwaar pakket (10-20kg)',
-                'price' => '8,75',
+                'price' => 8.75,
                 'created_by' => 1,
             ],
         ]);

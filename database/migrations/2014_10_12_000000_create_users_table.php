@@ -19,6 +19,8 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('role_id')->constrained();
+            $table->foreignId('usergroup_id')->constrained();
             $table->string('first_name', 100);
             $table->string('insertion', 45)->nullable();
             $table->string('last_name', 100);
@@ -32,8 +34,7 @@ class CreateUsersTable extends Migration
             $table->string('postal_code', 7);
             $table->string('city');
             $table->string('country')->default('Nederland');
-            $table->foreignId('role_id')->constrained();
-            $table->foreignId('usergroup_id')->constrained();
+
 
             $table->integer('created_by');
             $table->integer('updated_by')->nullable();

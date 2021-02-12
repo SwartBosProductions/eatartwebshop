@@ -20,6 +20,10 @@ class CollectionSeeder extends Seeder
                 'created_by' => 1,
             ],
             [
+                'collection_name' => 'EatArt Spring 2021',
+                'created_by' => 1,
+            ],
+            [
                 'collection_name' => 'EatArt Autumn 2021',
                 'created_by' => 1,
             ],

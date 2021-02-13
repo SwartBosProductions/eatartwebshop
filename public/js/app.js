@@ -3791,9 +3791,12 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+// const Mix = require('laravel-mix/src/Mix');
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
+
+mix.copyDirectory('resources/images/', 'public/images/logo', false);
 
 /***/ }),
 

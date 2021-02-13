@@ -1,8 +1,9 @@
 // Fonts
     // ->fonts in .css files @font face
+    // mix.copy(from, to); in js/app.js
 
-// Images
-    // mix.copy(from, to);
+// Images & Icons
+    // mix.copy(from, to); in js/app.js
     // copy static images for blade functionaliy to image maps
     // mix.copyDirectory{'../images/logo', 'public/images'};
     // copy custom images map
@@ -38,6 +39,3 @@
 @import "../css/app/shop_style";
 @import "../css/app/user_style";
 @import "../css/app/admin_style.css";
-
-
-// mix.version(); // Enable versioning.

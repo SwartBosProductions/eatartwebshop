@@ -2,9 +2,11 @@
     <nav class="row navbar navbar-dark justify-content-center mx-0">
         <div class="col-3">
             <div class="row ml-2">
+
                 <a href="/home" type="button" class="btn btn-secondary my-auto">
                     Home
                 </a>
+
             </div>
         </div>
         <div class="col-6">
@@ -23,9 +25,12 @@
         </div>
         <div class="col-3">
             <div class="row justify-content-end mr-4">
-                <a href="/home" type="button" class="btn btn-secondary my-auto">
-                    Winkelwagen
-                </a>
+                @if (Auth::user())
+                    {{-- iets met session id? --}}
+                    <a href="/home" type="button" class="btn btn-secondary my-auto">
+                        Winkelwagen
+                    </a>
+                @endif
             </div>
         </div>
     </nav>

@@ -51,31 +51,31 @@ Route::get('/admin/users', function () {
 
 // public basic views setup
 Route::get('/news', function () {
-    return view('app/public/news');
+    return view('public/news');
 });
 
 Route::get('/about', function () {
-    return view('app/public/about');
+    return view('public/about');
 });
 
 Route::get('/contact', function () {
-    return view('app/public/contact');
+    return view('public/contact');
 });
 
 Route::get('/home', function () {
-    return view('app/public/home');
+    return view('public/home');
 });
 
 Route::get('/current', function () {
-    return view('app/public/current');
+    return view('public/current');
 });
 
 Route::get('/museum', function () {
-    return view('app/public/museum');
+    return view('public/museum');
 });
 
 Route::get('/upcomming', function () {
-    return view('app/public/upcomming');
+    return view('public/upcomming');
 });
 
 

@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             ShippingclassSeeder::class,
             ProductSeeder::class,
             PeriodSeeder::class,
+            SaleSeeder::class,
         ]);
     }
 }

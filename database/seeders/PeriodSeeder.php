@@ -44,7 +44,7 @@ class PeriodSeeder extends Seeder
             ],
             [
                 'collection_id' => 4,
-                'period_id' => 4,
+                'period_id' => 3,
             ],
         ]);
     }

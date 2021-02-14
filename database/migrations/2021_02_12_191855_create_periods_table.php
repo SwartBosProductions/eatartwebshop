@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProductsTable extends Migration
+class CreatePeriodsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,21 +13,22 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('periods', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('designer_id')->constrained();
-            $table->foreignId('collection_id')->constrained();
-            $table->foreignId('shippingclass_id')->constrained();
-            $table->string('product_name', 100);
-            $table->string('serie_name', 100);
-            $table->string('picture');
-            $table->text('description');
-            $table->decimal('price', 5, 2);
+            $table->string('period_name', 45);
             $table->integer('created_by');
             $table->integer('updated_by')->nullable();
             $table->integer('deleted_by')->nullable();
             $table->timestamps();
             $table->softDeletes('deleted_at');
+        });
+
+        Schema::create('collection_period', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('collection_id')->constrained()->onDelete('cascade');
+            $table->foreignId('period_id')->constrained()->onDelete('cascade');
+            $table->timestamps();
+            $table->unique(['collection_id', 'period_id']);
         });
     }
 
@@ -38,6 +39,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('periods');
     }
 }

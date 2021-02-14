@@ -1,46 +1,46 @@
 <x-guest-layout>
-    <x-auth-card>
+    <x-auth.auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo width="82" />
+                <x-auth.application-logo width="82" />
             </a>
         </x-slot>
 
         <div class="card-body">
             <!-- Validation Errors -->
-            <x-auth-validation-errors class="mb-4" :errors="$errors" />
+            <x-auth.auth-validation-errors class="mb-4" :errors="$errors" />
 
             <form method="POST" action="{{ route('register') }}">
                 @csrf
 
                 <!-- Name -->
                 <div class="form-group">
-                    <x-label for="name" :value="__('Name')" />
+                    <x-auth.label for="name" :value="__('Name')" />
 
-                    <x-input id="name" type="text" name="name" :value="old('name')" required autofocus />
+                    <x-auth.input id="name" type="text" name="name" :value="old('name')" required autofocus />
                 </div>
 
                 <!-- Email Address -->
                 <div class="form-group">
-                    <x-label for="email" :value="__('Email')" />
+                    <x-auth.label for="email" :value="__('Email')" />
 
-                    <x-input id="email" type="email" name="email" :value="old('email')" required />
+                    <x-auth.input id="email" type="email" name="email" :value="old('email')" required />
                 </div>
 
                 <!-- Password -->
                 <div class="form-group">
-                    <x-label for="password" :value="__('Password')" />
+                    <x-auth.label for="password" :value="__('Password')" />
 
-                    <x-input id="password" type="password"
+                    <x-auth.input id="password" type="password"
                                     name="password"
                                     required autocomplete="new-password" />
                 </div>
 
                 <!-- Confirm Password -->
                 <div class="form-group">
-                    <x-label for="password_confirmation" :value="__('Confirm Password')" />
+                    <x-auth.label for="password_confirmation" :value="__('Confirm Password')" />
 
-                    <x-input id="password_confirmation" type="password"
+                    <x-auth.input id="password_confirmation" type="password"
                                     name="password_confirmation" required />
                 </div>
 
@@ -50,12 +50,12 @@
                             {{ __('Already registered?') }}
                         </a>
 
-                        <x-button>
+                        <x-auth.button>
                             {{ __('Register') }}
-                        </x-button>
+                        </x-auth.button>
                     </div>
                 </div>
             </form>
         </div>
-    </x-auth-card>
+    </x-auth.auth-card>
 </x-guest-layout>

@@ -3785,15 +3785,39 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./resources/js/animate-btn.js":
+/*!*************************************!*\
+  !*** ./resources/js/animate-btn.js ***!
+  \*************************************/
+/***/ (() => {
+
+// public pages inlog en register button on header animation
+// nog afmaken voor de leuk een keer
+var btn = document.querySelector('.btn-inlog-register');
+btn.addEventListener('click', function () {
+  btn.classList.add('anim');
+  setTimeout(function () {
+    btn.classList.remove('anim');
+  }, 1200);
+});
+console.log('animate-btn.js is running');
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+// const Mix = require('laravel-mix/src/Mix');
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
+
+__webpack_require__(/*! ./animate-btn */ "./resources/js/animate-btn.js");
+
+mix.copyDirectory('resources/images/', 'public/images/logo', false);
 
 /***/ }),
 

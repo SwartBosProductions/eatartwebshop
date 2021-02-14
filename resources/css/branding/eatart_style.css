@@ -30,10 +30,7 @@
     --eatart-logo-color-0: black;
     --eatart-logo-color-1: whitesmoke;
     --eatart-logo-color-1: yellow;
+
+    --eatart-font-1: 'abril_fatfaceregular';
 }
 
-
-a.eatart-a1 {
-    color: var(--eatart-logo-color-1);
-    font-family: 'abril_fatfaceregular';
-}

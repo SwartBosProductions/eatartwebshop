@@ -15,19 +15,19 @@
                     </a>
                     <a href="https://twitter.com/nhlstenden">
                         <img src="{{url('icons/iconmonstr-twitter-2.svg')}}"
-                        class="p-0 m-0 footer-icon" alt="nhl-stenden icon facebook">
+                        class="p-0 m-0 footer-icon" alt="nhl-stenden icon twitter">
                     </a>
                     <a href="https://www.instagram.com/nhlstenden/">
                         <img src="{{url('icons/iconmonstr-instagram-12.svg')}}"
-                        class="p-0 m-0 footer-icon" alt="nhl-stenden icon facebook">
+                        class="p-0 m-0 footer-icon" alt="nhl-stenden icon instagram">
                     </a>
                     <a href="https://www.youtube.com/channel/UCvyRcZ21kGoePNJaBDlQPlQ">
                         <img src="{{url('icons/iconmonstr-youtube-2.svg')}}"
-                        class="p-0 m-0 footer-icon" alt="nhl-stenden icon facebook">
+                        class="p-0 m-0 footer-icon" alt="nhl-stenden icon you tube">
                     </a>
                     <a href="https://www.linkedin.com/school/nhlstenden/">
                         <img src="{{url('icons/iconmonstr-linkedin-2.svg')}}"
-                        class="p-0 m-0 footer-icon" alt="nhl-stenden icon facebook">
+                        class="p-0 m-0 footer-icon" alt="nhl-stenden icon linkedin">
                     </a>
                 </div>
             </div>

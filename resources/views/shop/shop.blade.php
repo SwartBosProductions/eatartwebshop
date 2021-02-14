@@ -1,5 +1,5 @@
 
-@extends ('layouts.public')
+@extends ('layouts.shop')
 
 @section('content')
 <main class="main-shop container-fluid mx-auto" >

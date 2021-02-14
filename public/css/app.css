@@ -1,4 +1,42 @@
 
+
+
+body.body-auth {
+    -webkit-backdrop-filter: blur(8px) ;
+            backdrop-filter: blur(8px) ;
+    }
+
+.auth-forum-pos {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+#body-admin {
+    border: 24px solid var(--eatart-logo-color-1);
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.main-admin {
+    min-height: 70%;
+    max-height: 70%;
+    min-height: 70vh;
+    max-height: 70vh;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.content-admin-dashb {
+    border: 2px solid black;
+}
+
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10334,26 +10372,41 @@ h3 {
   --eatart-font-1: "abril_fatfaceregular";
 }
 
-a.eatart-a1 {
-  color: var(--eatart-logo-color-1);
-  /* font-family: 'abril_fatfaceregular'; */
-}
-
-/* BODY all app pages */
+/* ----------------------------------------------- --*/
+/* ---- Basic all pages style for Eat Art webshop ---*/
+/* ---------------------------------------------- ---*/
+/* ---- - only overall web style -! -----------------*/
+/* --------------------------------------------------*/
+/* ****************************** */
+/* **** Screen landscape/portrait */
+/* ****************************** */
+/* ****************************** */
+/* **** BODY all app pages ****** */
+/* ****************************** */
 body {
   background-image: url(/images/osb_unsplash.jpg?f34abd17d0579d035ad3dc4661a0e191);
-  background-repeat: stretch;
+  /* background-repeat: no-repeat; */
+  background-size: stretch;
+  background-position: center;
 }
 
-/* HEADER all app pages */
+/* ****************************** */
+/* **** HEADER all app pages **** */
+/* ****************************** */
+/* Header background */
 div div.header-bg {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.8);
   border: 4px solid;
   border-color: black transparent black black;
   border-radius: 0px 25px 25px 0px;
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6);
   height: 76px;
   max-height: 76px;
+}
+
+/* Header brand EatArt Webshop */
+.header-img-eatart {
+  height: 40px;
 }
 
 div a.header-brand-webshop {
@@ -10365,11 +10418,98 @@ div a.header-brand-webshop {
   text-transform: uppercase;
 }
 
-.header-img-eatart {
-  height: 40px;
+div a.header-brand-webshop:hover {
+  text-shadow: -4px 4px 10px rgba(211, 211, 211, 0.6);
 }
 
-/* Footer all app pages */
+/* Header login and register buttons */
+div.brand-a1 a.eatart-a1 {
+  color: var(--eatart-logo-color-1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-inlog-register {
+  /* position: relative;
+  cursor: pointer; */
+}
+
+.eatart-a1 {
+  display: inline-block;
+  font-family: "Amatic SC";
+  font-size: 70px;
+  color: #333;
+  transition: all 0.4s ease-out;
+  transform: scaleY(1);
+}
+
+.btn-inlog-register::after,
+.btn-inlog-register::before {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: grey;
+  transition: all 0.8s ease-out;
+  content: "";
+}
+
+.btn-inlog-register::before {
+  top: 0;
+  left: 0;
+}
+
+.btn-inlog-register::after {
+  top: 100%;
+  right: 0;
+}
+
+.btn-inlog-register:hover::after,
+.btn-inlog-register:hover::before {
+  width: 100%;
+}
+
+.anim {
+  pointer-events: none;
+}
+
+.anim eatart-a1 {
+  transform: scaleY(0);
+}
+
+.btn-inlog-register .anim::before,
+.btn-inlog-register .anim::after {
+  top: 50%;
+  width: 50%;
+  -webkit-animation: hide 0.5s forwards;
+          animation: hide 0.5s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes hide {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0;
+  }
+}
+/* ****************************** */
+/* **** Footer all app pages***** */
+/* ****************************** */
 div div.footer-bg {
   background-color: rgba(0, 0, 0, 0.9);
   border: 4px solid;
@@ -10393,7 +10533,7 @@ a img.footer-logo-nhlstenden:hover {
 
 a img.footer-icon {
   background-color: white;
-  font-size: 8px;
+  font-size: 6px;
   text-decoration: none;
 }
 
@@ -10405,7 +10545,10 @@ a img.footer-icon:hover {
 /* at screen size xs hidden */
 div.app-pwdby div.footer-all-text {
   color: grey;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a img.footer-forestblack-logo {
@@ -10414,7 +10557,31 @@ a img.footer-forestblack-logo {
 
 main.main-public {
   position: relative;
-  top: 168px;
+  top: 124px;
+}
+
+img.home-main-eatart-logo {
+  height: 148px;
+}
+
+div div h3.main-home-anno {
+  font-family: var(--eatart-font-1);
+  font-size: 24px;
+  color: black;
+}
+
+/* style public_site_nav */
+img.winkelwagen {
+  height: 96px;
+}
+
+span.badge-winkelwagen {
+  color: var(--eatart-logo-color-1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: black;
 }
 
 main.main-shop {
@@ -10431,4 +10598,16 @@ div.main-shop-content {
   height: 524px;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+body.body-user {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+.user-forum-pos {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }

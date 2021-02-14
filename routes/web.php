@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -33,71 +30,75 @@ require __DIR__.'/auth.php';
 
 // admin basic views setup
 Route::get('/admin/dashboard', function () {
-    return view('app/admin/dashboard');
+    return view('/admin/dashboard');
 });
 
 Route::get('/admin/announcements', function () {
-    return view('app/admin/announcements');
+    return view('/admin/announcements');
 });
 
 Route::get('/admin/products', function () {
-    return view('app/admin/products');
+    return view('/admin/products');
 });
 
 Route::get('/admin/users', function () {
-    return view('app/admin/users');
+    return view('/admin/users');
 });
 
 
 // public basic views setup
-Route::get('/news', function () {
-    return view('public/news');
-});
-
-Route::get('/about', function () {
-    return view('public/about');
-});
-
-Route::get('/contact', function () {
-    return view('public/contact');
-});
+Route::get('/', function () {
+    return view('public/enter');
+})->name('enter');
 
 Route::get('/home', function () {
     return view('public/home');
-});
+})->name('home');
+
+Route::get('/news', function () {
+    return view('public/news');
+})->name('news');
+
+Route::get('/about', function () {
+    return view('public/about');
+})->name('about');
+
+Route::get('/contact', function () {
+    return view('public/contact');
+})->name('contact');
 
 Route::get('/current', function () {
     return view('public/current');
-});
+})->name('current');
 
 Route::get('/museum', function () {
     return view('public/museum');
-});
+})->name('museum');
 
 Route::get('/upcomming', function () {
     return view('public/upcomming');
-});
+})->name('upcomming');
 
 
 // shop basic views setup
 Route::get('/shop', function () {
-    return view('app/shop/shop');
+    return view('/shop/shop');
 });
 
 Route::get('/shop/product_detail', function () {
-    return view('app/shop/product_detail');
+    return view('/shop/product_detail');
 });
 
 Route::get('/shop/shoppingcart', function () {
-    return view('app/shop/shoppingcart');
+    return view('/shop/shoppingcart');
 });
 
 Route::get('/shop/order', function () {
-    return view('app/shop/order');
+    return view('/shop/order');
 });
 
 
 // user basic views setup
 Route::get('/user/profile', function () {
-    return view('app/user/profile');
+    return view('/user/profile');
 });

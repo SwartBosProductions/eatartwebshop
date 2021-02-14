@@ -2,11 +2,13 @@
     <nav class="row navbar navbar-dark justify-content-center mx-0">
         <div class="col-3">
             <div class="row ml-2">
-
-                <a href="/home" type="button" class="btn btn-secondary my-auto">
-                    Home
-                </a>
-
+                @if(request()->routeIs('home'))
+                    {{-- small animation --}}
+                @else
+                    <a href="/home" type="button" class="btn btn-secondary my-auto">
+                        Home
+                    </a>
+                @endif
             </div>
         </div>
         <div class="col-6">
@@ -27,8 +29,12 @@
             <div class="row justify-content-end mr-4">
                 @if (Auth::user())
                     {{-- iets met session id? --}}
-                    <a href="/home" type="button" class="btn btn-secondary my-auto">
-                        Winkelwagen
+                    <a href="/shop/shoppingcart" type="button" class="btn">
+                        <img src="{{url('/icons/geeltje-tape-winkelwagen.png')}}"
+                        class="winkelwagen" alt="winkelwagen icon">
+                        <span class="badge badge-pill badge-winkelwagen">
+                            ##
+                        </span>
                     </a>
                 @endif
             </div>

@@ -1,5 +1,31 @@
 
 main.main-public {
     position: relative;
-    top: 168px;
+    top: 124px;
+}
+
+img.home-main-eatart-logo {
+    height: 148px;
+}
+
+div div h3.main-home-anno {
+    font-family: var(--eatart-font-1);
+    font-size: 24px;
+    color: black;
+}
+
+/* style public_site_nav */
+
+img.winkelwagen {
+    height: 96px;
+}
+
+span.badge-winkelwagen {
+    color: var(--eatart-logo-color-1);
+    font-family: Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
 }

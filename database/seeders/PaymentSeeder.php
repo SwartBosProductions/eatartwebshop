@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class OrderSeeder extends Seeder
+class PaymentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,10 +14,10 @@ class OrderSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('orders')->insert([
+        DB::table('payments')->insert([
             [
-                'shoppingcart_id' => 2,
-                'shippingoption_id' => 1,
+                'order_id' => 1,
+                'payment_date' => '2021-02-11 00:00:00',
                 'created_by' => 1,
             ]
         ]);

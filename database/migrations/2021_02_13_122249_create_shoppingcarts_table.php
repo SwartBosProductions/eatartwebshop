@@ -16,13 +16,12 @@ class CreateShoppingcartsTable extends Migration
         Schema::create('shoppingcarts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->foreignId('product_id')->constrained()->onDelete('cascade');
+            $table->foreignId('product_id')->constrained();
             $table->integer('created_by');
             $table->integer('updated_by')->nullable();
             $table->integer('deleted_by')->nullable();
             $table->timestamps();
             $table->softDeletes('deleted_at');
-            $table->unique(['product_id', 'user_id']);
         });
     }
 

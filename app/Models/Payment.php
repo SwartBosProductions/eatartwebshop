@@ -2,12 +2,11 @@
 
 namespace App\Models;
 
-
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Wildside\Userstamps\Userstamps;
 
-class Order extends Model
+class Payment extends Model
 {
     use SoftDeletes, Userstamps;
     /**
@@ -15,8 +14,8 @@ class Order extends Model
      * @var array
      */
     protected $fillable = [
-        'shoppingcart_id',
-        'shippingoption_id',
+        'payment_date',
+        'order_id',
         'created_by',
         'updated_by',
         'deleted_by',

@@ -79,6 +79,10 @@ Route::get('/upcomming', function () {
     return view('public/upcomming');
 })->name('upcomming');
 
+Route::get('/forestblack', function () {
+    return view('forestblack/forestblack');
+})->name('forestblackInfo');
+
 
 // shop basic views setup
 Route::get('/shop', function () {

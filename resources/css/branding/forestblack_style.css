@@ -5,3 +5,20 @@
 /* ---- - use id/class not html tag's ----------- ---*/
 /* ---- - in case of use elsewhere in app make var --*/
 /* --------------------------------------------------*/
+
+body#forestblack {
+    background-color: black;
+    background-image: url(../../images/logo/forestblack-logo-V20.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    width: auto;
+}
+
+main.main-forestblack {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 520px;
+}

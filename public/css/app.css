@@ -1,16 +1,25 @@
 
-
-
 body.body-auth {
-    -webkit-backdrop-filter: blur(8px) ;
-            backdrop-filter: blur(8px) ;
-    }
+
+    overflow: hidden;
+}
 
 .auth-forum-pos {
+    -webkit-backdrop-filter: blur(6px) ;
+            backdrop-filter: blur(6px) ;
     min-height: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
+}
+
+div.card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid;
+    border-color: black;
+    border-radius: 0px 25px 0px 25px;
+    box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.6);
+    color: var(--eatart-logo-color-1);
 }
 
 
@@ -10323,6 +10332,23 @@ h3 {
 /* ---- - use id/class not html tag's ----------- ---*/
 /* ---- - in case of use elsewhere in app make var --*/
 /* --------------------------------------------------*/
+body#forestblack {
+  background-color: black;
+  background-image: url(/images/forestblack-logo-V20.jpg?c60e81ab9656e084bb970cce9294a51b);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  height: 100vh;
+  width: auto;
+}
+
+main.main-forestblack {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 520px;
+}
+
 /* ------------------------------------------------- */
 /* ---- NHL STENDEN style for Eat Art webshop -------*/
 /* ---------------------------------------------- ---*/
@@ -10381,8 +10407,18 @@ h3 {
 /* **** Screen landscape/portrait */
 /* ****************************** */
 /* ****************************** */
-/* **** BODY all app pages ****** */
+/* **** HTML&BODY all app pages ****** */
 /* ****************************** */
+html {
+  /* box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  height: 100vh;
+  border: 0px solid transparent;
+  align-items: center; */
+}
+
 body {
   background-image: url(/images/osb_unsplash.jpg?f34abd17d0579d035ad3dc4661a0e191);
   /* background-repeat: no-repeat; */
@@ -10507,6 +10543,9 @@ div.brand-a1 a.eatart-a1 {
     width: 0;
   }
 }
+/* *********************************** */
+/* **** Body Parts all app pages ***** */
+/* *********************************** */
 /* ****************************** */
 /* **** Footer all app pages***** */
 /* ****************************** */
@@ -10533,8 +10572,8 @@ a img.footer-logo-nhlstenden:hover {
 
 a img.footer-icon {
   background-color: white;
-  font-size: 6px;
   text-decoration: none;
+  max-height: 20px;
 }
 
 a img.footer-icon:hover {
@@ -10552,7 +10591,7 @@ div.app-pwdby div.footer-all-text {
 }
 
 a img.footer-forestblack-logo {
-  height: 40px;
+  height: 48px;
 }
 
 main.main-public {

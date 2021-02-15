@@ -12,8 +12,8 @@
             </div>
         </div>
         <div class="col-6">
-            <div class="row btn-group d-flex">
-                <a href="/museum" type="button" class="btn btn-secondary my-auto">
+            <div class="row btn-group d-flex btn-group-sitenav">
+                <a href="/museum" type="button" class="btn btn-secondary my-auto btn-group-sitenav">
                     Museum
                 </a>
                 <a href="/current" type="button" class="btn btn-secondary btn-lg my-auto">

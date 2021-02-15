@@ -46,16 +46,16 @@
                 <div class="mb-0">
                     <div class="d-flex justify-content-end align-items-baseline">
                         @if (Route::has('password.request'))
-                            <a class="text-muted mr-3" href="{{ route('password.request') }}">
+                            <a class="text-muted mr-2 text-decoration-none" href="{{ route('password.request') }}">
                                 {{ __('Forgot your password?') }}
                             </a>
                         @endif
-
                         <x-auth.button>
                             {{ __('Login') }}
                         </x-auth.button>
                     </div>
                 </div>
+
             </form>
         </div>
     </x-auth.auth-card>

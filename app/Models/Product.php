@@ -23,4 +23,19 @@ class Product extends Model
         'updated_by',
         'deleted_by',
     ];
+
+    // public function designer()
+    // {
+    //     return $this->belongsTo(Designer::class);
+    // }
+
+    // public function collection()
+    // {
+    //     return $this->belongsTo(Collection::class);
+    // }
+
+    // public function shippingclass();
+    // {
+    //     return $this->hasOne(Shippingclass::class);
+    // }
 }

@@ -7,9 +7,12 @@
 
         <div class="col-2">
             <div class="row justify-content-end mr-2">
+                <x-public.main-home-button>
+                    {{ __('Home') }}
+                </x-public.main-home-button>
                 {{--home button  --}}
             </div>
-            <div class="row justify-content-end mr-2">
+            <div class="row justify-content-end mr-2 mt-4">
                 @include('public/partials/about_eatart_nav')
             </div>
         </div>
@@ -64,14 +67,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
 
 </main>
 

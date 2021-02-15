@@ -1,15 +1,7 @@
 <div class="container-fluid m-0 p-0">
     <nav class="row navbar navbar-dark justify-content-center mx-0">
         <div class="col-3">
-            <div class="row ml-2">
-                @if(request()->routeIs('home'))
-                    {{-- small animation --}}
-                @else
-                    <a href="/home" type="button" class="btn btn-secondary my-auto">
-                        Home
-                    </a>
-                @endif
-            </div>
+
         </div>
         <div class="col-6">
             <div class="row btn-group d-flex btn-group-sitenav">

@@ -15,7 +15,7 @@
 
                 <!-- Name -->
                 <div class="form-group">
-                    <x-auth.label for="name" :value="__('Name')" />
+                    <x-auth.label for="name" :value="__('Naam')" />
 
                     <x-auth.input id="name" type="text" name="name" :value="old('name')" required autofocus />
                 </div>
@@ -29,7 +29,7 @@
 
                 <!-- Password -->
                 <div class="form-group">
-                    <x-auth.label for="password" :value="__('Password')" />
+                    <x-auth.label for="password" :value="__('Wachtwoord')" />
 
                     <x-auth.input id="password" type="password"
                                     name="password"
@@ -38,7 +38,7 @@
 
                 <!-- Confirm Password -->
                 <div class="form-group">
-                    <x-auth.label for="password_confirmation" :value="__('Confirm Password')" />
+                    <x-auth.label for="password_confirmation" :value="__('Bevestig wachtwoord')" />
 
                     <x-auth.input id="password_confirmation" type="password"
                                     name="password_confirmation" required />
@@ -47,11 +47,11 @@
                 <div class="mb-0">
                     <div class="d-flex justify-content-end align-items-baseline">
                         <a class="text-muted mr-3 text-decoration-none" href="{{ route('login') }}">
-                            {{ __('Already registered?') }}
+                            {{ __('Heb je al een account ?') }}
                         </a>
 
                         <x-auth.button>
-                            {{ __('Register') }}
+                            {{ __('Registreren') }}
                         </x-auth.button>
                     </div>
                 </div>

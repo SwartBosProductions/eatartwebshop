@@ -8,7 +8,7 @@
 
         <div class="card-body">
             <div class="mb-4">
-                {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+                {{ __('Wachtwoord vergeten ? Geen probleem, als je al geregistreerd bent; vul je email adres in en we sturen je een email waar je een nieuw wachtwoord mee kan aanmaken. Anders ga naar de registratie pagina.') }}
             </div>
 
             <div class="card-body">
@@ -30,7 +30,7 @@
 
                     <div class="d-flex justify-content-end mt-4">
                         <x-auth.button>
-                            {{ __('Email Password Reset Link') }}
+                            {{ __('Email Wachtwoord Reset Link') }}
                         </x-auth.button>
                     </div>
                 </form>

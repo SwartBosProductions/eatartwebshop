@@ -19,7 +19,7 @@
 
             <!-- Password -->
             <div class="form-group">
-                <x-auth.label for="password" :value="__('Password')" />
+                <x-auth.label for="password" :value="__('Wachtwoord')" />
 
                 <x-auth.input id="password" type="password"
                                 name="password"
@@ -28,7 +28,7 @@
 
             <div class="d-flex justify-content-end mt-4">
                 <x-auth.button class="ml-4">
-                    {{ __('Confirm') }}
+                    {{ __('Bevestigen') }}
                 </x-auth.button>
             </div>
         </form>

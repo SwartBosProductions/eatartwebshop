@@ -25,14 +25,14 @@
 
                 <!-- Password -->
                 <div class="form-group">
-                    <x-auth.label for="password" :value="__('Password')" />
+                    <x-auth.label for="password" :value="__('Wachtwoord')" />
 
                     <x-auth.input id="password" type="password" name="password" required />
                 </div>
 
                 <!-- Confirm Password -->
                 <div class="form-group">
-                    <x-auth.label for="password_confirmation" :value="__('Confirm Password')" />
+                    <x-auth.label for="password_confirmation" :value="__('Bevestig wachtwoord')" />
 
                     <x-auth.input id="password_confirmation" type="password"
                                         name="password_confirmation" required />
@@ -41,7 +41,7 @@
                 <div class="mb-0">
                     <div class="d-flex justify-content-end">
                         <x-auth.button>
-                            {{ __('Reset Password') }}
+                            {{ __('Reset wachtwoord') }}
                         </x-auth.button>
                     </div>
                 </div>

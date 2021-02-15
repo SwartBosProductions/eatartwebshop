@@ -3,7 +3,7 @@
         <div class="col-3">
 
         </div>
-        <div class="col-6">
+        <div class="col-6 pt-2">
             <div class="row btn-group d-flex btn-group-sitenav">
                 <a href="/museum" type="button" class="btn btn-secondary my-auto btn-group-sitenav">
                     Museum

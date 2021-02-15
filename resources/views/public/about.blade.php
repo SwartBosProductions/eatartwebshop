@@ -12,7 +12,6 @@
                 <x-public.main-home-button>
                     {{ __('Home') }}
                 </x-public.main-home-button>
-                {{--home button  --}}
             </div>
             <div class="row mt-4 mr-1 justify-content-end">
                 @include('public/partials/about_eatart_nav')

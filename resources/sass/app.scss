@@ -1,6 +1,10 @@
 // Fonts
-    // ->fonts in .css files @font face
-    // mix.copy(from, to); in js/app.js
+    @import "../fonts/abril_fatface/stylesheet";
+    @import "../fonts/cerapro/stylesheet";
+    @import "../fonts/cerastencilpro/stylesheet";
+    @import "../fonts/ibm_plex_sans/webfontkit-20210215-070903/stylesheet";
+    @import "../fonts/oswald/webfontkit-20210215-071214/stylesheet";
+    @import "../fonts/special_elite/webfontkit-20210215-071351/stylesheet";
 
 // Images & Icons
     // mix.copy(from, to); in js/app.js

@@ -17,13 +17,13 @@
     /* 4 = special_elite*/
         /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/special_elite/SpecialElite-Regular.ttf */
 
-@font-face {
+/* @font-face {
     font-family: 'abril_fatfaceregular';
     src: url('../../fonts/abril_fatface/abrilfatface-regular-webfont.woff2') format('woff2'),
             url('../../fonts/abril_fatface/abrilfatface-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 
 :root {
@@ -31,6 +31,6 @@
     --eatart-logo-color-1: whitesmoke;
     --eatart-logo-color-1: yellow;
 
-    --eatart-font-1: 'abril_fatfaceregular';
+    --eatart-font-1: 'special_eliteregular';
 }
 

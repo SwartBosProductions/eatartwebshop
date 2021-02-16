@@ -1,36 +1,29 @@
-/* ----------------------------------------------- --*/
-/* ---- Eat Art style for Eat Art webshop -----------*/
-/* ---------------------------------------------- ---*/
-/* ---- - only additionals for global elements-! 1---*/
-/* ---- - use id/class not html tag's ----------- ---*/
-/* ---- - in case of use elsewhere in app make var --*/
-/* --------------------------------------------------*/
-
-
-/* ---- Eat Art custom fonts ----*/
-    /* 1 = oswald*/
-        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/oswald/Oswald-VariableFont_wght.ttf*/
-    /* 2 = abril_fatface*/
-        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/abril_fatface/AbrilFatface-Regular.ttf */
-    /* 3 = ibm_plex_sans*/
-        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/ibm_plex_sans/IBMPlexSans-Regular.ttf */
-    /* 4 = special_elite*/
-        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/special_elite/SpecialElite-Regular.ttf */
-
-@font-face {
-    font-family: 'abril_fatfaceregular';
-    src: url('../../fonts/abril_fatface/abrilfatface-regular-webfont.woff2') format('woff2'),
-            url('../../fonts/abril_fatface/abrilfatface-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* --------------------------------------------------------------- */
+/* ---- Eat Art style for Eat Art webshop -------------------------*/
+/* ----------------------------------------------------------------*/
+/* ---- - use id/class not html tag's if --------------------------*/
+/* ---- - prefer make vars for use in .css files for styling app --*/
+/* ----------------------------------------------------------------*/
 
 :root {
-    --eatart-logo-color-0: black;
+    /* ---- Eat Art  custom colors ----------------8888------------*/
+    /* ---- (black and white also in color set) ------------------ */
+    --eatart-logo-color-0: rgb(11, 11, 11);
     --eatart-logo-color-1: whitesmoke;
-    --eatart-logo-color-1: yellow;
+    --eatart-logo-color-2: yellow;
 
-    --eatart-font-1: 'abril_fatfaceregular';
+    /* ---- Eat Art custom fonts ---------------------------------*/
+    /* 1 = ibm_plex_sans -> normal */
+        /* 1.1 = ibm_plex_sans -> XLtIt */
+        /* 1.2 = ibm_plex_sans -> Bold*/
+    /* 2 = special_elite -> normal */
+    /* 3 = abril_fatface -> normal */
+    /* 4 = oswald -> normal */
+    --eatart-font-1: 'ibm_plex_sansregular';
+        --eatart-font-1_1: 'ibm_plex_sansXLtIt';
+        --eatart-font-1_2: 'ibm_plex_sansbold';
+    --eatart-font-2: 'special_eliteregular';
+    --eatart-font-3: 'abril_fatfaceregular';
+    --eatart-font-4: 'oswaldregular';
 }
-
+/* ----------------------------------------------------------------*/

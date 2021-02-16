@@ -10,14 +10,24 @@
 
 
 /* ****************************** */
-/* **** BODY all app pages ****** */
+/* **** HTML&BODY all app pages ****** */
 /* ****************************** */
+html{
+    /* box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 100%;
+    height: 100vh;
+    border: 0px solid transparent;
+    align-items: center; */
+}
 
 body {
     background-image: url(../../images/background/osb_unsplash.jpg);
     /* background-repeat: no-repeat; */
     background-size: stretch;
     background-position: center;
+    font-family: var( --eatart-font-1);
 }
 
 /* ****************************** */
@@ -41,8 +51,8 @@ div div.header-bg {
 }
 
 div a.header-brand-webshop {
-    color: var(--eatart-logo-color-1);
-    font-family: Impact, Haettenschweiler,
+    color: var(--eatart-logo-color-2);
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
                 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
     text-decoration: none;
@@ -56,8 +66,8 @@ div a.header-brand-webshop:hover {
 
 /* Header login and register buttons */
 div.brand-a1 a.eatart-a1 {
-    color: var(--eatart-logo-color-1);
-    font-family: Impact, Haettenschweiler,
+    color: var(--eatart-logo-color-2);
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
                 'Arial Narrow Bold', sans-serif;
     font-size: 12px;
     text-decoration: none;
@@ -75,7 +85,7 @@ display: inline-block;
 font-family: 'Amatic SC';
 font-size: 70px;
 color: #333;
-transition: all .4s ease-out;
+transition: all 1s ease-out;
 transform: scaleY(1);
 }
 
@@ -86,7 +96,7 @@ position: absolute;
 width: 0;
 height: 3px;
 background-color: grey;
-transition: all .8s ease-out;
+transition: all 1s ease-out;
 content: '';
 }
 
@@ -117,8 +127,8 @@ pointer-events: none;
 .btn-inlog-register .anim::after {
     top: 50%;
     width: 50%;
-    animation: hide .5s forwards;
-    animation-delay: .5s;
+    animation: hide .8s forwards;
+    animation-delay: .8s;
 }
 
 @keyframes hide {
@@ -128,6 +138,12 @@ pointer-events: none;
         width: 0;
     }
 }
+
+/* *********************************** */
+/* **** Body Parts all app pages ***** */
+/* *********************************** */
+
+
 
 /* ****************************** */
 /* **** Footer all app pages***** */
@@ -155,24 +171,24 @@ a img.footer-logo-nhlstenden:hover {
 
 a img.footer-icon {
     background-color: white;
-    font-size: 6px;
     text-decoration: none;
+    max-height: 20px;
 }
 a img.footer-icon:hover {
     background-color: var(--nhlstenden-color-1);
     text-decoration: none;
 }
-/* at screen size xs hidden */
 
+/* at screen size xs hidden */
 div.app-pwdby div.footer-all-text {
     color: grey;
     font-family: Impact, Haettenschweiler,
                 'Arial Narrow Bold', sans-serif;
     font-size: 10px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 a img.footer-forestblack-logo {
-    height: 40px;
+    height: 48px;
 }

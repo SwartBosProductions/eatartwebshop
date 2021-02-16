@@ -25,7 +25,7 @@
 
                 <!-- Password -->
                 <div class="form-group">
-                    <x-auth.label for="password" :value="__('Password')" />
+                    <x-auth.label for="password" :value="__('Wachtwoord')" />
 
                     <x-auth.input id="password" type="password"
                              name="password"
@@ -38,7 +38,7 @@
                         <x-auth.checkbox id="remember_me" name="remember" />
 
                         <label class="form-check-label" for="remember">
-                            {{ __('Remember Me') }}
+                            {{ __('Onthouden') }}
                         </label>
                     </div>
                 </div>
@@ -46,16 +46,16 @@
                 <div class="mb-0">
                     <div class="d-flex justify-content-end align-items-baseline">
                         @if (Route::has('password.request'))
-                            <a class="text-muted mr-3" href="{{ route('password.request') }}">
-                                {{ __('Forgot your password?') }}
+                            <a class="text-muted mr-2 text-decoration-none" href="{{ route('password.request') }}">
+                                {{ __('Wachtwoord vergeten ?') }}
                             </a>
                         @endif
-
                         <x-auth.button>
                             {{ __('Login') }}
                         </x-auth.button>
                     </div>
                 </div>
+
             </form>
         </div>
     </x-auth.auth-card>

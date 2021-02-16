@@ -8,12 +8,12 @@
 
         <div class="card-body">
             <div class="mb-4 small text-muted">
-                {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
+                {{ __('Leuk dat je een account hebt aangemaakt! Voor dat we verder kunnen kan je het account verrifieren door op de link in de email te klikken die we je hebben gestuurd. Mocht je geen email van ons ontvangen hebben, kunnen we je een nieuw email bericht sturen.') }}
             </div>
 
             @if (session('status') == 'verification-link-sent')
                 <div class="alert alert-success" role="alert">
-                    {{ __('A new verification link has been sent to the email address you provided during registration.') }}
+                    {{ __('We hebben een verificatie email naar het adres gestuurd wat je bij de registratie hebt ingevuld.') }}
                 </div>
             @endif
 
@@ -23,7 +23,7 @@
 
                     <div>
                         <x-auth.button>
-                            {{ __('Resend Verification Email') }}
+                            {{ __('Opnieuw verificatie email versturen') }}
                         </x-auth.button>
                     </div>
                 </form>

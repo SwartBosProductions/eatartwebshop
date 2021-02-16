@@ -13,16 +13,19 @@
                     <div class="btn-group brand-a1" role="group">
                         @auth
                             <div class="btn p-2 m-1 btn-inlog-register">
-                                <a href="{{ url('/dashboard') }}" class="eatart-a1 mx-2">
+                                <a href="{{ url('/user/profile') }}" class="eatart-a1 mx-2">
                                     Gebruiker pagina
                                 </a>
-                                {{-- route logout link  --}}
                             </div>
-                            <div class="btn p-2 m-1 btn-inlog-register">
-                                <a href="{{ route('logout') }}" class="eatart-a1 mx-2">
-                                    Uitloggen
-                                </a>
-                            </div>
+                            <form action="{{ route('logout') }}" method="POST"
+                                class="btn p-2 m-1 btn-inlog-register">
+                                    @csrf
+                                    <a href="route('logout')" class="eatart-a1 mx-2"
+                                        onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                        Uitloggen
+                                    </a>
+                            </form>
                         @else
                             <div class="btn p-2 m-1 btn-inlog-register">
                                 <a href="{{ route('login') }}" class="eatart-a1 mx-2">
@@ -43,4 +46,3 @@
         </div>
     </div>
 </div>
-

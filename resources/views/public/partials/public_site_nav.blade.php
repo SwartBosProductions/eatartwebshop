@@ -5,15 +5,15 @@
         </div>
         <div class="col-6 pt-2">
             <div class="row btn-group d-flex btn-group-sitenav">
-                <a href="/museum" type="button" class="btn btn-secondary my-auto btn-group-sitenav">
-                    Museum
+                <a href="/museum" type="button" class="btn my-auto px-0 btn-group-sitenav">
+                    -> Museum <-
                 </a>
-                <a href="/current" type="button" class="btn btn-secondary btn-lg my-auto">
+                <a href="/current" type="button" class="btn btn-lg my-auto px-0 btn-group-sitenav">
                     {{-- make nice effect for button when in active as Shop is closed --}}
-                    Shop
+                    -> Shop <-
                 </a>
-                <a href="/upcomming" type="button" class="btn btn-secondary my-auto">
-                    Verwacht
+                <a href="/upcomming" type="button" class="btn my-auto px-0 btn-group-sitenav">
+                    -> Verwacht <-
                 </a>
             </div>
         </div>

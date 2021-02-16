@@ -41,6 +41,20 @@
                                 openingstijden fysieke shop
                             </p>
                         </article>
+                        <article>
+                                    <a href="https://www.facebook.com/eatart/" type="button" class="dropdown-item btn btn-group-eatartsocial">
+                                        <img src="{{url('icons/iconmonstr-facebook-2.svg')}}"
+                                        class="eatart-social-icon" alt="eat-art icon facebook">
+                                    </a>
+                                    <a href="https://twitter.com/eatart" type="button" class="dropdown-item btn btn-group-eatartsocial">
+                                        <img src="{{url('icons/iconmonstr-twitter-2.svg')}}"
+                                        class="eatart-social-icon" alt="eat-art icon twitter">
+                                    </a>
+                                    <a href="https://www.instagram.com/eatart/" type="button" class="dropdown-item btn btn-group-eatartsocial">
+                                        <img src="{{url('icons/iconmonstr-instagram-12.svg')}}"
+                                        class="eatart-social-icon" alt="eat-art icon instagram">
+                                    </a>
+                        </article>
                     </div>
                 </div>
             </div>

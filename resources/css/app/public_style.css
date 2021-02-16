@@ -4,12 +4,34 @@ main.main-public {
     top: 124px;
 }
 
+div div.btn-group-sitenav a.btn-group-sitenav {
+    font-family: var(--eatart-font-2);
+    font-weight: bolder;
+    color: black;
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+div div.btn-group-about a.btn-group-about {
+    font-family: var(--eatart-font-2);
+    color: black;
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+.btn-group-eatartsocial {
+    font-family: var(--eatart-font-2);
+    color: black;
+    background-color: var(--eatart-logo-color-1);
+    border: 2px solid black;
+}
+
 img.home-main-eatart-logo {
     height: 148px;
 }
 
 div div h3.main-home-anno {
-    font-family: var(--eatart-font-1);
+    font-family: var(--eatart-font-3);
     font-size: 24px;
     color: black;
 }

@@ -21,4 +21,9 @@ class Sale extends Model
         'updated_by',
         'deleted_by',
     ];
+
+    public function products()
+    {
+        return $this->belongsToMany(Product::class);
+    }
 }

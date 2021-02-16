@@ -3,18 +3,21 @@
 @section('content')
 
 <main class="main-public container-fluid mx-auto">
+
     <div class="row">
 
         <div class="col-2">
-            <div class="row justify-content-end mr-2">
+
+            <div class="row mt-2 mr-1 justify-content-end">
                 <x-public.main-home-button>
                     {{ __('Home') }}
                 </x-public.main-home-button>
                 {{--home button  --}}
             </div>
-            <div class="row justify-content-end mr-2 mt-4">
+            <div class="row mt-4 mr-1 justify-content-end">
                 @include('public/partials/about_eatart_nav')
             </div>
+
         </div>
 
         <div class="col-8">

@@ -124,7 +124,7 @@
                         </div>
                     </div>
                     <div>
-                        <x-auth.input id="role_id" type="number" name="role_id" value="3"/>
+                        <x-auth.input id="role_id" type="hidden" name="role_id" value="3"/>
                     </div>
                 </div>
 

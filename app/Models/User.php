@@ -37,7 +37,8 @@ class User extends Authenticatable
         'created_by',
         'updated_by',
         'deleted_by',
-        'usergroup_id'
+        'usergroup_id',
+        'role_id',
     ];
 
     /**

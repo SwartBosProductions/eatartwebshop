@@ -44,7 +44,6 @@ class RegisteredUserController extends Controller
             'house_num_addition' => 'string|max:5',
             'postal_code' => 'required|string|max:7',
             'city' => 'required|string|max:255',
-            'user'
         ]);
 
         Auth::login($user = User::create([
@@ -59,7 +58,8 @@ class RegisteredUserController extends Controller
             'house_num_addition' => $request->house_num_addition,
             'postal_code' => $request->postal_code,
             'city' => $request->city,
-            'role_id' => 4,
+            'usergroup_id' => $request->usergroup_id,
+            'role_id' => $request->role_id,
         ]));
 
         event(new Registered($user));

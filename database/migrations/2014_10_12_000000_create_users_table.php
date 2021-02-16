@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('role_id')->constrained()->default(4);
+            $table->foreignId('role_id')->constrained()->default(3);
             $table->foreignId('usergroup_id')->constrained();
             $table->string('first_name', 100);
             $table->string('insertion', 45)->nullable();

@@ -22,15 +22,15 @@
                             <div class="form-group">
                                 <x-auth.label for="first_name" :value="__('Voornaam')" />
 
-                                <x-auth.input id="first_name" type="text" name="first_name" :value="old('first_name')" required autofocus />
+                                <x-auth.input id="first_name" type="text" name="first_name" :value="old('first_name')" required autofocus/>
                             </div>
                         </div>
 
                         <div class="col-2">
                             <div class="form-group">
-                                <x-auth.label for="insertion" :value="__('Tussen voegsel')" />
+                                <x-auth.label for="insertion" :value="__('Tussenvoegsel')" />
 
-                                <x-auth.input id="insertion" type="text" name="insertion" :value="old('insertion')" required autofocus />
+                                <x-auth.input id="insertion" type="text" name="insertion" :value="old('insertion')"/>
                             </div>
                         </div>
 
@@ -38,7 +38,7 @@
                             <div class="form-group">
                                 <x-auth.label for="last_name" :value="__('Achternaam')" />
 
-                                <x-auth.input id="last_name" type="text" name="last_name" :value="old('last_name')" required autofocus />
+                                <x-auth.input id="last_name" type="text" name="last_name" :value="old('last_name')" required/>
                             </div>
                         </div>
 
@@ -47,7 +47,7 @@
                     <div class="form-group">
                         <x-auth.label for="email" :value="__('Email')" />
 
-                        <x-auth.input id="email" type="email" name="email" :value="old('email')" required />
+                        <x-auth.input id="email" type="email" name="email" :value="old('email')" required/>
                     </div>
 
                     <!-- Password -->
@@ -70,17 +70,17 @@
                     <!-- Credentials-->
                     <div class="form-group">
                         <div class="form-group">
-                            <x-auth.label for="birthday" :value="__('Geboorte datum')" />
+                            <x-auth.label for="birthday" :value="__('Geboortedatum')" />
 
-                            <x-auth.input id="birthday" type="text" name="birthday" :value="old('birthday')" required autofocus />
+                            <x-auth.input id="birthday" type="text" name="birthday" :value="old('birthday')" required/>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="form-group">
-                            <x-auth.label for="street" :value="__('Straat naam')" />
+                            <x-auth.label for="street" :value="__('Straatnaam')" />
 
-                            <x-auth.input id="street" type="text" name="street" :value="old('street')" required autofocus />
+                            <x-auth.input id="street" type="text" name="street" :value="old('street')" required/>
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@
                         <div class="form-group">
                             <x-auth.label for="house_num" :value="__('Huisnummer')" />
 
-                            <x-auth.input id="house_num" type="text" name="house_num" :value="old('house_num')" required autofocus />
+                            <x-auth.input id="house_num" type="text" name="house_num" :value="old('house_num')" required/>
                         </div>
                     </div>
 
@@ -104,7 +104,7 @@
                         <div class="form-group">
                             <x-auth.label for="postal_code" :value="__('Postcode')" />
 
-                            <x-auth.input id="postal_code" type="text" name="postal_code" :value="old('postal_code')" required autofocus />
+                            <x-auth.input id="postal_code" type="text" name="postal_code" :value="old('postal_code')" required/>
                         </div>
                     </div>
 
@@ -112,15 +112,7 @@
                         <div class="form-group">
                             <x-auth.label for="city" :value="__('Plaatsnaam')" />
 
-                            <x-auth.input id="city" type="text" name="city" :value="old('city')" required autofocus />
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="form-group">
-                            <x-auth.label for="city" :value="__('Plaatsnaam')" />
-
-                            <x-auth.input id="city" type="text" name="city" :value="old('city')" required autofocus />
+                            <x-auth.input id="city" type="text" name="city" :value="old('city')" required/>
                         </div>
                     </div>
 
@@ -128,10 +120,12 @@
                         <div class="form-group">
                             <x-auth.label for="usergroup_id" :value="__('Relatie tot NHL-Stenden')" />
 
-                            <x-auth.input id="usergroup_id" type="text" name="usergroup_id" :value="old('usergroup_id')" required autofocus />
+                            <x-auth.input id="usergroup_id" type="number" name="usergroup_id" :value="old('usergroup_id')" required/>
                         </div>
                     </div>
-
+                    <div>
+                        <x-auth.input id="role_id" type="number" name="role_id" value="3"/>
+                    </div>
                 </div>
 
 

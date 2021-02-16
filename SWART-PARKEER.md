@@ -7,3 +7,14 @@ test 1 vanuit build-views
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+
+
+
+                                <div class="btn p-2 m-1 btn-inlog-register">
+                                    <a href="{{ route('logout') }}" class="eatart-a1 mx-2"
+                                        onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                        Uitloggen
+                                    </a>
+                                </div>

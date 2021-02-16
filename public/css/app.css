@@ -19,7 +19,12 @@ div.card {
     border-color: black;
     border-radius: 0px 25px 0px 25px;
     box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.6);
-    color: var(--eatart-logo-color-1);
+    color: var(--eatart-logo-color-2);
+}
+
+div.form-group label.auth-label {
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
 }
 
 
@@ -10546,13 +10551,15 @@ h3 {
   flex: 1 1 0%;
 }
 
-/* ----------------------------------------------- --*/
-/* ---- Eat Art style for Eat Art webshop -----------*/
-/* ---------------------------------------------- ---*/
-/* ---- - only additionals for global elements-! 1---*/
-/* ---- - use id/class not html tag's ----------- ---*/
-/* ---- - in case of use elsewhere in app make var --*/
-/* --------------------------------------------------*/
+/* --------------------------------------------------------------- */
+/* ---- ForestBlack style for Eat Art webshop ---------------------*/
+/* ----------------------------------------------------------------*/
+/* ---- - use id/class not html tag's if --------------------------*/
+/* ---- - prefer make vars for use in .css files for styling app --*/
+/* ----------------------------------------------------------------*/
+/* --------------------------------------------------------------- */
+/* ---- ForestBlack About page content styling --------------------*/
+/* ----------------------------------------------------------------*/
 body#forestblack {
   background-color: black;
   background-image: url(/images/forestblack-logo-V20.jpg?c60e81ab9656e084bb970cce9294a51b);
@@ -10570,56 +10577,56 @@ main.main-forestblack {
   top: 520px;
 }
 
-/* ------------------------------------------------- */
-/* ---- NHL STENDEN style for Eat Art webshop -------*/
-/* ---------------------------------------------- ---*/
-/* ---- - only additionals for global elements-! 1---*/
-/* ---- - use id/class not html tag's ----------- ---*/
-/* ---- - in case of use elsewhere in app make var --*/
-/* --------------------------------------------------*/
-/* ---- NHL STENDEN custom fonts ----*/
-/* 1 = CeraPro*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/cerapro/stylesheet.css */
-/* 2 = CeraStencilPro*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/cerastencilpro/stylesheet.css */
-/* 3 = CeraBrush*/
-/* commercial font */
+/* --------------------------------------------------------------- */
+/* ---- NHL STENDEN style for Eat Art webshop ---------------------*/
+/* ----------------------------------------------------------------*/
+/* ---- - use id/class not html tag's if --------------------------*/
+/* ---- - prefer make vars for use in .css files for styling app --*/
+/* ----------------------------------------------------------------*/
 :root {
+  /* ---- NHL STENDEN custom colors -----------------------------*/
+  /* ---- (black and white also in color set) ------------------ */
   --nhlstenden-color-1: rgb(0, 90, 170);
   --nhlstenden-color-3: rgb(0, 155, 170);
   --nhlstenden-color-4: rgb(230, 35, 40);
+  /* ---- NHL STENDEN custom fonts ------------------------------*/
+  /* 1 = CeraPro*/
+  /* 2 = CeraStencilPro*/
+  /* 3 = CeraBrush*/
+  /* not in use yet commercial font ! */
+  --nhlstenden-font-1: "Cera Pro";
+  --nhlstenden-font-2: "CeraStencilPRO";
 }
 
-/* ----------------------------------------------- --*/
-/* ---- Eat Art style for Eat Art webshop -----------*/
-/* ---------------------------------------------- ---*/
-/* ---- - only additionals for global elements-! 1---*/
-/* ---- - use id/class not html tag's ----------- ---*/
-/* ---- - in case of use elsewhere in app make var --*/
-/* --------------------------------------------------*/
-/* ---- Eat Art custom fonts ----*/
-/* 1 = oswald*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/oswald/Oswald-VariableFont_wght.ttf*/
-/* 2 = abril_fatface*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/abril_fatface/AbrilFatface-Regular.ttf */
-/* 3 = ibm_plex_sans*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/ibm_plex_sans/IBMPlexSans-Regular.ttf */
-/* 4 = special_elite*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/special_elite/SpecialElite-Regular.ttf */
-/* @font-face {
-    font-family: 'abril_fatfaceregular';
-    src: url('../../fonts/abril_fatface/abrilfatface-regular-webfont.woff2') format('woff2'),
-            url('../../fonts/abril_fatface/abrilfatface-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
+/* ----------------------------------------------------------------*/
+/* --------------------------------------------------------------- */
+/* ---- Eat Art style for Eat Art webshop -------------------------*/
+/* ----------------------------------------------------------------*/
+/* ---- - use id/class not html tag's if --------------------------*/
+/* ---- - prefer make vars for use in .css files for styling app --*/
+/* ----------------------------------------------------------------*/
 :root {
-  --eatart-logo-color-0: black;
+  /* ---- Eat Art  custom colors ----------------8888------------*/
+  /* ---- (black and white also in color set) ------------------ */
+  --eatart-logo-color-0: rgb(11, 11, 11);
   --eatart-logo-color-1: whitesmoke;
-  --eatart-logo-color-1: yellow;
-  --eatart-font-1: "special_eliteregular";
+  --eatart-logo-color-2: yellow;
+  /* ---- Eat Art custom fonts ---------------------------------*/
+  /* 1 = ibm_plex_sans -> normal */
+  /* 1.1 = ibm_plex_sans -> XLtIt */
+  /* 1.2 = ibm_plex_sans -> Bold*/
+  /* 2 = special_elite -> normal */
+  /* 3 = abril_fatface -> normal */
+  /* 4 = oswald -> normal */
+  --eatart-font-1: "ibm_plex_sansregular";
+  --eatart-font-1_1: "ibm_plex_sansXLtIt";
+  --eatart-font-1_2: "ibm_plex_sansbold";
+  --eatart-font-2: "special_eliteregular";
+  --eatart-font-3: "abril_fatfaceregular";
+  --eatart-font-4: "oswaldregular";
 }
 
+/* ----------------------------------------------------------------*/
 /* ----------------------------------------------- --*/
 /* ---- Basic all pages style for Eat Art webshop ---*/
 /* ---------------------------------------------- ---*/
@@ -10646,6 +10653,7 @@ body {
   /* background-repeat: no-repeat; */
   background-size: stretch;
   background-position: center;
+  font-family: var(--eatart-font-1);
 }
 
 /* ****************************** */
@@ -10668,8 +10676,8 @@ div div.header-bg {
 }
 
 div a.header-brand-webshop {
-  color: var(--eatart-logo-color-1);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: var(--eatart-logo-color-2);
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 24px;
   text-decoration: none;
   font-weight: bold;
@@ -10682,8 +10690,8 @@ div a.header-brand-webshop:hover {
 
 /* Header login and register buttons */
 div.brand-a1 a.eatart-a1 {
-  color: var(--eatart-logo-color-1);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: var(--eatart-logo-color-2);
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 12px;
   text-decoration: none;
   font-weight: bold;
@@ -10700,7 +10708,7 @@ div.brand-a1 a.eatart-a1 {
   font-family: "Amatic SC";
   font-size: 70px;
   color: #333;
-  transition: all 0.4s ease-out;
+  transition: all 1s ease-out;
   transform: scaleY(1);
 }
 
@@ -10711,7 +10719,7 @@ div.brand-a1 a.eatart-a1 {
   width: 0;
   height: 3px;
   background-color: grey;
-  transition: all 0.8s ease-out;
+  transition: all 1s ease-out;
   content: "";
 }
 
@@ -10742,10 +10750,10 @@ div.brand-a1 a.eatart-a1 {
 .btn-inlog-register .anim::after {
   top: 50%;
   width: 50%;
-  -webkit-animation: hide 0.5s forwards;
-          animation: hide 0.5s forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation: hide 0.8s forwards;
+          animation: hide 0.8s forwards;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 @-webkit-keyframes hide {
@@ -10809,7 +10817,7 @@ div.app-pwdby div.footer-all-text {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 10px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a img.footer-forestblack-logo {
@@ -10821,12 +10829,34 @@ main.main-public {
   top: 124px;
 }
 
+div div.btn-group-sitenav a.btn-group-sitenav {
+  font-family: var(--eatart-font-2);
+  font-weight: bolder;
+  color: black;
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+div div.btn-group-about a.btn-group-about {
+  font-family: var(--eatart-font-2);
+  color: black;
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+.btn-group-eatartsocial {
+  font-family: var(--eatart-font-2);
+  color: black;
+  background-color: var(--eatart-logo-color-1);
+  border: 2px solid black;
+}
+
 img.home-main-eatart-logo {
   height: 148px;
 }
 
 div div h3.main-home-anno {
-  font-family: var(--eatart-font-1);
+  font-family: var(--eatart-font-3);
   font-size: 24px;
   color: black;
 }

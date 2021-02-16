@@ -1,5 +1,5 @@
 @props(['value'])
 
-<label {{ $attributes }}>
+<label {{ $attributes->merge(['class' => 'auth-label']) }}>
     {{ $value ?? $slot }}
 </label>

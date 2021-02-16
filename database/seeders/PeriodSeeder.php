@@ -20,7 +20,7 @@ class PeriodSeeder extends Seeder
                 'created_by' => 1,
             ],
             [
-                'period_name' => 'present',
+                'period_name' => 'current',
                 'created_by' => 1,
             ],
             [

@@ -28,7 +28,7 @@
                 @foreach ($products as $product)
                 <article>
                     <h3>
-                        {{$product->product_name}}
+                        {{$product->serie_name}}
                     </h3>
                     <img src="{{$product->picture}}" alt="">
                 </article>

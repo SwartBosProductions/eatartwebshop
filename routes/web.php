@@ -25,7 +25,7 @@ Route::get('/dashboard', function () {
 
 require __DIR__ . '/auth.php';
 
-// BOSMA TEST ROUTE FOR SHOP
+// BOSMA TEST ROUTES FOR PRUTSING AROUND
 //
 Route::get('/testshop', 'App\Http\Controllers\ProductController@indexCurrent');
 /*
@@ -76,9 +76,7 @@ Route::get('/contact', function () {
     return view('public/contact');
 })->name('contact');
 
-Route::get('/current', function () {
-    return view('public/current');
-})->name('current');
+Route::get('/current', 'App\Http\Controllers\ProductController@indexCurrent')->name('current');
 
 Route::get('/museum', function () {
     return view('public/museum');

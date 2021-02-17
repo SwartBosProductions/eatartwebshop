@@ -19,7 +19,7 @@
 
     </head>
 
-    <body id="body-admin">
+    <body class="">
 
         <header>
             @include('layouts.partials.header')

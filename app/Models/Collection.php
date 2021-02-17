@@ -15,6 +15,7 @@ class Collection extends Model
      */
     protected $fillable = [
         'collection_name',
+        'period_id',
         'created_by',
         'updated_by',
         'deleted_by',

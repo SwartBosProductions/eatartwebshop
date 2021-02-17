@@ -6,5 +6,7 @@ require('alpinejs');
 
 require('./animate-btn');
 
+require('./admin-tabel');
+
 mix.copyDirectory('resources/images/', 'public/images/logo', false);
 

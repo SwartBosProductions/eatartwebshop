@@ -1,59 +1,56 @@
-function activateNav() {
-    $('ul.nav > li').on('click', function (evt) {
-      if ($(evt.currentTarget).hasClass('toggle-nav')) return;
-      $(evt.currentTarget).addClass('active').siblings().removeClass('active');
-    });
-  }
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+});
 
-
-  var docs = [
-    {
-      "Type": "excel",
-      "Name": "Remaining tasks for this app",
-      "Description": "This is a list of all the remaining tasks required to complete this app",
-      "Tags": "Responsive, RWD",
-      "LastViewed": "an hour ago",
-      "Expiration": "Sep 17, 2015"
-    },
-    {
-      "Type": "ppt",
-      "Name": "EVAMs presentation",
-      "Description": "This is presentation for the EVAM occuring later this month",
-      "Tags": "EVAM",
-      "LastViewed": "a day ago",
-      "Expiration": "Sep 08, 2015"
-    },
-    {
-      "Type": "word",
-      "Name": "Xmas Party list",
-      "Description": "List of all the people who will be attending the holiday party",
-      "Tags": "Responsive, RWD",
-      "LastViewed": "a few mins ago",
-      "Expiration": "Dec 25, 2014"
-    }
-  ];
-
-
-  function addToggle() {
-      $('li.toggle-nav').on('click', function () {
-          $(this).find('i').toggleClass('rotate-180-deg');
-          $('.navbar-nav.side-nav').toggleClass('hide-link-text');
-          $('#wrapper').toggleClass('expanded');
-      });
-  }
-
-  function fixHamburgerUl() {
-      $('.navbar-toggle').on('click', function () {
-          $('.navbar-nav.side-nav').removeClass('hide-link-text');
-          $("#wrapper").removeClass('expanded');
-          $('i.fa-arrow-left').removeClass('rotate-180-deg');
-      });
-  }
-
-  function init() {
-    activateNav();
-    addToggle();
-    fixHamburgerUl();
-  }
-
-  init();
+// $(document).ready(function(){
+// 	$('[data-toggle="tooltip"]').tooltip();
+// 	var actions = $("table td:last-child").html();
+// 	// Append table with add row form on add new button click
+//     $(".add-new").click(function(){
+// 		$(this).attr("disabled", "disabled");
+// 		var index = $("table tbody tr:last-child").index();
+//         var row = '<tr>' +
+//             '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+//             '<td><input type="text" class="form-control" name="department" id="department"></td>' +
+//             '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
+// 			'<td>' + actions + '</td>' +
+//         '</tr>';
+//     	$("table").append(row);
+// 		$("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+//         $('[data-toggle="tooltip"]').tooltip();
+//     });
+// 	// Add row on add button click
+// 	$(document).on("click", ".add", function(){
+// 		var empty = false;
+// 		var input = $(this).parents("tr").find('input[type="text"]');
+//         input.each(function(){
+// 			if(!$(this).val()){
+// 				$(this).addClass("error");
+// 				empty = true;
+// 			} else{
+//                 $(this).removeClass("error");
+//             }
+// 		});
+// 		$(this).parents("tr").find(".error").first().focus();
+// 		if(!empty){
+// 			input.each(function(){
+// 				$(this).parent("td").html($(this).val());
+// 			});
+// 			$(this).parents("tr").find(".add, .edit").toggle();
+// 			$(".add-new").removeAttr("disabled");
+// 		}
+//     });
+// 	// Edit row on edit button click
+// 	$(document).on("click", ".edit", function(){
+//         $(this).parents("tr").find("td:not(:last-child)").each(function(){
+// 			$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+// 		});
+// 		$(this).parents("tr").find(".add, .edit").toggle();
+// 		$(".add-new").attr("disabled", "disabled");
+//     });
+// 	// Delete row on delete button click
+// 	$(document).on("click", ".delete", function(){
+//         $(this).parents("tr").remove();
+// 		$(".add-new").removeAttr("disabled");
+//     });
+// });

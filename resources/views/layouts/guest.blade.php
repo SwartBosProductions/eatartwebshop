@@ -24,7 +24,7 @@
             @include('layouts.partials.header')
         </header>
 
-        <main class="main-public container-fluid mx-auto">
+        <main class="main-guest container-fluid mx-auto my-auto">
 
             <div class="row">
 

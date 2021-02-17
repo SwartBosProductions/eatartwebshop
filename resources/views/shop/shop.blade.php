@@ -25,13 +25,15 @@
     <div class="main-shop-content container-fluid p-2 my-2 mx-auto">
         <div class="row justify-content-center">
             <div class=" col-10 col-lg-8 bg-light text-center">
+                @foreach ($products as $product)
                 <article>
                     <h3>
-                        Serie naam 1
+                        {{$product->product_name}}
                     </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
+                    <img src="{{$product->picture}}" alt="">
                 </article>
-                <article>
+                @endforeach
+                {{-- <article>
                     <h3>
                         Serie naam 2
                     </h3>
@@ -60,7 +62,7 @@
                         Serie naam 6
                     </h3>
                     <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article>
+                </article> --}}
             </div>
         </div>
     </div>

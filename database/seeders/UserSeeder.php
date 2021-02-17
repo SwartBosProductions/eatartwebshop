@@ -109,7 +109,7 @@ class UserSeeder extends Seeder
                 'postal_code' => '8917 DB',
                 'city' => 'Leeuwarden',
                 'created_by' => 1,
-                'role_id' => 4,
+                'role_id' => 3,
                 'usergroup_id' => 2
             ],
             [
@@ -125,7 +125,7 @@ class UserSeeder extends Seeder
                 'postal_code' => '8917 DB',
                 'city' => 'Leeuwarden',
                 'created_by' => 1,
-                'role_id' => 4,
+                'role_id' => 3,
                 'usergroup_id' => 2
             ],
             [
@@ -141,7 +141,7 @@ class UserSeeder extends Seeder
                 'postal_code' => '8917 DS',
                 'city' => 'Leeuwarden',
                 'created_by' => 1,
-                'role_id' => 4,
+                'role_id' => 3,
                 'usergroup_id' => 3
             ],
             [
@@ -157,7 +157,7 @@ class UserSeeder extends Seeder
                 'postal_code' => '8917 DS',
                 'city' => 'Leeuwarden',
                 'created_by' => 1,
-                'role_id' => 4,
+                'role_id' => 3,
                 'usergroup_id' => 3
             ],
             [
@@ -173,7 +173,7 @@ class UserSeeder extends Seeder
                 'postal_code' => '8912 AS',
                 'city' => 'Leeuwarden',
                 'created_by' => 1,
-                'role_id' => 4,
+                'role_id' => 3,
                 'usergroup_id' => 1
             ],
             [
@@ -189,7 +189,7 @@ class UserSeeder extends Seeder
                 'postal_code' => '8912 AS',
                 'city' => 'Leeuwarden',
                 'created_by' => 1,
-                'role_id' => 4,
+                'role_id' => 3,
                 'usergroup_id' => 1
             ],
         ]);

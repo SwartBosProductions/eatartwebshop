@@ -3,20 +3,31 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Collection;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of products which are currently for sale.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function getCurrent()
     {
-        //
+        $current_collection = 
+        // Collection::where(function ($query) {
+        //     $query->select('collection_id')
+        //         ->from('collection_period')
+        //         ->whereColumn('period_id', 2);
+        // });
     }
-
+        
+    // Product::where(function ($query) {
+    //     $query
+    //     ->select('period_name')
+    //     ->from('periods')
+    // }, 'current')->get();
     /**
      * Show the form for creating a new resource.
      *

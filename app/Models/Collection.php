@@ -24,4 +24,9 @@ class Collection extends Model
     {
         return $this->hasMany(Product::class);
     }
+
+    public function period()
+    {
+        return $this->belongsTo(Period::class);
+    }
 }

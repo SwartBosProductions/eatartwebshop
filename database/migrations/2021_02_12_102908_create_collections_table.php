@@ -15,6 +15,7 @@ class CreateCollectionsTable extends Migration
     {
         Schema::create('collections', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('period_id')->constrained();
             $table->string('collection_name', 45);
             $table->integer('created_by');
             $table->integer('updated_by')->nullable();

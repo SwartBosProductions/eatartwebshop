@@ -20,4 +20,14 @@ class Designer extends Model
         'updated_by',
         'deleted_by',
     ];
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

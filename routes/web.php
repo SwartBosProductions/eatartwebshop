@@ -23,9 +23,11 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
-
+// BOSMA TEST ROUTE FOR SHOP
+//
+Route::get('/testshop', 'App\Http\Controllers\ProductController@indexCurrent');
 /*
 ******************************
 // routes for webapp !

@@ -27,14 +27,4 @@ class Sale extends Model
     {
         return $this->belongsToMany(Product::class);
     }
-
-    public function currentSales()
-    {
-        $date = Carbon::now()->toDateTimeString();
-
-        $currentSale =  $this->whereBetween($date, [$this->start_sale, $this->end_sale])
-            ->orWhereBetween($date, [$this->start_sale, $this->end_sale]);
-
-        return $currentSale;
-    }
 }

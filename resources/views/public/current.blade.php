@@ -36,6 +36,16 @@
                         <p>laat zien wat er momenteel in de winkel te koop is zonder koop functionaliteit</p>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class=" col-10 col-lg-8 bg-light text-center">
+                        @foreach ($products as $product)
+                        <article>
+                            <h3>
+                                {{$product->serie_name}}
+                            </h3>
+                            <img src="{{$product->picture}}" alt="">
+                        </article>
+                        @endforeach
             </div>
         </div>
 

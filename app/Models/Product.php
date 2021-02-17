@@ -48,15 +48,12 @@ class Product extends Model
         return $this->belongsToMany(Sale::class);
     }
 
-    public function currentProducts()
+    public function currentSeries(array $periods)
     {
-        $currentCollections = DB::table('collections')->where('period_id', 2)->pluck('id');
-        // dd($currentCollections);
-
-        $products = DB::table('products')
-            ->whereIn('collection_id', $currentCollections)
-            ->latest()
-            ->get();
+        $collections = Collection::whereIn('period_id', $periods)->pluck('id');
+        $products = $this->whereIn('collection_id', $collections)
+            ->get()
+            ->unique('serie_name');
         return $products;
     }
 }

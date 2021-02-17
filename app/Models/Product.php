@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Wildside\Userstamps\Userstamps;
+use Illuminate\Support\Facades\DB;
 
 class Product extends Model
 {
@@ -45,5 +46,17 @@ class Product extends Model
     public function sales()
     {
         return $this->belongsToMany(Sale::class);
+    }
+
+    public function currentProducts()
+    {
+        $currentCollections = DB::table('collections')->where('period_id', 2)->pluck('id');
+        // dd($currentCollections);
+
+        $products = DB::table('products')
+            ->whereIn('collection_id', $currentCollections)
+            ->latest()
+            ->get();
+        return $products;
     }
 }

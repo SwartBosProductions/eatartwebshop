@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\Collection;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
@@ -13,21 +14,25 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getCurrent()
+    public function indexCurrent()
     {
-        $current_collection = 
-        // Collection::where(function ($query) {
-        //     $query->select('collection_id')
-        //         ->from('collection_period')
-        //         ->whereColumn('period_id', 2);
-        // });
+        // $currentCollections = DB::table('collections')->where('period_id', 2)->pluck('id');
+        // // dd($currentCollections);
+
+        // $products = DB::table('products')
+        //     ->whereIn('collection_id', $currentCollections)
+        //     ->latest()
+        //     ->get();
+        // // dd($products);
+
+        $product = new Product;
+        $products = $product->currentProducts();
+
+        return view('/shop/shop', ['products' => $products]);
     }
-        
-    // Product::where(function ($query) {
-    //     $query
-    //     ->select('period_name')
-    //     ->from('periods')
-    // }, 'current')->get();
+
+
+
     /**
      * Show the form for creating a new resource.
      *

@@ -78,13 +78,9 @@ Route::get('/contact', function () {
 
 Route::get('/current', 'App\Http\Controllers\ProductController@indexCurrent')->name('current');
 
-Route::get('/museum', function () {
-    return view('public/museum');
-})->name('museum');
+Route::get('/museum', 'App\Http\Controllers\ProductController@indexMuseum')->name('museum');
 
-Route::get('/upcomming', function () {
-    return view('public/upcomming');
-})->name('upcomming');
+Route::get('/upcomming', 'App\Http\Controllers\ProductController@indexUpcoming')->name('upcomming');
 
 Route::get('/forestblack', function () {
     return view('forestblack/forestblack');

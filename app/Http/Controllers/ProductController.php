@@ -19,7 +19,7 @@ class ProductController extends Controller
     {
         $products = new Product;
 
-        return view('public/current', ['products' => $products->currentSeries([2])]);
+        return view('public/current', ['products' => $products->getSeriesByPeriod([2])]);
     }
 
     public function indexShop()
@@ -28,6 +28,20 @@ class ProductController extends Controller
         $sale = new Sale;
 
         return view('shop/shop', ['products' => $products->inCurrentSale(), 'sales' => $sale->currentSale()]);
+    }
+
+    public function indexMuseum()
+    {
+        $products = new Product;
+
+        return view('public/current', ['products' => $products->getSeriesByPeriod([1])]);
+    }
+
+    public function indexUpcoming()
+    {
+        $products = new Product;
+
+        return view('public/current', ['products' => $products->getSeriesByPeriod([3])]);
     }
 
 

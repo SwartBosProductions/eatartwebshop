@@ -12,9 +12,11 @@
                 @if (Route::has('login'))
                     <div class="btn-group brand-a1" role="group">
                         @auth
+                            {{-- if admin page hide/inactive button --}}
                             <div class="btn p-2 m-1 btn-inlog-register">
                                 <a href="{{ url('/user/profile') }}" class="eatart-a1 mx-2">
                                     Gebruiker pagina
+                                    {{-- get first/last name from database --}}
                                 </a>
                             </div>
                             <form action="{{ route('logout') }}" method="POST"

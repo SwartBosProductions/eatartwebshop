@@ -22,14 +22,6 @@ class CreatePeriodsTable extends Migration
             $table->timestamps();
             $table->softDeletes('deleted_at');
         });
-
-        Schema::create('collection_period', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('collection_id')->constrained()->onDelete('cascade');
-            $table->foreignId('period_id')->constrained()->onDelete('cascade');
-            $table->timestamps();
-            $table->unique(['collection_id', 'period_id']);
-        });
     }
 
     /**

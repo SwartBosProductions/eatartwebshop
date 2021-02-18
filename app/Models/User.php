@@ -37,6 +37,8 @@ class User extends Authenticatable
         'created_by',
         'updated_by',
         'deleted_by',
+        'usergroup_id',
+        'role_id',
     ];
 
     /**
@@ -57,4 +59,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
+    public function usergroup()
+    {
+        return $this->belongsTo(Usergroup::class);
+    }
 }

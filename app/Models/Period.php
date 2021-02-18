@@ -19,4 +19,9 @@ class Period extends Model
         'updated_by',
         'deleted_by',
     ];
+
+    public function collections()
+    {
+        return $this->hasMany(Collection::class);
+    }
 }

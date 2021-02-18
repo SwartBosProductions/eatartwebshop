@@ -22,6 +22,13 @@ class ProductController extends Controller
         return view('public/current', ['products' => $products->currentSeries([2])]);
     }
 
+    public function indexShop()
+    {
+        $products = new Product;
+
+        return view('shop/shop', ['products' => $products->inCurrentSale()]);
+    }
+
 
     /**
      * Show the form for creating a new resource.

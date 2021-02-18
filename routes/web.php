@@ -27,7 +27,7 @@ require __DIR__ . '/auth.php';
 
 // BOSMA TEST ROUTES FOR PRUTSING AROUND
 //
-Route::get('/testshop', 'App\Http\Controllers\ProductController@indexCurrent');
+Route::get('/testshop', 'App\Http\Controllers\ProductController@indexShop');
 /*
 ******************************
 // routes for webapp !

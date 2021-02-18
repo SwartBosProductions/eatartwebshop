@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Wildside\Userstamps\Userstamps;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
 
 class Product extends Model
 {
@@ -55,5 +55,20 @@ class Product extends Model
             ->get()
             ->unique('serie_name');
         return $products;
+    }
+
+    public function inCurrentSale()
+    {
+        $date = Carbon::now()->toDateTimeString();
+        $currentSale = Sale::where('start_sale', '<=', $date)
+            ->where('end_sale', '>=', $date)
+            ->pluck('id');
+        dd($currentSale);
+        $products = $this->whereIn('sale_id', $currentSale)
+            ->get()
+            ->unique('serie_name');
+        dd($products);
+        // Does not work yet, I have to access the sale_id in the pivot_table. Will continue tomorrow.
+        // return $products;
     }
 }

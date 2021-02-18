@@ -27,4 +27,24 @@ class Sale extends Model
     {
         return $this->belongsToMany(Product::class);
     }
+
+    public function currentSale()
+    {
+        $date = Carbon::now()->toDateTimeString();
+        $currentSale = Sale::where('start_sale', '<=', $date)
+            ->where('end_sale', '>=', $date)
+            ->get();
+
+        return $currentSale;
+    }
+
+    public function currentSaleID()
+    {
+        $date = Carbon::now()->toDateTimeString();
+        $currentSale = Sale::where('start_sale', '<=', $date)
+            ->where('end_sale', '>=', $date)
+            ->pluck('id');
+
+        return $currentSale;
+    }
 }

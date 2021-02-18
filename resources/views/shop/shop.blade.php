@@ -8,11 +8,13 @@
         <div class="row justify-content-center">
             <div class=" col-12 col-lg-10 bg-light text-center">
                 <div class="row">
+                    @foreach ($sales as $sale)
                     <div class="col-3 bg-light">
-                        <h2>Sale naam</h2>
+                        <h2>{{$sale->sale_name}}</h2>
                     </div>
+                    @endforeach
                     <div class="col-6 bg-light">
-                        <p>Sale description</p>
+                        <p>Sale description (doesn't exist yet))</p>
                     </div>
                     <div class="col-3 bg-warning">
                         Sale searchfield/buttons

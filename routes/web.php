@@ -93,9 +93,7 @@ Route::get('/forestblack', function () {
 
 // GROUP SHOP
 // shop basic views setup
-Route::get('/shop', function () {
-    return view('/shop/shop');
-})->name('shop');
+Route::get('/shop', 'App\Http\Controllers\ProductController@indexShop')->name('shop');
 
 Route::get('/shop/product_detail', function () {
     return view('/shop/product_detail');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Sale;
 use App\Models\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -16,21 +17,17 @@ class ProductController extends Controller
      */
     public function indexCurrent()
     {
-        // $currentCollections = DB::table('collections')->where('period_id', 2)->pluck('id');
-        // // dd($currentCollections);
+        $products = new Product;
 
-        // $products = DB::table('products')
-        //     ->whereIn('collection_id', $currentCollections)
-        //     ->latest()
-        //     ->get();
-        // // dd($products);
-
-        $product = new Product;
-        $products = $product->currentProducts();
-
-        return view('/shop/shop', ['products' => $products]);
+        return view('public/current', ['products' => $products->currentSeries([2])]);
     }
 
+    public function indexShop()
+    {
+        $products = new Product;
+
+        return view('shop/shop', ['products' => $products->inCurrentSale()]);
+    }
 
 
     /**

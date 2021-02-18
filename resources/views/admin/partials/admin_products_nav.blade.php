@@ -1,29 +1,27 @@
 <div class="container-fluid m-0 p-0">
-    <nav class="row navbar navbar-dark justify-content-center mx-0 my-auto">
-        <div class="col-10 my-auto">
-            <div class="row justify-content-center mx-0 py-1">
-                <div class="row justify-content-center mx-0 my-auto py-1">
-                    <div class="row btn-group d-flex btn-group-admin-options">
-                        <a href="/admin/users" type="button" class="btn my-auto mx-2 px-1 btn-group-admin-options">
-                            Actieve Sale
-                        </a>
-                        <a href="/admin/products" type="button" class="btn my-auto mx-2 px-1 btn-group-admin-options">
-                            Voorraad Sale
-                        </a>
-                    </div>
-                 </div>
-                <div class="row btn-group d-flex btn-group-admin-options">
-                    <a href="/admin/users" type="button" class="btn btn-sm my-auto mx-2 px-1 btn-group-admin-options">
+    <nav class="row mx-0 my-auto">
+        <div class="col-12 my-auto">
+            <div class="row mx-0 py-1">
+                <div class="col-4 d-flex btn-group-admin-tabnew">
+                    <a href="#" type="button"
+                        class="btn my-auto mx-2 px-1 btn-group-admin-tabnew">
+                        Nieuw Product
+                    </a>
+                </div>
+                <div class="col-4 d-flex btn-group-admin-tab1">
+                    <a href="#" type="button"
+                        class="btn btn-sm my-auto mx-2 px-1 btn-group-admin-tab1">
                         Alle Producten
                     </a>
-                    <a href="/admin/announcements" type="button" class="btn btn-sm my-auto mx-2 px-1 btn-group-admin-options">
-                        Collectie Beheer
+                </div>
+                <div class="col-4 btn-group-vertical d-flex btn-group-admin-tab2">
+                    <a href="#" type="button"
+                        class="btn btn-sm my-auto mx-2 px-1 btn-group-admin-tab2">
+                        Actieve Sale
                     </a>
-                    <a href="/admin/announcements" type="button" class="btn btn-sm my-auto mx-2 px-1 btn-group-admin-options">
-                        Producten Museum
-                    </a>
-                    <a href="/admin/announcements" type="button" class="btn btn-sm my-auto mx-2 px-1 btn-group-admin-options">
-                        Producten Verwacht
+                    <a href="#" type="button"
+                        class="btn btn-sm my-auto mx-2 px-1 btn-group-admin-tab2">
+                        Voorraad Sale
                     </a>
                 </div>
             </div>

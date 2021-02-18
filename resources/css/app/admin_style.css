@@ -5,7 +5,7 @@ main.main-admin {
 }
 
 .content-admin-dashb {
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 h1.h1-admin {
@@ -28,7 +28,7 @@ div div.btn-group-admin-options a.btn-group-admin-options,
 }
 
 /* ------------------------------------------------------------------------- */
-/* tabel users iig */
+/* tabel basic style all admin pages
 /* ------------------------------------------------------------------------- */
 .table-wrapper {
     /* min-width: 1000px; */
@@ -48,12 +48,12 @@ div div.btn-group-admin-options a.btn-group-admin-options,
 .search-box input {
     height: 34px;
     border-radius: 20px;
-    border-color: var(--eatart-logo-color-2);
+    border-color: var(--nhlstenden-color-1);
     box-shadow: none;
     background-color: rgb(211, 211, 211);
 }
 .search-box input:focus {
-    border-color: var(--eatart-logo-color-2);
+    border-color: var(--nhlstenden-color-1);
 }
 .search-box i {
     color: #a0a5b1;
@@ -142,4 +142,41 @@ table.table td i {
     float: left;
     margin-top: 6px;
     font-size: 95%;
+}
+
+/* ------------------------------------------------------------------------- */
+/* tabel style product administration
+/* ------------------------------------------------------------------------- */
+
+/* nav in table products admin */
+div div.btn-group-admin-tab1 a.btn-group-admin-tab1,
+    a.btn-group-admin-tab1 {
+        font-family: var(--eatart-font-2);
+        font-weight: bolder;
+        font-size: 80%;
+        color: black;
+        background-color: rgb(161, 161, 161);
+        border: 1px solid var(--nhlstenden-color-1);
+}
+
+div div.btn-group-admin-tab2 a.btn-group-admin-tab2,
+    a.btn-group-admin-prod2 {
+        font-family: var(--eatart-font-2);
+        font-weight: bolder;
+        font-size: 60%;
+        color: black;
+        background-color: rgb(161, 161, 161);
+        border: 1px solid var(--nhlstenden-color-1);
+
+}
+
+div div.btn-group-admin-tabnew a.btn-group-admin-tabnew,
+    a.btn-group-admin-tabnew {
+        font-family: var(--eatart-font-2);
+        font-weight: bolder;
+        font-size: 80%;
+        color: black;
+        background-color: rgb(161, 161, 161);
+        border: 1.5px solid var(--nhlstenden-color-2);
+
 }

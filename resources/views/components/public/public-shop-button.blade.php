@@ -1,3 +1,4 @@
+{{-- if shop is open show --}}
 <a href="login" type="button" class="btn p-0 public-shop-btnbg">
     <div class="row text-center public-shop-btntoptext mt-1 mb-2 p-1">
         Login

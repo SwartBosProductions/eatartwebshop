@@ -1,9 +1,6 @@
 
 @extends ('layouts.admin')
 
-
-
-
 @section('content')
 
 <main class="main-admin container-fluid mx-auto">

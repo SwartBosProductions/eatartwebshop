@@ -28,7 +28,7 @@
 
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10 text-center mt-1 mb-2 btn-group-admin-options">
-                @include('admin/partials/admin_products_nav')
+
             </div>
         </div>
 
@@ -42,17 +42,17 @@
                         <div class="table-wrapper">
 
                             <div class="table-title">
-                                <div class="row px-4 py-2 my-auto">
+                                <div class="row px-4 py-2">
 
-                                    <div class="col-sm-4">
-                                        <div class="search-box">
+                                    <div class="col-sm-8">
+                                        @include('admin/partials/admin_products_nav')
+                                    </div>
+
+                                    <div class="col-sm-4 my-auto d-flex justify-content-end">
+                                        <div class="search-box d-flex justify-content-end">
                                             {{-- Search picto --}}
                                             <input type="text" class="form-control" placeholder="Zoeken&hellip;">
                                         </div>
-                                    </div>
-
-                                    <div class="col-sm-4">
-                                        {{-- maybe better spot for buttons admin preselect --}}
                                     </div>
 
                                 </div>

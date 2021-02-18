@@ -25,8 +25,9 @@ class ProductController extends Controller
     public function indexShop()
     {
         $products = new Product;
+        $sale = new Sale;
 
-        return view('shop/shop', ['products' => $products->inCurrentSale()]);
+        return view('shop/shop', ['products' => $products->inCurrentSale(), 'sales' => $sale->currentSale()]);
     }
 
 

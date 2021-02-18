@@ -27,10 +27,8 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-10 text-center mt-1 mb-2 btn-group-admin-options">
-                @include('admin/partials/admin_announcements_nav')
-            </div>
-        </div>
+
+
 
         <div class="row justify-content-center">
 
@@ -44,12 +42,12 @@
                             <div class="table-title">
                                 <div class="row px-4 py-2 my-auto">
 
-                                    <div class="col-5">
-
+                                    <div class="col-sm-8">
+                                        @include('admin/partials/admin_announcements_nav')
                                     </div>
 
-                                    <div class="col-5">
-                                        {{-- maybe better spot for buttons admin preselect --}}
+                                    <div class="col-sm-4 my-auto d-flex justify-content-end">
+                                        {{-- evt searchbar --}}
                                     </div>
 
                                 </div>
@@ -121,6 +119,8 @@
                         </div>
 
                     </div>
+
+                </div>
 
             </div>
 

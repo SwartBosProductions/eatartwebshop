@@ -4,6 +4,18 @@ main.main-public {
     top: 124px;
 }
 
+/* ----------------------------------------- */
+
+a.main-home-button {
+    font-family: var(--eatart-font-2);
+    font-weight: bolder;
+    color: black;
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+/* ----------------------------------------- */
+
 div div.btn-group-sitenav a.btn-group-sitenav {
     font-family: var(--eatart-font-2);
     font-weight: bolder;
@@ -12,6 +24,111 @@ div div.btn-group-sitenav a.btn-group-sitenav {
     border: 2px solid black;
 }
 
+div div.btn-group-sitenav a.btn-group-sitenav img{
+    height:24px;
+    /* position: relative; */
+}
+
+div div.btn-group-sitenav a.btn-group-sitenav p{
+    font-size: 12px;
+    color: red;
+    text-shadow: 2px 1px 6px red;
+    transform: rotate(-30deg)!important;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+}
+
+/* ----------------------------------------- */
+div.public-shop-btnbg, div.public-shop-btnarea {
+    /* background-color:whitesmoke; */
+    border: 1px solid black;
+    background-color: rgb(211,211,211);
+    box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
+}
+
+div.public-shop-btntoptext {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color:var(--eatart-logo-color-2);
+    border: 0.2px solid black;
+}
+
+div.public-shop-btntext1 {
+    color: white;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+div.public-shop-btntext2 {
+    color: var(--eatart-logo-color-2);
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+div.public-shop-btn {
+    background-color: whitesmoke;
+    background-image: url(/images/eatart-de_kast.png);
+    background-size: cover;
+    background-position: center;
+    border: 2.5px solid black;
+    height: 120px;
+    /* z-index: 9; */
+}
+/* --------------------------------------------- */
+/* Sale area */
+div.public-sale-area {
+    font-family: var(--eatart-font-3);
+    font-weight: bold;
+    color:chartreuse;
+    background-color:deeppink;
+    border: 1px solid black;
+    box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
+}
+/* --------------------------------------------- */
+/* Sale area */
+div img.side-logo-nhlstenden {
+    height: 120px;
+}
+
+div div.repro-side-title {
+    font-family: var(--nhlstenden-font-1);
+}
+
+
+div.public-repro-area {
+    font-family: var(--nhlstenden-font-1);
+    font-weight: bold;
+    font-size: 12px;
+    color:var(--nhlstenden-color-1);
+    background-color:white;
+    border: 1px solid black;
+    box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
+}
+
+div.public-repro-area a {
+    font-family: var(--nhlstenden-font-1);
+    font-weight: bold;
+    font-size: 12px;
+    color:var(--nhlstenden-color-1);
+}
+
+/* --------------------------------------------- */
 div div.btn-group-about a.btn-group-about {
     font-family: var(--eatart-font-2);
     color: black;
@@ -19,12 +136,7 @@ div div.btn-group-about a.btn-group-about {
     border: 2px solid black;
 }
 
-.btn-group-eatartsocial {
-    font-family: var(--eatart-font-2);
-    color: black;
-    background-color: var(--eatart-logo-color-1);
-    border: 2px solid black;
-}
+/* ----------------------------------------- */
 
 img.home-main-eatart-logo {
     height: 148px;
@@ -36,18 +148,12 @@ div div h3.main-home-anno {
     color: black;
 }
 
-/* style public_site_nav */
-
-img.winkelwagen {
-    height: 96px;
+/* --------------------------------------------- */
+/* contact page */
+.btn-group-eatartsocial {
+    font-family: var(--eatart-font-2);
+    color: black;
+    background-color: var(--eatart-logo-color-1);
+    border: 2px solid black;
 }
 
-span.badge-winkelwagen {
-    color: var(--eatart-logo-color-1);
-    font-family: Impact, Haettenschweiler,
-                'Arial Narrow Bold', sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: black;
-}

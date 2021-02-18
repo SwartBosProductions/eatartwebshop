@@ -9,14 +9,11 @@
             <div class=" col-12 col-lg-10 bg-light text-center">
                 <div class="row">
                     @foreach ($sales as $sale)
-                    <div class="col-3 bg-light">
+                    <div class="col-6 bg-light">
                         <h2>{{$sale->sale_name}}</h2>
                     </div>
                     @endforeach
-                    <div class="col-6 bg-light">
-                        <p>Sale description (doesn't exist yet))</p>
-                    </div>
-                    <div class="col-3 bg-warning">
+                    <div class="col-4 bg-warning">
                         Sale searchfield/buttons
                     </div>
                 </div>
@@ -28,43 +25,13 @@
         <div class="row justify-content-center">
             <div class=" col-10 col-lg-8 bg-light text-center">
                 @foreach ($products as $product)
-                <article>
+                <section>
                     <h3>
                         {{$product->serie_name}}
                     </h3>
-                    <img src="{{$product->picture}}" alt="">
-                </article>
+                    <img src="{{$product->picture}}" alt="voorbeeld afbeelding van serie product" height="80">
+                </section>
                 @endforeach
-                {{-- <article>
-                    <h3>
-                        Serie naam 2
-                    </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article>
-                <article>
-                    <h3>
-                        Serie naam 3
-                    </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article>
-                <article>
-                    <h3>
-                        Serie naam 4
-                    </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article>
-                <article>
-                    <h3>
-                        Serie naam 5
-                    </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article>
-                <article>
-                    <h3>
-                        Serie naam 6
-                    </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article> --}}
             </div>
         </div>
     </div>

@@ -14,4 +14,16 @@ div.main-shop-content {
     overflow-y: scroll;
 }
 
+img.winkelwagen {
+    height: 96px;
+}
 
+span.badge-winkelwagen {
+    color: var(--eatart-logo-color-1);
+    font-family: Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
+}

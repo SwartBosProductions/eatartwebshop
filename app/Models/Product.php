@@ -59,16 +59,13 @@ class Product extends Model
 
     public function inCurrentSale()
     {
-        $date = Carbon::now()->toDateTimeString();
-        $currentSale = Sale::where('start_sale', '<=', $date)
-            ->where('end_sale', '>=', $date)
-            ->pluck('id');
-        dd($currentSale);
-        $products = $this->whereIn('sale_id', $currentSale)
-            ->get()
+        $products = Product::whereHas('sales', function ($query) {
+            $sale = new Sale;
+            $currentSale = $sale->currentSaleID();
+            $query->where('sale_id', $currentSale);
+        })->get()
             ->unique('serie_name');
-        dd($products);
-        // Does not work yet, I have to access the sale_id in the pivot_table. Will continue tomorrow.
-        // return $products;
+
+        return $products;
     }
 }

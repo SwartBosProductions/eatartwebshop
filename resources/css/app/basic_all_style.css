@@ -59,6 +59,10 @@ div a.header-brand-webshop {
     font-weight: bold;
     text-transform: uppercase;
 }
+div a.header-brand-webshop sub {
+    font-size: 12px;
+    color: whitesmoke;
+}
 
 div a.header-brand-webshop:hover {
     text-shadow: -4px 4px 10px rgba(211, 211, 211, 0.6);

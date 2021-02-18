@@ -8,9 +8,11 @@
                 <a href="/museum" type="button" class="btn my-auto px-0 btn-group-sitenav">
                     -> Museum <-
                 </a>
-                <a href="/current" type="button" class="btn btn-lg my-auto px-0 btn-group-sitenav">
-                    {{-- make nice effect for button when in active as Shop is closed --}}
-                    -> Shop <-
+                <a href="/current" type="button" class="btn btn-lg my-auto px-0 btn-group-sitenav d-flex justify-content-center">
+                    <img src="/images/logo/eat art logo_vrijstaand_zw_tn.png" alt="klein logo Eat Art" class="d-flex">
+                    <p class="d-flex my-1">
+                        Fresh !
+                    </p>
                 </a>
                 <a href="/upcomming" type="button" class="btn my-auto px-0 btn-group-sitenav">
                     -> Verwacht <-

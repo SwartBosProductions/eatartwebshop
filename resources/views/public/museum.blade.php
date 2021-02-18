@@ -40,8 +40,16 @@
 
         </div>
 
-        <div class="col-2">
+        <div class="col-2 pl-0">
+            <div class="row mb-2 mt-4 ml-1 mr-5 p-1 justify-content-center public-shop-btnarea">
+                <x-public.public-shop-button>
 
+                </x-public.public-shop-button>
+            </div>
+            <div class="row mb-2 mt-4 ml-1 mr-5 justify-content-center public-shop-btnarea">
+                {{-- if er is een sale dan alle sale namen --}}
+                Nu Te Koop <br> Sale Naam
+            </div>
         </div>
 
     </div>

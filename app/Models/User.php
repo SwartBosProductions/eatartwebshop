@@ -68,4 +68,20 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Usergroup::class);
     }
+
+    public function designer()
+    {
+        return $this->hasOne(Designer::class);
+    }
+
+    public function getFullNameAttribute()
+    {
+        return "{$this->first_name} {$this->insertion} {$this->last_name}";
+    }
+
+    public function getAll()
+    {
+        $users = $this->get();
+        return $users;
+    }
 }

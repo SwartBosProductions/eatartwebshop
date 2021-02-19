@@ -14,7 +14,7 @@
                         Fresh !
                     </p>
                 </a>
-                <a href="/upcomming" type="button" class="btn my-auto px-0 btn-group-sitenav">
+                <a href="/upcoming" type="button" class="btn my-auto px-0 btn-group-sitenav">
                     -> Verwacht <-
                 </a>
             </div>

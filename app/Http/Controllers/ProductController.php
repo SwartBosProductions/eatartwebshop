@@ -34,14 +34,14 @@ class ProductController extends Controller
     {
         $products = new Product;
 
-        return view('public/current', ['products' => $products->getSeriesByPeriod([1])]);
+        return view('public/museum', ['products' => $products->getSeriesByPeriod([1])]);
     }
 
     public function indexUpcoming()
     {
         $products = new Product;
 
-        return view('public/current', ['products' => $products->getSeriesByPeriod([3])]);
+        return view('public/upcoming', ['products' => $products->getSeriesByPeriod([3])]);
     }
 
 

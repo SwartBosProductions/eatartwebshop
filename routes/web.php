@@ -80,7 +80,7 @@ Route::get('/current', 'App\Http\Controllers\ProductController@indexCurrent')->n
 
 Route::get('/museum', 'App\Http\Controllers\ProductController@indexMuseum')->name('museum');
 
-Route::get('/upcomming', 'App\Http\Controllers\ProductController@indexUpcoming')->name('upcomming');
+Route::get('/upcoming', 'App\Http\Controllers\ProductController@indexUpcoming')->name('upcoming');
 
 Route::get('/forestblack', function () {
     return view('forestblack/forestblack');

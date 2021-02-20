@@ -59,14 +59,15 @@
                                         <th>Voornaam </th>
                                         <th>Achternaam <i class="fa fa-sort"></i></th>
                                         <th>Email</th>
-                                        <th>Geboortedatum <i class="fa fa-sort"></i></th>
-                                        <th>Plaats </th>
-                                        <th>Straat <i class="fa fa-sort"></i></th>
+                                        <th>Gebruikersgroep <i class="fa fa-sort"></i></th>
+                                        <th> Designer </th>
+
 
                                     </tr>
                                 </thead>
 
                                 <tbody>
+                                    @foreach ($users as $user)
                                     <tr>
 
                                         <td class="p-1">
@@ -76,14 +77,21 @@
                                         </td>
 
                                         {{-- voorbeeld van record --}}
-                                        <td>Folkert </td>
-                                        <td> Swart </td>
-                                        <td>folkert@swartmail.nl</td>
-                                        <td>18-06-1980</td>
-                                        <td>Groningen</td>
-                                        <td>Horensialaan</td>
+
+                                        <td>{{$user->first_name}} </td>
+                                        <td> {{$user->last_name}} </td>
+                                        <td>{{$user->email}}</td>
+                                        <td>{{$user->usergroup->usergroupname}}</td>
+                                        <td>
+                                            @if ($user->designer)
+                                            &#10004;
+                                            @endif
+                                        </td>
+
+
 
                                     </tr>
+                                    @endforeach
                                 </tbody>
 
                             </table>

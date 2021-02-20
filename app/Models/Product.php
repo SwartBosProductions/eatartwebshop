@@ -48,6 +48,12 @@ class Product extends Model
         return $this->belongsToMany(Sale::class);
     }
 
+    public function getAll()
+    {
+        $products = $this->get();
+        return $products;
+    }
+
     public function getSeriesByPeriod(array $periods)
     {
         $collections = Collection::whereIn('period_id', $periods)->pluck('id');

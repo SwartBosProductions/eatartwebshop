@@ -15,6 +15,15 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function index()
+    {
+        $products = new Product;
+        $products->getAll();
+
+        return view('admin/products', ['products' => $products->getAll()]);
+    }
+
     public function indexCurrent()
     {
         $products = new Product;

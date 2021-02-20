@@ -17,7 +17,7 @@
 
 
             <div class="col-8 col-lg-6 text-center mt-3 mb-1">
-                <h1 class="h1-admin">Producten Administratie</h1>
+                <h1 class="h1-admin">Productadministratie</h1>
             </div>
 
             <div class="col-2">
@@ -66,17 +66,20 @@
                                         <th>ACTIES <i class="fa fa-sort"></i></th>
 
                                         {{-- voorbeeld van, enzovoort zeg maar zijn de table column names --}}
-                                        <th>Product naam </th>
-                                        <th>Serie naam <i class="fa fa-sort"></i></th>
-                                        <th>Collectie naam</th>
-                                        <th>Beschrijving <i class="fa fa-sort"></i></th>
-                                        <th>Afbeelding </th>
+                                        <th>Afbeelding</th>
+                                        <th>Productnaam</th>
+                                        <th>Prijs</th>
+                                        <th>Serie<i class="fa fa-sort"></i></th>
+                                        <th>Designer</th>
+                                        <th>Collectie</th>
+                                        <th>Beschrijving<i class="fa fa-sort"></i></th>
                                         {{-- nice to have preview show small picture on click/hover --}}
 
                                     </tr>
                                 </thead>
 
                                 <tbody>
+                                    @foreach ($products as $product)
                                     <tr>
 
                                         <td class="p-1">
@@ -86,13 +89,16 @@
                                         </td>
 
                                         {{-- voorbeeld van record --}}
-                                        <td>Technico 1 </td>
-                                        <td>Technico </td>
-                                        <td>EatArt Spring 2021 </td>
-                                        <td>Eerste van vier abstracte zeefdrukken met als onderwerp techniek in de jaren negentig. </td>
-                                        <td>https://images.kunstveiling.be/tmp-de5542f2e219b01f00fc5e1eea35cfd8-bob-kemper_d700.jpeg</td>
+                                        <td><img src="{{$product->picture}}" width="100"></td>
+                                        <td>{{$product->product_name}}</td>
+                                        <td>&euro; {{$product->price}}</td>
+                                        <td>{{$product->serie_name}} </td>
+                                        <td>{{$product->designer->user->full_name}} </td>
+                                        <td>{{$product->collection->collection_name}} </td>
+                                        <td>{{$product->description}} </td>
 
                                     </tr>
+                                    @endforeach
                                 </tbody>
 
                             </table>

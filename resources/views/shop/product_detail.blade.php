@@ -5,20 +5,35 @@
 
     <div class="nav-sale container-fluid p-2 my-2 mx-auto">
         <div class="row justify-content-center">
-            <div class=" col-12 col-lg-10 bg-light">
+
+            <div class="col-1 col-lg-2">
+                terug naar shop button
+            </div>
+
+
+            <div class=" col-10 col-lg-8 bg-light">
                 <div class="row">
-                    <div class="col-12 bg-light">
+                    <div class=" col-10 col-lg-8 bg-light">
                         <h2>
                             Serie: naam van selected
                         </h2>
                     </div>
                 </div>
             </div>
+
+            <div class="col-1 col-lg-2">
+                <x-shop.shoppingcart_icon>
+
+                </x-shop.shoppingcart_icon>
+            </div>
+
         </div>
     </div>
 
+
     <div class="main-shop-content container-fluid p-2 my-2 mx-auto">
         <div class="row justify-content-center">
+
             <div class=" col-10 col-lg-8 bg-light text-center">
 
                 <div class="row p-2">
@@ -54,6 +69,7 @@
                 </div>
 
             </div>
+
         </div>
     </div>
 

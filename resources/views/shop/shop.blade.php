@@ -2,9 +2,9 @@
 @extends ('layouts.shop')
 
 @section('content')
-<main class="main-shop container-fluid mx-auto" >
+<main class="container-fluid mx-auto main-shop">
 
-    <div class="nav-sale container-fluid p-2 my-2 mx-auto">
+    <div class="container-fluid p-2 my-2 mx-auto nav-sale">
         <div class="row justify-content-end mr-4">
 
             <div class="col-2">
@@ -16,9 +16,9 @@
         </div>
     </div>
 
-    <div class="main-shop-content container-fluid p-2 my-2 mx-auto">
+    <div class="container-fluid p-2 my-2 mx-auto main-shop-content">
         <div class="row justify-content-center">
-            <div class=" col-10 col-lg-8 bg-light text-center">
+            <div class="col-10 col-lg-8 bg-light text-center">
 
                 <div class="row">
                     @foreach ($sales as $sale)

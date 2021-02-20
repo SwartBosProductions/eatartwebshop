@@ -88,9 +88,7 @@ Route::get('/forestblack', function () {
 // shop basic views setup
 Route::get('/shop', 'App\Http\Controllers\ProductController@indexShop')->name('shop');
 
-Route::get('/shop/product_detail', function () {
-    return view('/shop/product_detail');
-})->name('shop-product');
+Route::get('/shop/{serie_name}/products', 'App\Http\Controllers\ProductController@show')->name('shop-product');
 
 Route::get('/shop/shoppingcart', function () {
     return view('/shop/shoppingcart');

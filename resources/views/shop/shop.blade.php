@@ -38,7 +38,7 @@
                         @foreach ($products as $product)
                         <div class="col-3 p-2 m-2">
                             <section class="">
-                                <a href="#">
+                                <a href={{route('shop-product', ['serie_name' => $product->serie_name])}}>
                                     {{-- = link naar product detail page / daar knop koop en gaat ie in de winkelmand --}}
                                     <h3>
                                         Serie: {{$product->serie_name}}

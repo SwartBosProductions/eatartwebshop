@@ -65,7 +65,7 @@
                                     &euro; {{$product->price}}
                                 </h4>
                                 <h4>
-                                    * Wat willen we hier nog meer vertellen?
+                                    * Meer info & koopknop
                                 </h4>
                             </div>
                         </section>

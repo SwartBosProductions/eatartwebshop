@@ -1,10 +1,11 @@
 <div class="container-fluid fixed-top py-4 pr-0 mt-2 mb-2 mr-4">
     <div class="row p-0 ml-0 mr-4 my-auto header-bg">
         <div class="col-6 pl-4 my-auto">
-            <a href="home" class="header-brand-webshop">
+            <a href="/home" class="header-brand-webshop">
                 <img src="{{url('images/eat art logo_vrijstaand_tn.png')}}"
                 class="header-img-eatart" alt="eat-art logo small">
-                Webshop <sub class="header-brand-webshop-more"> &nbsp; & more</sub>
+                Webshop
+                {{-- <sub class="header-brand-webshop-more"> &nbsp; & more</sub> --}}
             </a>
         </div>
         <div class="col-6 pl-4 my-auto">

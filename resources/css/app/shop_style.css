@@ -1,3 +1,6 @@
+/* -------------------------------------------------------------- */
+/* shop main content styles */
+
 main.main-shop {
     position: relative;
     top: 248px;
@@ -14,6 +17,9 @@ div.main-shop-content {
     overflow-y: scroll;
 }
 
+/* -------------------------------------------------------------- */
+/* winkelwagen icon style */
+
 img.winkelwagen {
     height: 96px;
 }
@@ -27,3 +33,6 @@ span.badge-winkelwagen {
     font-weight: bold;
     background-color: black;
 }
+
+/* -------------------------------------------------------------- */
+/*  */

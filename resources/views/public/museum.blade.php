@@ -36,6 +36,59 @@
 
                     </div>
                 </div>
+
+                <div class="row justify-content-center">
+                    <div class=" col-10 col-lg-8  text-center">
+
+                        <div class="wrapper">
+
+                        <div class="item">
+                            <div class="polaroid"><img src="https://image.ibb.co/b8UJBc/administration_architecture_big_ben_221166.jpg">
+                            <div class="caption">Londen</div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="polaroid"><img src="https://image.ibb.co/mmyvrc/anniversary_balloons_birthday_68369.jpg">
+                            <div class="caption">Ballonnen</div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="polaroid"><img src="https://image.ibb.co/hQaarc/antique_blur_camera_828378.jpg">
+                            <div class="caption">Camera</div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="polaroid"><img src="https://image.ibb.co/crFarc/pexels_photo_100756.jpg">
+                            <div class="caption">Bloem</div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="polaroid"><img src="https://image.ibb.co/fvekrc/action_adult_art_673649.jpg">
+                            <div class="caption">Regenboog</div>
+                            </div>
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="row justify-content-center">
                     <div class=" col-10 col-lg-8 bg-light text-center">
                         @foreach ($products as $product)

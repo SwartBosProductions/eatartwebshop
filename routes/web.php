@@ -44,13 +44,10 @@ Route::get('/admin/announcements', function () {
     return view('/admin/announcements');
 })->name('admin-announcments');
 
-Route::get('/admin/products', function () {
-    return view('/admin/products');
-})->name('admin-products');
+Route::get('/admin/products', 'App\Http\Controllers\ProductController@index')->name('admin-products');
+Route::get('admin/products/{product}', 'App\Http\Controllers\ProductController@show');
 
-Route::get('/admin/users', function () {
-    return view('/admin/users');
-})->name('admin-users');
+Route::get('/admin/users', 'App\Http\Controllers\UserController@index')->name('admin-users');
 
 
 // GROUP PUBLIC

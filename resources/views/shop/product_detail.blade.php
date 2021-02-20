@@ -5,44 +5,71 @@
 
     <div class="nav-sale container-fluid p-2 my-2 mx-auto">
         <div class="row justify-content-center">
-            <div class=" col-12 col-lg-10 bg-light">
+
+            <div class="col-1 col-lg-2">
+                terug naar shop button
+            </div>
+
+
+            <div class=" col-10 col-lg-8 bg-light">
                 <div class="row">
-                    <div class="col-12 bg-light">
-                        <h2>Serie product detail pagina</h2>
+                    <div class=" col-10 col-lg-8 bg-light">
+                        <h2>
+                            Serie: naam van selected
+                        </h2>
                     </div>
                 </div>
             </div>
+
+            <div class="col-1 col-lg-2">
+                <x-shop.shoppingcart_icon>
+
+                </x-shop.shoppingcart_icon>
+            </div>
+
         </div>
     </div>
 
+
     <div class="main-shop-content container-fluid p-2 my-2 mx-auto">
         <div class="row justify-content-center">
+
             <div class=" col-10 col-lg-8 bg-light text-center">
-                <article>
-                    <h3>
-                        Product 1
-                    </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article>
-                <article>
-                    <h3>
-                        Product 2
-                    </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article>
-                <article>
-                    <h3>
-                        Product 3
-                    </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article>
-                <article>
-                    <h3>
-                        Product 4
-                    </h3>
-                    <img src="images/is-dit-kunst-of-kan-het-weg.png" alt="">
-                </article>
+
+                <div class="row p-2">
+
+                    {{-- @foreach product in serie current id --}}
+                    <div class="col-3 p-2 m-2">
+                        <section class="">
+
+                                {{-- = link naar product detail page / daar knop koop en gaat ie in de winkelmand --}}
+                                {{-- <img src="product picture" alt="voorbeeld afbeelding van serie product" height="80"> --}}
+                                {{-- * blur if sold --}}
+                                <h3>
+                                    picture
+                                    product naam
+                                </h3>
+
+                            <div class="">
+                                <h4>
+                                    * description
+                                </h4>
+                                <h4>
+                                    * designer name
+                                    * if ditale link foreach
+                                </h4>
+                                <h4>
+                                    * Wat willen we hier nog meer vertellen?
+                                </h4>
+                            </div>
+                        </section>
+                    </div>
+                    {{-- @endforeach --}}
+
+                </div>
+
             </div>
+
         </div>
     </div>
 

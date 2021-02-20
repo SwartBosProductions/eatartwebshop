@@ -27,6 +27,7 @@
             </div>
 
             <div class="content-main-home container-fluid p-2 my-2 mx-auto">
+
                 <div class="row justify-content-center">
                     <div class=" col-10 col-lg-8 bg-light text-center">
                         <h2>Recent Geproduceerd</h2>

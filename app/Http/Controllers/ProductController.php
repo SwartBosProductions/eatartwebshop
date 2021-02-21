@@ -86,6 +86,7 @@ class ProductController extends Controller
 
         $products = new Product;
         $products = $products->getAllInSerie($serie_name);
+        dd($products);
 
         return view('shop/product_detail', [
             'products' => $products,

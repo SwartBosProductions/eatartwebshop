@@ -13,87 +13,94 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*
+******************************
+// routes for tests !
+******************************
+*/
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
-
-
+// BOSMA TEST ROUTES FOR PRUTSING AROUND
+//
+Route::get('/testshop', 'App\Http\Controllers\ProductController@indexShop');
 /*
 ******************************
-// routes 1e setup for tests !
+// routes for webapp !
 ******************************
 */
 
+// GROUP ADMIN
 // admin basic views setup
 Route::get('/admin/dashboard', function () {
-    return view('app/admin/dashboard');
-});
+    return view('/admin/dashboard');
+})->name('admin-dashboard');
 
 Route::get('/admin/announcements', function () {
-    return view('app/admin/announcements');
-});
+    return view('/admin/announcements');
+})->name('admin-announcments');
 
-Route::get('/admin/products', function () {
-    return view('app/admin/products');
-});
+Route::get('/admin/products', 'App\Http\Controllers\ProductController@index')->name('admin-products');
+Route::get('admin/products/{product}', 'App\Http\Controllers\ProductController@show');
 
-Route::get('/admin/users', function () {
-    return view('app/admin/users');
-});
+Route::get('/admin/users', 'App\Http\Controllers\UserController@index')->name('admin-users');
 
 
+// GROUP PUBLIC
 // public basic views setup
-Route::get('/about', function () {
-    return view('app/public/about');
-});
-
-Route::get('/contact', function () {
-    return view('app/public/contact');
-});
+Route::get('/', function () {
+    return view('public/enter');
+    // reservation route for nice to have feature?
+})->name('enter');
 
 Route::get('/home', function () {
-    return view('app/public/home');
-});
+    return view('public/home');
+})->name('home');
 
-Route::get('/current', function () {
-    return view('app/public/product_current');
-});
+Route::get('/news', function () {
+    return view('public/news');
+})->name('news');
 
-Route::get('/history', function () {
-    return view('app/public/product_history');
-});
+Route::get('/about', function () {
+    return view('public/about');
+})->name('about');
 
-Route::get('/current', function () {
-    return view('app/public/product_upcomming');
-});
+Route::get('/contact', function () {
+    return view('public/contact');
+})->name('contact');
+
+Route::get('/current', 'App\Http\Controllers\ProductController@indexCurrent')->name('current');
+
+Route::get('/museum', 'App\Http\Controllers\ProductController@indexMuseum')->name('museum');
+
+Route::get('/upcoming', 'App\Http\Controllers\ProductController@indexUpcoming')->name('upcoming');
+
+Route::get('/forestblack', function () {
+    return view('forestblack/forestblack');
+})->name('forestblackInfo');
 
 
+// GROUP SHOP
 // shop basic views setup
-Route::get('/shop', function () {
-    return view('app/shop/shop');
-});
+Route::get('/shop', 'App\Http\Controllers\ProductController@indexShop')->name('shop');
 
-Route::get('/shop/product_detail', function () {
-    return view('app/shop/product_detail');
-});
+Route::get('/shop/{serie_name}/products', 'App\Http\Controllers\ProductController@show')->name('shop-product');
 
 Route::get('/shop/shoppingcart', function () {
-    return view('app/shop/shoppingcart');
-});
+    return view('/shop/shoppingcart');
+})->name('shop-cart');
 
 Route::get('/shop/order', function () {
-    return view('app/shop/order');
-});
+    return view('/shop/order');
+})->name('shop-order');
 
 
+// GROUP USER
 // user basic views setup
 Route::get('/user/profile', function () {
-    return view('app/user/profile');
-});
+    return view('/user/profile');
+})->name('user-profile');

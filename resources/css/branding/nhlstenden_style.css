@@ -1,22 +1,23 @@
-/* ------------------------------------------------- */
-/* ---- NHL STENDEN style for Eat Art webshop -------*/
-/* ---------------------------------------------- ---*/
-/* ---- - only additionals for global elements-! 1---*/
-/* ---- - use id/class not html tag's ----------- ---*/
-/* ---- - in case of use elsewhere in app make var --*/
-/* --------------------------------------------------*/
-
-
-/* ---- NHL STENDEN custom fonts ----*/
-    /* 1 = CeraPro*/
-        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/cerapro/stylesheet.css */
-    /* 2 = CeraStencilPro*/
-        /* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/cerastencilpro/stylesheet.css */
-    /* 3 = CeraBrush*/
-        /* commercial font */
+/* --------------------------------------------------------------- */
+/* ---- NHL STENDEN style for Eat Art webshop ---------------------*/
+/* ----------------------------------------------------------------*/
+/* ---- - use id/class not html tag's if --------------------------*/
+/* ---- - prefer make vars for use in .css files for styling app --*/
+/* ----------------------------------------------------------------*/
 
 :root {
+    /* ---- NHL STENDEN custom colors -----------------------------*/
+    /* ---- (black and white also in color set) ------------------ */
     --nhlstenden-color-1: rgb(0, 90, 170);
-    --nhlstenden-color-3: rgb(0, 155, 170);
-    --nhlstenden-color-4: rgb(230, 35, 40);
+    --nhlstenden-color-2: rgb(0, 155, 170);
+    --nhlstenden-color-3: rgb(230, 35, 40);
+
+    /* ---- NHL STENDEN custom fonts ------------------------------*/
+    /* 1 = CeraPro*/
+    /* 2 = CeraStencilPro*/
+    /* 3 = CeraBrush*/
+        /* not in use yet commercial font ! */
+    --nhlstenden-font-1: 'Cera Pro';
+    --nhlstenden-font-2: 'CeraStencilPRO';
 }
+/* ----------------------------------------------------------------*/

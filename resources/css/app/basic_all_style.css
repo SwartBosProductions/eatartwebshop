@@ -1,6 +1,198 @@
+/* ----------------------------------------------- --*/
+/* ---- Basic all pages style for Eat Art webshop ---*/
+/* ---------------------------------------------- ---*/
+/* ---- - only overall web style -! -----------------*/
+/* --------------------------------------------------*/
+
+/* ****************************** */
+/* **** Screen landscape/portrait */
+/* ****************************** */
+
+
+/* ****************************** */
+/* **** HTML&BODY all app pages ****** */
+/* ****************************** */
+html{
+    /* box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 100%;
+    height: 100vh;
+    border: 0px solid transparent;
+    align-items: center; */
+}
 
 body {
     background-image: url(../../images/background/osb_unsplash.jpg);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+    background-size: stretch;
+    background-position: center;
+    font-family: var( --eatart-font-1);
 }
 
+/* ****************************** */
+/* **** HEADER all app pages **** */
+/* ****************************** */
+
+/* Header background */
+div div.header-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid;
+    border-color: black transparent black black;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6);
+    height: 76px;
+    max-height: 76px;
+}
+
+/* Header brand EatArt Webshop */
+.header-img-eatart {
+    height: 40px;
+}
+
+div a.header-brand-webshop {
+    color: var(--eatart-logo-color-2);
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+div a.header-brand-webshop sub {
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+div a.header-brand-webshop:hover {
+    text-shadow: -4px 4px 10px rgba(211, 211, 211, 0.6);
+}
+
+/* Header login and register buttons */
+div.brand-a1 a.eatart-a1 {
+    color: var(--eatart-logo-color-2);
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-inlog-register {
+    /* position: relative;
+    cursor: pointer; */
+}
+
+.eatart-a1 {
+display: inline-block;
+font-family: 'Amatic SC';
+font-size: 70px;
+color: #333;
+transition: all 1s ease-out;
+transform: scaleY(1);
+}
+
+.btn-inlog-register::after,
+ .btn-inlog-register::before {
+display: block;
+position: absolute;
+width: 0;
+height: 3px;
+background-color: grey;
+transition: all 1s ease-out;
+content: '';
+}
+
+.btn-inlog-register::before {
+top: 0;
+left: 0;
+}
+
+.btn-inlog-register::after {
+top: 100%;
+right: 0;
+}
+
+.btn-inlog-register:hover::after,
+.btn-inlog-register:hover::before {
+width: 100%;
+}
+
+.anim {
+pointer-events: none;
+}
+
+.anim eatart-a1 {
+    transform: scaleY(0);
+}
+
+.btn-inlog-register .anim::before,
+.btn-inlog-register .anim::after {
+    top: 50%;
+    width: 50%;
+    animation: hide .8s forwards;
+    animation-delay: .8s;
+}
+
+@keyframes hide {
+    0% {
+        width: 50%;
+    } 100% {
+        width: 0;
+    }
+}
+
+/* *********************************** */
+/* **** Body Parts all app pages ***** */
+/* *********************************** */
+
+
+
+/* ****************************** */
+/* **** Footer all app pages***** */
+/* ****************************** */
+
+div div.footer-bg {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 4px solid;
+    border-color: black transparent black black;
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: -8px -8px 10px rgba(0, 0, 0, 0.6);
+    height: 76px;
+    max-height: 76px;
+}
+
+a img.footer-logo-nhlstenden {
+    height: 50px;
+    background-color: black;
+    text-decoration: none;
+}
+a img.footer-logo-nhlstenden:hover {
+    background-color: var(--nhlstenden-color-1);
+    text-decoration: none;
+}
+
+a img.footer-icon {
+    background-color: white;
+    text-decoration: none;
+    max-height: 20px;
+}
+a img.footer-icon:hover {
+    background-color: var(--nhlstenden-color-1);
+    text-decoration: none;
+}
+
+/* at screen size xs hidden */
+div.app-pwdby div.footer-all-text {
+    color: grey;
+    font-family: Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a img.footer-forestblack-logo {
+    height: 48px;
+}

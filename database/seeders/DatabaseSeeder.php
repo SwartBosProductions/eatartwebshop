@@ -22,8 +22,16 @@ class DatabaseSeeder extends Seeder
             UsergroupSeeder::class,
             UserSeeder::class,
             DesignerSeeder::class,
+            PeriodSeeder::class,
             CollectionSeeder::class,
+            ShippingclassSeeder::class,
             ProductSeeder::class,
+            SaleSeeder::class,
+            ShoppingcartSeeder::class,
+            ShippingoptionSeeder::class,
+            OrderSeeder::class,
+            PaymentSeeder::class,
+            ShipmentSeeder::class,
         ]);
     }
 }

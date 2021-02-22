@@ -1,8 +1,14 @@
-// Fonts
-    // ->fonts in .css files @font face
 
-// Images
-    // mix.copy(from, to);
+// Fonts branding
+@import "../fonts/abril_fatface/stylesheet";
+@import "../fonts/cerapro/stylesheet";
+@import "../fonts/cerastencilpro/stylesheet";
+@import "../fonts/ibm_plex_sans/webfontkit-20210215-070903/stylesheet";
+@import "../fonts/oswald/webfontkit-20210215-071214/stylesheet";
+@import "../fonts/special_elite/webfontkit-20210215-071351/stylesheet";
+
+// Images & Icons
+    // mix.copy(from, to); in js/app.js
     // copy static images for blade functionaliy to image maps
     // mix.copyDirectory{'../images/logo', 'public/images'};
     // copy custom images map
@@ -34,10 +40,8 @@
 
 // APP style sheets
 @import "../css/app/basic_all_style";
+@import "../css/app/auth_style.css";
 @import "../css/app/public_style";
 @import "../css/app/shop_style";
 @import "../css/app/user_style";
 @import "../css/app/admin_style.css";
-
-
-// mix.version(); // Enable versioning.

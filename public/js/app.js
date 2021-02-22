@@ -3785,15 +3785,104 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./resources/js/admin-tabel.js":
+/*!*************************************!*\
+  !*** ./resources/js/admin-tabel.js ***!
+  \*************************************/
+/***/ (() => {
+
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+}); // $(document).ready(function(){
+// 	$('[data-toggle="tooltip"]').tooltip();
+// 	var actions = $("table td:last-child").html();
+// 	// Append table with add row form on add new button click
+//     $(".add-new").click(function(){
+// 		$(this).attr("disabled", "disabled");
+// 		var index = $("table tbody tr:last-child").index();
+//         var row = '<tr>' +
+//             '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+//             '<td><input type="text" class="form-control" name="department" id="department"></td>' +
+//             '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
+// 			'<td>' + actions + '</td>' +
+//         '</tr>';
+//     	$("table").append(row);
+// 		$("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+//         $('[data-toggle="tooltip"]').tooltip();
+//     });
+// 	// Add row on add button click
+// 	$(document).on("click", ".add", function(){
+// 		var empty = false;
+// 		var input = $(this).parents("tr").find('input[type="text"]');
+//         input.each(function(){
+// 			if(!$(this).val()){
+// 				$(this).addClass("error");
+// 				empty = true;
+// 			} else{
+//                 $(this).removeClass("error");
+//             }
+// 		});
+// 		$(this).parents("tr").find(".error").first().focus();
+// 		if(!empty){
+// 			input.each(function(){
+// 				$(this).parent("td").html($(this).val());
+// 			});
+// 			$(this).parents("tr").find(".add, .edit").toggle();
+// 			$(".add-new").removeAttr("disabled");
+// 		}
+//     });
+// 	// Edit row on edit button click
+// 	$(document).on("click", ".edit", function(){
+//         $(this).parents("tr").find("td:not(:last-child)").each(function(){
+// 			$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+// 		});
+// 		$(this).parents("tr").find(".add, .edit").toggle();
+// 		$(".add-new").attr("disabled", "disabled");
+//     });
+// 	// Delete row on delete button click
+// 	$(document).on("click", ".delete", function(){
+//         $(this).parents("tr").remove();
+// 		$(".add-new").removeAttr("disabled");
+//     });
+// });
+
+/***/ }),
+
+/***/ "./resources/js/animate-btn.js":
+/*!*************************************!*\
+  !*** ./resources/js/animate-btn.js ***!
+  \*************************************/
+/***/ (() => {
+
+// public pages inlog en register button on header animation
+// nog afmaken voor de leuk een keer
+var btn = document.querySelector('.btn-inlog-register');
+btn.addEventListener('click', function () {
+  btn.classList.add('anim');
+  setTimeout(function () {
+    btn.classList.remove('anim');
+  }, 1200);
+});
+console.log('animate-btn.js is running');
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+// const Mix = require('laravel-mix/src/Mix');
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
+
+__webpack_require__(/*! ./animate-btn */ "./resources/js/animate-btn.js");
+
+__webpack_require__(/*! ./admin-tabel */ "./resources/js/admin-tabel.js");
+
+mix.copyDirectory('resources/images/', 'public/images/logo', false);
 
 /***/ }),
 

@@ -1,7 +1,28 @@
-/* ----------------------------------------------- --*/
-/* ---- Eat Art style for Eat Art webshop -----------*/
-/* ---------------------------------------------- ---*/
-/* ---- - only additionals for global elements-! 1---*/
-/* ---- - use id/class not html tag's ----------- ---*/
-/* ---- - in case of use elsewhere in app make var --*/
-/* --------------------------------------------------*/
+/* --------------------------------------------------------------- */
+/* ---- ForestBlack style for Eat Art webshop ---------------------*/
+/* ----------------------------------------------------------------*/
+/* ---- - use id/class not html tag's if --------------------------*/
+/* ---- - prefer make vars for use in .css files for styling app --*/
+/* ----------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------- */
+/* ---- ForestBlack About page content styling --------------------*/
+/* ----------------------------------------------------------------*/
+
+body#forestblack {
+    background-color: black;
+    background-image: url(../../images/logo/forestblack-logo-V20.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    width: auto;
+}
+
+main.main-forestblack {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 520px;
+}

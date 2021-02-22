@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
 
             <div class="col-1 col-lg-2">
-                terug naar shop button
+                <a href="/shop">Terug naar de shop</a>
             </div>
 
 

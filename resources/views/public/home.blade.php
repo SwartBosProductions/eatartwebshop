@@ -33,19 +33,25 @@
                         <div class="col-10 col-lg-8 text-center mt-3 mb-4">
 
                             <a href="/login" class="main-webshop-btn">
-                                <div class="row justify-content">
-                                <img src="{{url('images/eat art logo_vrijstaand_zw.png')}}"
-                                class="d-flex mx-auto home-main-eatart-logo" alt="eat-art logo">
+
+                                <div class="row justify-content-center">
+                                    <img src="{{url('images/eat art logo_vrijstaand_zw.png')}}"
+                                    class="home-main-eatart-logo" alt="eat-art logo">
+                                </div>
+
+                                <div class="row justify-content-end">
+                                    <h3 class="main-home-anno" >
+                                        Sinds 2018
+                                    </h3>
+                                </div>
+
+                                <div class="row justify-content-center">
+                                    <h2 class="main-webshop-btn">
+                                        Webshop
+                                    </h2>
                                 </div>
                                 <div class="row justify-content-center">
-                                <h2 class="main-webshop-btn">
-                                    Webshop
-                                </h2>
-                                </div>
-                                <div class="row justify-content-center">
-                                <h3 class="main-home-anno mb-1 mt-0" >
-                                    Sinds 2018
-                                </h3>
+
                                 </div>
                             </a>
 
@@ -54,7 +60,7 @@
                     </div>
 
                     <div class="row justify-content-center">
-                        <div class="col-10 col-lg-8 mt-1">
+                        <div class="col-10 col-lg-6 mt-1">
 
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">

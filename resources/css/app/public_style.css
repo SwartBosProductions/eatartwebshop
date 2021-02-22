@@ -213,6 +213,41 @@ div div h2.h2-museum-of {
     text-transform: uppercase;
 }
 
+/* --------------------------------------------------- */
+
+/* upcomming eatart */
+img.upcomming-main-eatart-logo {
+    height: 72px;
+}
+
+div div h2.h2-upcomming {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 56px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div div p.p-upcomming {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
 /* ----------------------------------- */
 /* polaroiod on museum of eatart */
 /* @IMPORT <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet"> */
@@ -232,7 +267,7 @@ div div h2.h2-museum-of {
   text-align: center;
 }
 .polaroid {
-  background: rgb(255, 233, 191);
+  background: rgb(252, 237, 209);
   padding: 0.5rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
 }
@@ -240,7 +275,9 @@ div div h2.h2-museum-of {
   max-width: 100%;
   height: auto;
   border-radius: 0.4em;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
+  /* filter: sepia(60%); */
+
 
 }
 .caption {
@@ -256,7 +293,7 @@ div div h2.h2-museum-of {
   display: inline-block;
   margin-top: 2rem;
   /* filter: grayscale(100%); */
-  /* filter: sepia(60%); */
+  filter: sepia(60%);
 }
 .item .polaroid:before {
   content: '';
@@ -314,15 +351,15 @@ div div h2.h2-museum-of {
 }
 
 .polaroid > img:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
   }
 
 .item:hover {
     filter: none;
     transform: scale(1, 1) rotate(0deg) !important;
     transition: all 0.35s;
-    filter: grayscale(0%);
-    filter: sepia(50%);
+    /* filter: grayscale(0%); */
+    filter: sepia(10%);
 }
 
 
@@ -361,3 +398,34 @@ div div h2.h2-museum-of {
     width:100%;
     height:100%;
   }
+
+
+/* ------------------------------------- */
+/* eat art fresh current */
+
+img.current-eatart-logo {
+    height:72px;
+    /* position: relative; */
+}
+
+h2.h2-current{
+    font-family: var(--eatart-font-2);
+    font-weight: bold;
+    font-size: 24px;
+    color: red;
+    text-shadow: 2px 1px 6px red;
+    transform: rotate(-30deg)!important;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+}
+
+p.p-upcomming {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}

@@ -7,15 +7,21 @@
         <div class="row justify-content-center">
 
             <div class="col-1 col-lg-2">
-                terug naar shop button
+                <a href="/shop">Terug naar de shop</a>
             </div>
 
 
-            <div class=" col-10 col-lg-8 bg-light">
+            <div class="col-10 col-lg-8 bg-light">
                 <div class="row">
-                    <div class=" col-10 col-lg-8 bg-light">
+                    <div class="    col-10 col-lg-8 bg-light">
                         <h2>
-                            Serie: naam van selected
+                            Serie: {{$serie_name}}
+                        </h2>
+                        <h2>
+                            Designer: {{$designer}}
+                        </h2>
+                        <h2>
+                            Hier komen 0 tot 3 linkjes moet ik nog aanpassen.
                         </h2>
                     </div>
                 </div>
@@ -39,6 +45,7 @@
                 <div class="row p-2">
 
                     {{-- @foreach product in serie current id --}}
+                    @foreach ($products as $product)
                     <div class="col-3 p-2 m-2">
                         <section class="">
 
@@ -46,24 +53,24 @@
                                 {{-- <img src="product picture" alt="voorbeeld afbeelding van serie product" height="80"> --}}
                                 {{-- * blur if sold --}}
                                 <h3>
-                                    picture
-                                    product naam
+                                    <img src="{{$product->picture}}" alt="afbeelding van het product" height="80">
+                                    {{$product->product_name}}
                                 </h3>
 
                             <div class="">
                                 <h4>
-                                    * description
+                                    {{$product->description}}
                                 </h4>
                                 <h4>
-                                    * designer name
-                                    * if ditale link foreach
+                                    &euro; {{$product->price}}
                                 </h4>
                                 <h4>
-                                    * Wat willen we hier nog meer vertellen?
+                                    * Meer info & koopknop
                                 </h4>
                             </div>
                         </section>
                     </div>
+                    @endforeach
                     {{-- @endforeach --}}
 
                 </div>

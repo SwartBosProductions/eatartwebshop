@@ -74,4 +74,13 @@ class Product extends Model
 
         return $products;
     }
+
+    public function getAllInSerie(string $serie_name)
+    {
+        $serie_name = explode(' ', $serie_name);
+
+        $products = $this->whereIn('serie_name', $serie_name)
+            ->get();
+        return $products;
+    }
 }

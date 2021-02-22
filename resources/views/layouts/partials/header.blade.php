@@ -4,7 +4,7 @@
             <a href="/home" class="header-brand-webshop">
                 <img src="{{url('images/eat art logo_vrijstaand_tn.png')}}"
                 class="header-img-eatart" alt="eat-art logo small">
-                Webshop
+                {{-- Webshop --}}
                 {{-- <sub class="header-brand-webshop-more"> &nbsp; & more</sub> --}}
             </a>
         </div>

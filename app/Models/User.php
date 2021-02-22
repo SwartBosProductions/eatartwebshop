@@ -37,6 +37,8 @@ class User extends Authenticatable
         'created_by',
         'updated_by',
         'deleted_by',
+        'usergroup_id',
+        'role_id',
     ];
 
     /**
@@ -57,4 +59,29 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
+    public function usergroup()
+    {
+        return $this->belongsTo(Usergroup::class);
+    }
+
+    public function designer()
+    {
+        return $this->hasOne(Designer::class);
+    }
+
+    public function getFullNameAttribute()
+    {
+        return "{$this->first_name} {$this->insertion} {$this->last_name}";
+    }
+
+    public function getAll()
+    {
+        $users = $this->get();
+        return $users;
+    }
 }

@@ -1,5 +1,453 @@
+html{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 100%;
+    height: 100vh;
+    border: 0px solid transparent;
+    align-items: center;
+}
+body.body-auth {
+    offset: relative;
+    top: 10%;
+    height: 80%;
+    height: 80vh;
+    /* overflow-y: hidden; */
+}
+
+main.main-guest {
+    position: relative;
+    top: 124px;
+}
+
+.auth-forum-pos {
+    -webkit-backdrop-filter: blur(6px) ;
+            backdrop-filter: blur(6px) ;
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+div.card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid;
+    border-color: black;
+    border-radius: 0px 25px 0px 25px;
+    box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.6);
+    color: var(--eatart-logo-color-2);
+}
+
+div.form-group label.auth-label {
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+}
+
+
+main.main-admin {
+    position: relative;
+    top: 124px;
+}
+
+.content-admin-dashb {
+    /* border: 2px solid black; */
+}
+
+h1.h1-admin {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 48px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div div.btn-group-admin-options a.btn-group-admin-options,
+    a.btn-group-admin-options {
+        font-family: var(--eatart-font-2);
+        font-weight: bolder;
+        color: whitesmoke;
+        background-color: black;
+        border: 2px solid var(--eatart-logo-color-2);
+}
+
+/* ------------------------------------------------------------------------- */
+/* tabel basic style all admin pages
+/* ------------------------------------------------------------------------- */
+.table-wrapper {
+    /* min-width: 1000px; */
+    /* to scroll ?? */
+}
+.table-title {
+    min-width: 100%;
+}
+.table-title h2 {
+    font-size: 16px;
+}
+
+.search-box {
+    position: relative;
+    float: left;
+}
+.search-box input {
+    height: 34px;
+    border-radius: 20px;
+    border-color: var(--nhlstenden-color-1);
+    box-shadow: none;
+    background-color: rgb(211, 211, 211);
+}
+.search-box input:focus {
+    border-color: var(--nhlstenden-color-1);
+}
+.search-box i {
+    color: #a0a5b1;
+    position: absolute;
+    font-size: 19px;
+    top: 8px;
+    left: 10px;
+}
+table.table tr th, table.table tr td {
+    border-color: rgb(211, 211, 211);
+}
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
+}
+table.table th i {
+    font-size: 8px;
+    cursor: pointer;
+}
+
+table.table td {
+    font-size: 14px;
+    font-family: var(--nhlstenden-font-1);
+}
+
+table.table td:last-child {
+    width: 130px;
+}
+table.table td a {
+    color: #a0a5b1;
+    display: inline-block;
+}
+table.table td a.view {
+    color: var(--nhlstenden-color-1);
+}
+table.table td a.edit {
+    color: var(--nhlstenden-color-2);
+}
+table.table td a.delete {
+    color: var(--nhlstenden-color-3);
+}
+table.table td i {
+    font-size: 16px;
+}
+.pagination {
+    float: right;
+}
+.pagination li a {
+    border: none;
+    font-size: 95%;
+    width: 30px;
+    height: 30px;
+    color: black;
+    margin: 0 2px;
+    line-height: 30px;
+    border-radius: 30px !important;
+    text-align: center;
+    padding: 0;
+    font-family: var(--eatart-font-2), Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+}
+.pagination li a:hover {
+    color: #666;
+}
+.pagination li.active a {
+    background: var(--eatart-logo-color-2)!important;
+    color: black !important;
+    font-family: var(--eatart-font-2), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+.pagination li.active a:hover {
+    background: var(--eatart-logo-color-2);
+}
+.pagination li.disabled i {
+    color: whitesmoke;
+}
+.pagination li i {
+    font-size: 16px;
+    padding-top: 6px
+}
+.hint-text {
+    float: left;
+    margin-top: 6px;
+    font-size: 95%;
+}
+
+/* ------------------------------------------------------------------------- */
+/* tabel style product administration
+/* ------------------------------------------------------------------------- */
+
+/* nav in table products admin */
+div div.btn-group-admin-tab1 a.btn-group-admin-tab1,
+    a.btn-group-admin-tab1 {
+        font-family: var(--eatart-font-2);
+        font-weight: bolder;
+        font-size: 80%;
+        color: black;
+        background-color: rgb(161, 161, 161);
+        border: 1px solid var(--nhlstenden-color-1);
+}
+
+div div.btn-group-admin-tab2 a.btn-group-admin-tab2,
+    a.btn-group-admin-prod2 {
+        font-family: var(--eatart-font-2);
+        font-weight: bolder;
+        font-size: 60%;
+        color: black;
+        background-color: rgb(161, 161, 161);
+        border: 1px solid var(--nhlstenden-color-1);
+
+}
+
+div div.btn-group-admin-tabnew a.btn-group-admin-tabnew,
+    a.btn-group-admin-tabnew {
+        font-family: var(--eatart-font-2);
+        font-weight: bolder;
+        font-size: 80%;
+        color: black;
+        background-color: rgb(161, 161, 161);
+        border: 1.5px solid var(--nhlstenden-color-2);
+
+}
 
 @charset "UTF-8";
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on February 9, 2021 */
+@font-face {
+  font-family: "abril_fatfaceregular";
+  src: url(/fonts/abrilfatface-regular-webfont.woff2?3c5a0f48cb6fb4b713e34115493c5f6d) format("woff2"), url(/fonts/abrilfatface-regular-webfont.woff?f783eb623e6adde82018b85046481429) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-Italic.eot?e15d80dc6fd0773b8960349149cf9253);
+  src: local("Cera Pro Italic"), local("CeraPro-Italic"), url(/fonts/CeraPro-Italic.eot?e15d80dc6fd0773b8960349149cf9253) format("embedded-opentype"), url(/fonts/CeraPro-Italic.woff?1bcaaad76482e92e6372b564fad06476) format("woff"), url(/fonts/CeraPro-Italic.ttf?ffab62755a5f8c10c1874542b6b3c7e9) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-Regular.eot?90d6d3f3b26b0c67ff973d1ee42c006d);
+  src: local("Cera Pro Regular"), local("CeraPro-Regular"), url(/fonts/CeraPro-Regular.eot?90d6d3f3b26b0c67ff973d1ee42c006d) format("embedded-opentype"), url(/fonts/CeraPro-Regular.woff?a81f68b2a1331c71b4e45702493e2d30) format("woff"), url(/fonts/CeraPro-Regular.ttf?41e4685b30b1ca1724047d85a656aeac) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-BlackItalic.eot?7c1aaad5662a3e72a31bdb59e3e0982e);
+  src: local("Cera Pro Black Italic"), local("CeraPro-BlackItalic"), url(/fonts/CeraPro-BlackItalic.eot?7c1aaad5662a3e72a31bdb59e3e0982e) format("embedded-opentype"), url(/fonts/CeraPro-BlackItalic.woff?c26d9c9499ad22f9aa09c960e9734b4e) format("woff"), url(/fonts/CeraPro-BlackItalic.ttf?8efab2cf0df400058f0b56d0adccd305) format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-Light.eot?dbbf0f706b6291981ec8a7b929986c17);
+  src: local("Cera Pro Light"), local("CeraPro-Light"), url(/fonts/CeraPro-Light.eot?dbbf0f706b6291981ec8a7b929986c17) format("embedded-opentype"), url(/fonts/CeraPro-Light.woff?98b5420ed7dadfd6bac85c320adb75dd) format("woff"), url(/fonts/CeraPro-Light.ttf?cc15c1c569b6aee012ce36aee49500c3) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-BoldItalic.eot?0358e9e9d6884f13f4b71b06c059d15d);
+  src: local("Cera Pro Bold Italic"), local("CeraPro-BoldItalic"), url(/fonts/CeraPro-BoldItalic.eot?0358e9e9d6884f13f4b71b06c059d15d) format("embedded-opentype"), url(/fonts/CeraPro-BoldItalic.woff?2f7cbf13bd6de55b918e63f8773123ad) format("woff"), url(/fonts/CeraPro-BoldItalic.ttf?282f94f636ca32528be5ecd99eb2d614) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-Black.eot?8aaf9a2ac722763ca3c236588c5928cb);
+  src: local("Cera Pro Black"), local("CeraPro-Black"), url(/fonts/CeraPro-Black.eot?8aaf9a2ac722763ca3c236588c5928cb) format("embedded-opentype"), url(/fonts/CeraPro-Black.woff?df6bd63f05bbe21554f7dc91cf78f3dc) format("woff"), url(/fonts/CeraPro-Black.ttf?9f6c69a47f18c07b2e05a93ec29411a3) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-Medium.eot?0f2f1644f0b2c4c09b5688c10550f6b5);
+  src: local("Cera Pro Medium"), local("CeraPro-Medium"), url(/fonts/CeraPro-Medium.eot?0f2f1644f0b2c4c09b5688c10550f6b5) format("embedded-opentype"), url(/fonts/CeraPro-Medium.woff?f64d02acab54735d518fe280ddf638a5) format("woff"), url(/fonts/CeraPro-Medium.ttf?2f9e30d88b8df017e8d4263b96c3b207) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-Bold.eot?7a6223c0d9f5e1699b2f95955eb425c8);
+  src: local("Cera Pro Bold"), local("CeraPro-Bold"), url(/fonts/CeraPro-Bold.eot?7a6223c0d9f5e1699b2f95955eb425c8) format("embedded-opentype"), url(/fonts/CeraPro-Bold.woff?d5b3ad75d9323b1675954bb9d7fb5ec6) format("woff"), url(/fonts/CeraPro-Bold.ttf?acce31fe54d79d00fd49115f97696798) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-Thin.eot?3b5c6a3d75d98c984ce7d70c7ad6ecca);
+  src: local("Cera Pro Thin"), local("CeraPro-Thin"), url(/fonts/CeraPro-Thin.eot?3b5c6a3d75d98c984ce7d70c7ad6ecca) format("embedded-opentype"), url(/fonts/CeraPro-Thin.woff?5b6de3b2677b739edcf97543bcf66ee4) format("woff"), url(/fonts/CeraPro-Thin.ttf?f95cdbd87fcaac2fd84b2cd35bcc80f6) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-MediumItalic.eot?9003360e8f63800ede54e07d839de690);
+  src: local("Cera Pro Medium Italic"), local("CeraPro-MediumItalic"), url(/fonts/CeraPro-MediumItalic.eot?9003360e8f63800ede54e07d839de690) format("embedded-opentype"), url(/fonts/CeraPro-MediumItalic.woff?dd559e99510f52c2b9c66febd3c22359) format("woff"), url(/fonts/CeraPro-MediumItalic.ttf?31b86b8e2b65af0c3c210f3d6125ec0f) format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-LightItalic.eot?2bc1d5b62180312ec1eee064c7ef6580);
+  src: local("Cera Pro Light Italic"), local("CeraPro-LightItalic"), url(/fonts/CeraPro-LightItalic.eot?2bc1d5b62180312ec1eee064c7ef6580) format("embedded-opentype"), url(/fonts/CeraPro-LightItalic.woff?434287a77041d137206df42520f9b651) format("woff"), url(/fonts/CeraPro-LightItalic.ttf?2940a94e91bd90052f3627e2dc558956) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(/fonts/CeraPro-ThinItalic.eot?ad06663525691c750e1e2f1409305045);
+  src: local("Cera Pro Thin Italic"), local("CeraPro-ThinItalic"), url(/fonts/CeraPro-ThinItalic.eot?ad06663525691c750e1e2f1409305045) format("embedded-opentype"), url(/fonts/CeraPro-ThinItalic.woff?ff1d06c5b087e4e1749d9b68b25980a0) format("woff"), url(/fonts/CeraPro-ThinItalic.ttf?c7eb6db29f879e592b30809bd733e91d) format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+/* This stylesheet generated by Transfonter (https://transfonter.org) on March 11, 2018 7:17 PM */
+@font-face {
+  font-family: "CeraStencilPRO";
+  src: url(/fonts/CeraStencilPRO-Regular.eot?240ebb491080d6e4b59704ed747adfad);
+  src: local("☞Cera Stencil PRO"), local("CeraStencilPRO-Regular"), url(/fonts/CeraStencilPRO-Regular.eot?240ebb491080d6e4b59704ed747adfad) format("embedded-opentype"), url(/fonts/CeraStencilPRO-Regular.woff?6e7f7185de0c6022fbeac590abf6cfb2) format("woff"), url(/fonts/CeraStencilPRO-Regular.ttf?cbfa24cafb720ebb2ef50e9e84d655f6) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraStencilPRO";
+  src: url(/fonts/CeraStencilPRO-Medium.eot?d7c17e2caa4e3a6389dde333aeec0fbe);
+  src: local("☞Cera Stencil PRO Medium"), local("CeraStencilPRO-Medium"), url(/fonts/CeraStencilPRO-Medium.eot?d7c17e2caa4e3a6389dde333aeec0fbe) format("embedded-opentype"), url(/fonts/CeraStencilPRO-Medium.woff?35987206072add210fd01a367474fec1) format("woff"), url(/fonts/CeraStencilPRO-Medium.ttf?f5315aeb11398203a8e7801c25e8a384) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraStencilPRO";
+  src: url(/fonts/CeraStencilPRO-Thin.eot?ed7ead896eef0ea52bd59c98ca2bc8a6);
+  src: local("☞Cera Stencil PRO Thin"), local("CeraStencilPRO-Thin"), url(/fonts/CeraStencilPRO-Thin.eot?ed7ead896eef0ea52bd59c98ca2bc8a6) format("embedded-opentype"), url(/fonts/CeraStencilPRO-Thin.woff?59216bcd16a25350ed6343395773d5dd) format("woff"), url(/fonts/CeraStencilPRO-Thin.ttf?87128426c538f61e698503cbec7caf62) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraStencilPRO";
+  src: url(/fonts/CeraStencilPRO-Bold.eot?6fc0b947e25a8f3f43f2854260005cab);
+  src: local("☞Cera Stencil PRO Bold"), local("CeraStencilPRO-Bold"), url(/fonts/CeraStencilPRO-Bold.eot?6fc0b947e25a8f3f43f2854260005cab) format("embedded-opentype"), url(/fonts/CeraStencilPRO-Bold.woff?756a4d81e3eb41a432918af1dd8e6117) format("woff"), url(/fonts/CeraStencilPRO-Bold.ttf?a381a050e21e381c1d76dcc46a8accb5) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraStencilPRO";
+  src: url(/fonts/CeraStencilPRO-Light.eot?d1ba6816f58e3a3fa58239fb97581d44);
+  src: local("☞Cera Stencil PRO Light"), local("CeraStencilPRO-Light"), url(/fonts/CeraStencilPRO-Light.eot?d1ba6816f58e3a3fa58239fb97581d44) format("embedded-opentype"), url(/fonts/CeraStencilPRO-Light.woff?3c48c4e7d279da74bcc962f0768d5233) format("woff"), url(/fonts/CeraStencilPRO-Light.ttf?e567e374e728cebcc2e2de8ad70e7761) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraStencilPRO";
+  src: url(/fonts/CeraStencilPRO-Black.eot?4c74208b63d802c6cbd45fa53a4c3d91);
+  src: local("☞Cera Stencil PRO Black"), local("CeraStencilPRO-Black"), url(/fonts/CeraStencilPRO-Black.eot?4c74208b63d802c6cbd45fa53a4c3d91) format("embedded-opentype"), url(/fonts/CeraStencilPRO-Black.woff?52385216a6222d9425f71b6191e255c9) format("woff"), url(/fonts/CeraStencilPRO-Black.ttf?3973aab8d1320959cce4f4a8a9a07119) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on February 15, 2021 */
+@font-face {
+  font-family: "ibm_plex_sanssemibold_italic";
+  src: url(/fonts/ibmplexsans-semibolditalic-webfont.woff2?49fecf548f71272115510ae46cb32263) format("woff2"), url(/fonts/ibmplexsans-semibolditalic-webfont.woff?1d0688495ab99b3546ef6e366882f322) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sanssemibold";
+  src: url(/fonts/ibmplexsans-semibold-webfont.woff2?556b66f34f21883a47a3d793bb7930af) format("woff2"), url(/fonts/ibmplexsans-semibold-webfont.woff?0bbc52a17200ca0fdf0cd667e82ede23) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sansregular";
+  src: url(/fonts/ibmplexsans-regular-webfont.woff2?5588d5589c14d60023d3c0719b99782c) format("woff2"), url(/fonts/ibmplexsans-regular-webfont.woff?b0268ac59c2bc5ca9a1c9db46a5eac3b) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sansmedium_italic";
+  src: url(/fonts/ibmplexsans-mediumitalic-webfont.woff2?07362d53bdc22556410f78f0a74a09c9) format("woff2"), url(/fonts/ibmplexsans-mediumitalic-webfont.woff?eb434282dc827af87e8921d820641b87) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sansmedium";
+  src: url(/fonts/ibmplexsans-medium-webfont.woff2?12b62fc84bbb9539ff9551d510dcd62d) format("woff2"), url(/fonts/ibmplexsans-medium-webfont.woff?847817f12118eef2a09b0807dd5a1be6) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sanslight_italic";
+  src: url(/fonts/ibmplexsans-lightitalic-webfont.woff2?00316379775f51f9d1e8accbfe4d3a4f) format("woff2"), url(/fonts/ibmplexsans-lightitalic-webfont.woff?55a0fc2f08311c2c52c6c3907e665dbd) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sanslight";
+  src: url(/fonts/ibmplexsans-light-webfont.woff2?04967a3e607312f588fc770f777992da) format("woff2"), url(/fonts/ibmplexsans-light-webfont.woff?76a8d1705e2793aa7e7270e1f71ee5d2) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sansitalic";
+  src: url(/fonts/ibmplexsans-italic-webfont.woff2?462e4e066b7cd1286523ca1c1979e1a1) format("woff2"), url(/fonts/ibmplexsans-italic-webfont.woff?e14c5826fbadc1c68fb61a901d104f87) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sansXLtIt";
+  src: url(/fonts/ibmplexsans-extralightitalic-webfont.woff2?d49602f621452484abbbe8da12dd53bb) format("woff2"), url(/fonts/ibmplexsans-extralightitalic-webfont.woff?7f0febbfc6b8ac6237009085e4d80d8a) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sansextralight";
+  src: url(/fonts/ibmplexsans-extralight-webfont.woff2?5003d33fde258d4ef800acb6db2e082e) format("woff2"), url(/fonts/ibmplexsans-extralight-webfont.woff?a2b7b47c611fcdca5d37bf0921645d35) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sansbold_italic";
+  src: url(/fonts/ibmplexsans-bolditalic-webfont.woff2?c6d424af6a6ad52140cd7db55e3a0e26) format("woff2"), url(/fonts/ibmplexsans-bolditalic-webfont.woff?5e8bea2186e9b7e8131f9778ba935df9) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ibm_plex_sansbold";
+  src: url(/fonts/ibmplexsans-bold-webfont.woff2?b8e7ad0e61e16899cb2983e4946694be) format("woff2"), url(/fonts/ibmplexsans-bold-webfont.woff?6f8d5e242546d23a31b5e64b6d8e3673) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on February 15, 2021 */
+@font-face {
+  font-family: "oswaldregular";
+  src: url(/fonts/oswald-variablefont_wght-webfont.woff2?888e238b811b70e225dce5a1453fdb8a) format("woff2"), url(/fonts/oswald-variablefont_wght-webfont.woff?7f1f59a33e64fcb2d712cfd1290e4f12) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on February 15, 2021 */
+@font-face {
+  font-family: "special_eliteregular";
+  src: url(/fonts/specialelite-regular-webfont.woff2?a8a5c4eaadbffda6c358be1ea7dba023) format("woff2"), url(/fonts/specialelite-regular-webfont.woff?d5ebdac9a3b5e713af6a1ad030bae7c2) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10278,74 +10726,558 @@ h3 {
   flex: 1 1 0%;
 }
 
-/* ----------------------------------------------- --*/
-/* ---- Eat Art style for Eat Art webshop -----------*/
-/* ---------------------------------------------- ---*/
-/* ---- - only additionals for global elements-! 1---*/
-/* ---- - use id/class not html tag's ----------- ---*/
-/* ---- - in case of use elsewhere in app make var --*/
-/* --------------------------------------------------*/
-/* ------------------------------------------------- */
-/* ---- NHL STENDEN style for Eat Art webshop -------*/
-/* ---------------------------------------------- ---*/
-/* ---- - only additionals for global elements-! 1---*/
-/* ---- - use id/class not html tag's ----------- ---*/
-/* ---- - in case of use elsewhere in app make var --*/
-/* --------------------------------------------------*/
-/* ---- NHL STENDEN custom fonts ----*/
-/* 1 = CeraPro*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/cerapro/stylesheet.css */
-/* 2 = CeraStencilPro*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/cerastencilpro/stylesheet.css */
-/* 3 = CeraBrush*/
-/* commercial font */
+/* --------------------------------------------------------------- */
+/* ---- ForestBlack style for Eat Art webshop ---------------------*/
+/* ----------------------------------------------------------------*/
+/* ---- - use id/class not html tag's if --------------------------*/
+/* ---- - prefer make vars for use in .css files for styling app --*/
+/* ----------------------------------------------------------------*/
+/* --------------------------------------------------------------- */
+/* ---- ForestBlack About page content styling --------------------*/
+/* ----------------------------------------------------------------*/
+body#forestblack {
+  background-color: black;
+  background-image: url(/images/forestblack-logo-V20.jpg?c60e81ab9656e084bb970cce9294a51b);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  height: 100vh;
+  width: auto;
+}
+
+main.main-forestblack {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 520px;
+}
+
+/* --------------------------------------------------------------- */
+/* ---- NHL STENDEN style for Eat Art webshop ---------------------*/
+/* ----------------------------------------------------------------*/
+/* ---- - use id/class not html tag's if --------------------------*/
+/* ---- - prefer make vars for use in .css files for styling app --*/
+/* ----------------------------------------------------------------*/
 :root {
+  /* ---- NHL STENDEN custom colors -----------------------------*/
+  /* ---- (black and white also in color set) ------------------ */
   --nhlstenden-color-1: rgb(0, 90, 170);
-  --nhlstenden-color-3: rgb(0, 155, 170);
-  --nhlstenden-color-4: rgb(230, 35, 40);
+  --nhlstenden-color-2: rgb(0, 155, 170);
+  --nhlstenden-color-3: rgb(230, 35, 40);
+  /* ---- NHL STENDEN custom fonts ------------------------------*/
+  /* 1 = CeraPro*/
+  /* 2 = CeraStencilPro*/
+  /* 3 = CeraBrush*/
+  /* not in use yet commercial font ! */
+  --nhlstenden-font-1: "Cera Pro";
+  --nhlstenden-font-2: "CeraStencilPRO";
 }
 
-/* ----------------------------------------------- --*/
-/* ---- Eat Art style for Eat Art webshop -----------*/
-/* ---------------------------------------------- ---*/
-/* ---- - only additionals for global elements-! 1---*/
-/* ---- - use id/class not html tag's ----------- ---*/
-/* ---- - in case of use elsewhere in app make var --*/
-/* --------------------------------------------------*/
-/* ---- Eat Art custom fonts ----*/
-/* 1 = oswald*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/oswald/Oswald-VariableFont_wght.ttf*/
-/* 2 = abril_fatface*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/abril_fatface/AbrilFatface-Regular.ttf */
-/* 3 = ibm_plex_sans*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/ibm_plex_sans/IBMPlexSans-Regular.ttf */
-/* 4 = special_elite*/
-/* /media/swart/datadisk/codegorilla/sites/eatartwebshop/eatart_style_app/fonts/special_elite/SpecialElite-Regular.ttf */
-@font-face {
-  font-family: "abril_fatfaceregular";
-  src: url(/fonts/abrilfatface-regular-webfont.woff2?3c5a0f48cb6fb4b713e34115493c5f6d) format("woff2"), url(/fonts/abrilfatface-regular-webfont.woff?f783eb623e6adde82018b85046481429) format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+/* ----------------------------------------------------------------*/
+/* --------------------------------------------------------------- */
+/* ---- Eat Art style for Eat Art webshop -------------------------*/
+/* ----------------------------------------------------------------*/
+/* ---- - use id/class not html tag's if --------------------------*/
+/* ---- - prefer make vars for use in .css files for styling app --*/
+/* ----------------------------------------------------------------*/
 :root {
-  --eatart-logo-color-0: black;
+  /* ---- Eat Art  custom colors ----------------8888------------*/
+  /* ---- (black and white also in color set) ------------------ */
+  --eatart-logo-color-0: rgb(11, 11, 11);
   --eatart-logo-color-1: whitesmoke;
-  --eatart-logo-color-1: yellow;
+  --eatart-logo-color-2: yellow;
+  /* ---- Eat Art custom fonts ---------------------------------*/
+  /* 1 = ibm_plex_sans -> normal */
+  /* 1.1 = ibm_plex_sans -> XLtIt */
+  /* 1.2 = ibm_plex_sans -> Bold*/
+  /* 2 = special_elite -> normal */
+  /* 3 = abril_fatface -> normal */
+  /* 4 = oswald -> normal */
+  --eatart-font-1: "ibm_plex_sansregular";
+  --eatart-font-1_1: "ibm_plex_sansXLtIt";
+  --eatart-font-1_2: "ibm_plex_sansbold";
+  --eatart-font-2: "special_eliteregular";
+  --eatart-font-3: "abril_fatfaceregular";
+  --eatart-font-4: "oswaldregular";
 }
 
-a.eatart-a1 {
-  color: var(--eatart-logo-color-1);
-  font-family: "abril_fatfaceregular";
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------- --*/
+/* ---- Basic all pages style for Eat Art webshop ---*/
+/* ---------------------------------------------- ---*/
+/* ---- - only overall web style -! -----------------*/
+/* --------------------------------------------------*/
+/* ****************************** */
+/* **** Screen landscape/portrait */
+/* ****************************** */
+/* ****************************** */
+/* **** HTML&BODY all app pages ****** */
+/* ****************************** */
+html {
+  /* box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  height: 100vh;
+  border: 0px solid transparent;
+  align-items: center; */
 }
 
 body {
   background-image: url(/images/osb_unsplash.jpg?f34abd17d0579d035ad3dc4661a0e191);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+  background-size: stretch;
+  background-position: center;
+  font-family: var(--eatart-font-1);
+}
+
+/* ****************************** */
+/* **** HEADER all app pages **** */
+/* ****************************** */
+/* Header background */
+div div.header-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 4px solid;
+  border-color: black transparent black black;
+  border-radius: 0px 25px 25px 0px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6);
+  height: 76px;
+  max-height: 76px;
+}
+
+/* Header brand EatArt Webshop */
+.header-img-eatart {
+  height: 40px;
+}
+
+div a.header-brand-webshop {
+  color: var(--eatart-logo-color-2);
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div a.header-brand-webshop sub {
+  font-size: 12px;
+  color: whitesmoke;
+}
+
+div a.header-brand-webshop:hover {
+  text-shadow: -4px 4px 10px rgba(211, 211, 211, 0.6);
+}
+
+/* Header login and register buttons */
+div.brand-a1 a.eatart-a1 {
+  color: var(--eatart-logo-color-2);
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-inlog-register {
+  /* position: relative;
+  cursor: pointer; */
+}
+
+.eatart-a1 {
+  display: inline-block;
+  font-family: "Amatic SC";
+  font-size: 70px;
+  color: #333;
+  transition: all 1s ease-out;
+  transform: scaleY(1);
+}
+
+.btn-inlog-register::after,
+.btn-inlog-register::before {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: grey;
+  transition: all 1s ease-out;
+  content: "";
+}
+
+.btn-inlog-register::before {
+  top: 0;
+  left: 0;
+}
+
+.btn-inlog-register::after {
+  top: 100%;
+  right: 0;
+}
+
+.btn-inlog-register:hover::after,
+.btn-inlog-register:hover::before {
+  width: 100%;
+}
+
+.anim {
+  pointer-events: none;
+}
+
+.anim eatart-a1 {
+  transform: scaleY(0);
+}
+
+.btn-inlog-register .anim::before,
+.btn-inlog-register .anim::after {
+  top: 50%;
+  width: 50%;
+  -webkit-animation: hide 0.8s forwards;
+          animation: hide 0.8s forwards;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+@-webkit-keyframes hide {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0;
+  }
+}
+/* *********************************** */
+/* **** Body Parts all app pages ***** */
+/* *********************************** */
+/* ****************************** */
+/* **** Footer all app pages***** */
+/* ****************************** */
+div div.footer-bg {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 4px solid;
+  border-color: black transparent black black;
+  border-radius: 25px 0px 0px 25px;
+  box-shadow: -8px -8px 10px rgba(0, 0, 0, 0.6);
+  height: 76px;
+  max-height: 76px;
+}
+
+a img.footer-logo-nhlstenden {
+  height: 50px;
+  background-color: black;
+  text-decoration: none;
+}
+
+a img.footer-logo-nhlstenden:hover {
+  background-color: var(--nhlstenden-color-1);
+  text-decoration: none;
+}
+
+a img.footer-icon {
+  background-color: white;
+  text-decoration: none;
+  max-height: 20px;
+}
+
+a img.footer-icon:hover {
+  background-color: var(--nhlstenden-color-1);
+  text-decoration: none;
+}
+
+/* at screen size xs hidden */
+div.app-pwdby div.footer-all-text {
+  color: grey;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+a img.footer-forestblack-logo {
+  height: 48px;
 }
 
 main.main-public {
   position: relative;
-  top: 168px;
+  top: 124px;
+}
+
+/* ----------------------------------------- */
+a.main-home-button {
+  font-family: var(--eatart-font-2);
+  font-weight: bolder;
+  color: black;
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+/* ----------------------------------------- */
+div div.btn-group-sitenav a.btn-group-sitenav {
+  font-family: var(--eatart-font-2);
+  font-weight: bolder;
+  color: black;
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+div div.btn-group-sitenav a.btn-group-sitenav img {
+  height: 24px;
+  /* position: relative; */
+}
+
+div div.btn-group-sitenav a.btn-group-sitenav p {
+  font-size: 12px;
+  color: red;
+  text-shadow: 2px 1px 6px red;
+  transform: rotate(-30deg) !important;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+}
+
+/* ----------------------------------------- */
+div.public-shop-btnbg, div.public-shop-btnarea {
+  /* background-color:whitesmoke; */
+  border: 1px solid black;
+  background-color: rgb(211, 211, 211);
+  box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
+}
+
+div.public-shop-btntoptext {
+  color: black;
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--eatart-logo-color-2);
+  border: 0.2px solid black;
+}
+
+div.public-shop-btntext1 {
+  color: white;
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+div.public-shop-btntext2 {
+  color: var(--eatart-logo-color-2);
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+div.public-shop-btn {
+  background-color: whitesmoke;
+  background-image: url(/images/eatart-de_kast.png);
+  background-size: cover;
+  background-position: center;
+  border: 2.5px solid black;
+  height: 120px;
+  /* z-index: 9; */
+}
+
+/* --------------------------------------------- */
+/* Sale area */
+div.public-sale-area {
+  font-family: var(--eatart-font-3);
+  font-weight: bold;
+  color: chartreuse;
+  background-color: deeppink;
+  border: 1px solid black;
+  box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
+}
+
+div img.side-logo-nhlstenden {
+  height: 120px;
+}
+
+div div.repro-side-title {
+  font-family: var(--nhlstenden-font-1);
+}
+
+div.public-repro-area {
+  font-family: var(--nhlstenden-font-1);
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--nhlstenden-color-1);
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
+}
+
+div.public-repro-area a {
+  font-family: var(--nhlstenden-font-1);
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--nhlstenden-color-1);
+}
+
+/* --------------------------------------------- */
+div div.btn-group-about a.btn-group-about {
+  font-family: var(--eatart-font-2);
+  color: black;
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+/* ----------------------------------------- */
+img.home-main-eatart-logo {
+  height: 148px;
+}
+
+div div h3.main-home-anno {
+  font-family: var(--eatart-font-3);
+  font-size: 24px;
+  color: black;
+}
+
+/* --------------------------------------------- */
+/* contact page */
+.btn-group-eatartsocial {
+  font-family: var(--eatart-font-2);
+  color: black;
+  background-color: var(--eatart-logo-color-1);
+  border: 2px solid black;
+}
+
+/* --------------------------------------------------- */
+/* polaroiod on eat-art fresh */
+/* @IMPORT <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet"> */
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: 'Poor Story', cursive;
+  background: #bdffbd;
+} */
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.polaroid {
+  background: #fff;
+  padding: 0.5rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.2em;
+}
+
+.polaroid > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.4em;
+}
+
+.caption {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  /* filter: grayscale(100%); */
+  filter: sepia(60%);
+}
+
+.item .polaroid:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+
+.item:hover .polaroid:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.35s;
 }
 
 main.main-shop {
@@ -10362,4 +11294,29 @@ div.main-shop-content {
   height: 524px;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+img.winkelwagen {
+  height: 96px;
+}
+
+span.badge-winkelwagen {
+  color: var(--eatart-logo-color-1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: black;
+}
+
+body.body-user {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+.user-forum-pos {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }

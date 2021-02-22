@@ -1,0 +1,43 @@
+html{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 100%;
+    height: 100vh;
+    border: 0px solid transparent;
+    align-items: center;
+}
+body.body-auth {
+    offset: relative;
+    top: 10%;
+    height: 80%;
+    height: 80vh;
+    /* overflow-y: hidden; */
+}
+
+main.main-guest {
+    position: relative;
+    top: 124px;
+}
+
+.auth-forum-pos {
+    backdrop-filter: blur(6px) ;
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+div.card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid;
+    border-color: black;
+    border-radius: 0px 25px 0px 25px;
+    box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.6);
+    color: var(--eatart-logo-color-2);
+}
+
+div.form-group label.auth-label {
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+}

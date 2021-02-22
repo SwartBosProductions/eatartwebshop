@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+// use Illuminate\Support\Facades\Auth;
 
 class CreateUsersTable extends Migration
 {
@@ -19,7 +20,7 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('role_id')->constrained();
+            $table->foreignId('role_id')->constrained()->default(3);
             $table->foreignId('usergroup_id')->constrained();
             $table->string('first_name', 100);
             $table->string('insertion', 45)->nullable();
@@ -36,7 +37,7 @@ class CreateUsersTable extends Migration
             $table->string('country')->default('Nederland');
 
 
-            $table->integer('created_by');
+            $table->integer('created_by')->nullable();
             $table->integer('updated_by')->nullable();
             $table->integer('deleted_by')->nullable();
             $table->rememberToken();

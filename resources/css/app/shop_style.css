@@ -1,3 +1,6 @@
+/* -------------------------------------------------------------- */
+/* shop main content styles */
+
 main.main-shop {
     position: relative;
     top: 248px;
@@ -14,4 +17,22 @@ div.main-shop-content {
     overflow-y: scroll;
 }
 
+/* -------------------------------------------------------------- */
+/* winkelwagen icon style */
 
+img.winkelwagen {
+    height: 96px;
+}
+
+span.badge-winkelwagen {
+    color: var(--eatart-logo-color-1);
+    font-family: Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
+}
+
+/* -------------------------------------------------------------- */
+/*  */

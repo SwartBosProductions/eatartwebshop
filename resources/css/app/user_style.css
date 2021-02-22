@@ -1,0 +1,10 @@
+body.body-user {
+    backdrop-filter: blur(8px) ;
+    }
+
+.user-forum-pos {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}

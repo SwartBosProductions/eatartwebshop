@@ -25,16 +25,19 @@
 
 
                 <h2>In Winkelwagen</h2>
+                @foreach ($items as $item)
                 <article>
                     <h3>
-                        Product 1
+                        Naam: {{$item[name]}}
                     </h3>
                 </article>
                 <article>
                     <h3>
-                        Product 2
+                        Prijs: {{$item->price}}
                     </h3>
                 </article>
+                @endforeach
+
 
 
             </div>

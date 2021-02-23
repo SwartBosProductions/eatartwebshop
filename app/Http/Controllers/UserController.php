@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -26,7 +27,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        // dit gebeurt als men op registerknop drukt en formuliertje krijgt via Breeze (auth-map/routes)
     }
 
     /**
@@ -37,7 +38,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dit gebeurt als men het registratieformulier indient via Breeze (auth-map/routes)
     }
 
     /**
@@ -46,9 +47,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        return view('/user/profile', ['user' => Auth::user()]);
     }
 
     /**
@@ -57,9 +58,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
-        //
+        dd('Kiekeboe');
     }
 
     /**

@@ -26,23 +26,25 @@
             </div>
 
             <div class="row">
-                <div class="content-main-home container-fluid p-2 my-2 mx-auto">
+                <div class="content-main-home container-fluid p-2 my-1 mx-auto">
 
                     <div class="row justify-content-center">
 
-                        <div class="col-10 col-lg-8 text-center mt-3 mb-4">
+                        <div class="col-10 col-lg-8 text-center mt-1 mb-2">
 
                             <a href="/login" class="main-webshop-btn">
 
                                 <div class="row justify-content-center">
                                     <img src="{{url('images/eat art logo_vrijstaand_zw.png')}}"
                                     class="home-main-eatart-logo" alt="eat-art logo">
+
                                 </div>
 
                                 <div class="row justify-content-end">
                                     <h3 class="main-home-anno" >
                                         Sinds 2018
                                     </h3>
+
                                 </div>
 
                                 <div class="row justify-content-center">
@@ -66,9 +68,9 @@
                                 <div class="carousel-inner">
 
                                     <div class="carousel-item active">
-                                        <img class="d-block w-100 mx-auto "
+                                        <img class=""
                                             src="images/eatart-de_kast.png" alt="Eat Art kast bij document-center">
-                                        <div class="carousel-caption d-none d-md-block">
+                                        <div class="carousel-caption">
                                             <h5>Ook te bezoeken !</h5>
                                             <p>Bij het document-centre van de NHL-Stenden</p>
                                         </div>
@@ -76,7 +78,7 @@
 
 
                                     <div class="carousel-item">
-                                        <img class="d-block w-100 mx-auto"
+                                        <img class="d-block"
                                             src="images/is-dit-kunst-of-kan-het-weg.png" alt="Voorbeeld foto Eat Art product">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5>naam van serie</h5>

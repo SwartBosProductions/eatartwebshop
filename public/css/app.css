@@ -11397,17 +11397,11 @@ div div p.p-upcomming {
 /* landingpage home carroussel */
 .carousel-item {
   background-color: black;
+  max-height: 32vh;
 }
 
 .carousel-item img {
-  width: auto !important;
-  height: 240px;
-  max-height: 240px;
-}
-
-.carousel-item .img {
-  width: 100%;
-  height: 100%;
+  max-height: cover;
 }
 
 /* ------------------------------------- */

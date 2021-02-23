@@ -2,7 +2,7 @@
 
 require('./bootstrap');
 
-require('alpinejs');
+require('./alpinejs');
 
 require('./animate-btn');
 

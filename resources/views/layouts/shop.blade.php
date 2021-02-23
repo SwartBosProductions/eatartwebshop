@@ -28,16 +28,12 @@
         <main class="container-fluid mx-auto main-shop">
 
             <div class="row justify-content-center">
-
                 <div class="col-2 pr-0">
-
                     <div class="row mt-2 mr-1 justify-content-end">
                         <x-shop.back-shop-button>
-                            {{ __('Terug naar de Shop') }}
                         </x-shop.back-shop-button>
                     </div>
                 </div>
-
                 <div class="col-8">
                     <div class="row justify-content-center">
                         <img src="{{url('images/eat art logo_vrijstaand_zw.png')}}"
@@ -48,19 +44,13 @@
                             Webshop
                         </h2>
                     </div>
-
                 </div>
-
-
                 <div class="col-2">
                     <div class="row justify-content-end mr-4">
-                        {{-- if page order/shoppingcart -> hidden --}}
                         <x-shop.shoppingcart_icon>
-
                         </x-shop.shoppingcart_icon>
                     </div>
                 </div>
-
             </div>
 
             <section>

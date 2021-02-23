@@ -36,11 +36,11 @@ div.card {
     border-radius: 0px 25px 0px 25px;
     box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.6);
     color: var(--eatart-logo-color-2);
-    height: 60%;
-    height: 60vh;
+    max-height: 56%;
+    max-height: 56vh;
 }
 
-div.card-body {
+div.reg-body {
     overflow-y: scroll;
 }
 
@@ -76,10 +76,4 @@ div div.form-group a.a-auth {
     color: var(--eatart-logo-color-2);
     font-family: var(--eatart-font-4), Impact, Haettenschweiler,
                 'Arial Narrow Bold', sans-serif;
-    /* text-decoration: underline!important; */
 }
-
-/* input#conditions_confirmation{
-    background-color: black;
-    color: var(--eatart-logo-color-2);
-} */

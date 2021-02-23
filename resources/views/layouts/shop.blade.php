@@ -27,15 +27,28 @@
 
         <main class="container-fluid mx-auto main-shop">
 
-            <div class="row">
+            <div class="row justify-content-center">
 
-                <div class="col-2">
-                    {{-- if uri is shop ->hidden --}}
-                    <a href="/shop">Terug naar de shop</a>
+                <div class="col-2 pr-0">
+
+                    <div class="row mt-2 mr-1 justify-content-end">
+                        <x-shop.back-shop-button>
+                            {{ __('Terug naar de Shop') }}
+                        </x-shop.back-shop-button>
+                    </div>
                 </div>
 
                 <div class="col-8">
-                    logo eat art
+                    <div class="row justify-content-center">
+                        <img src="{{url('images/eat art logo_vrijstaand_zw.png')}}"
+                        class="shop-eatart-logo" alt="eat-art logo">
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 class="h2-shop">
+                            Webshop
+                        </h2>
+                    </div>
+
                 </div>
 
 

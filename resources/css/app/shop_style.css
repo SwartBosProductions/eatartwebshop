@@ -16,6 +16,21 @@ div.main-shop-content {
 /* ------------------------------------------------------------------------- */
 /* shop all pages main content styles
 /* ------------------------------------------------------------------------- */
+/* top all pages shop */
+img.shop-eatart-logo {
+    height:72px;
+    /* position: relative; */
+}
+
+h2.h2-shop{
+    font-family: var(--eatart-font-4);
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--eatart-logo-color-2);
+    text-shadow: -1px 1px 0.5px black;
+}
+
+
 /* nav sal on shop page in content container*/
 div.nav-sale {
     position: fixed;

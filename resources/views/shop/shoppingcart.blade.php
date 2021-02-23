@@ -1,31 +1,21 @@
 @extends ('layouts.shop')
 
 @section('content')
-<main class="container-fluid mx-auto main-shop " >
 
-    <div class="container-fluid p-2 my-2 mx-auto nav-sale ">
+
+    <div class="container-fluid p-2 my-1 mx-auto main-shop-content ">
         <div class="row justify-content-center">
-            <div class=" col-12 col-lg-10 bg-light">
-
-
-                <div class="row">
-                    <div class="col-3 bg-light">
-                        <h2>Winkelwagen</h2>
-                    </div>
-                </div>
-
-
+            <div class=" col-10 col-lg-8 text-center">
+                <h2>Winkelwagen</h2>
             </div>
         </div>
-    </div>
-
-    <div class="container-fluid p-2 my-2 mx-auto main-shop-content ">
         <div class="row justify-content-center">
             <div class=" col-10 col-lg-8 bg-light text-center">
 
 
-                <h2>In Winkelwagen</h2>
+
                 @if (is_countable($items) && count($items) > 0)
+                    <h2>In Winkelwagen</h2>
                     @foreach ($items as $item)
                     <article>
                     <h3>
@@ -46,7 +36,7 @@
                 @else
                 <article>
                     <h3>
-                        Geen producten in winkelwagen
+                        Geen producten in winkelwagen !
                     </h3>
                 </article>
                 @endif
@@ -58,5 +48,5 @@
         </div>
     </div>
 
-</main>
+
 @endsection

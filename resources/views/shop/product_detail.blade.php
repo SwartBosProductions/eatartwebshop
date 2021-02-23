@@ -1,15 +1,15 @@
 @extends ('layouts.shop')
 
 @section('content')
-<main class="main-shop container-fluid mx-auto" >
 
-    <div class="nav-sale container-fluid p-2 my-2 mx-auto">
+
+    <div class="main-shop-content container-fluid p-2 my-2 mx-auto">
 
         <div class="row justify-content-center">
 
             <div class="col-10 col-lg-8 bg-light">
                 <div class="row">
-                    <div class="    col-10 col-lg-8 bg-light">
+                    <div class="col-10 col-lg-8 bg-light">
                         <h2>
                             Serie: {{$serie_name}}
                         </h2>
@@ -25,10 +25,8 @@
 
         </div>
 
-    </div>
 
 
-    <div class="main-shop-content container-fluid p-2 my-2 mx-auto">
         <div class="row justify-content-center">
 
             <div class=" col-10 col-lg-8 bg-light text-center">
@@ -72,5 +70,4 @@
         </div>
     </div>
 
-</main>
 @endsection

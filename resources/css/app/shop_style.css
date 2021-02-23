@@ -3,7 +3,7 @@
 /* ------------------------------------------------------------------------- */
 main.main-shop {
     position: relative;
-    top: 248px;
+    top: 124px;
 }
 
 div.main-shop-content {
@@ -11,10 +11,12 @@ div.main-shop-content {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+
 /* ------------------------------------------------------------------------- */
 /* shop all pages main content styles
 /* ------------------------------------------------------------------------- */
-/* nav sal on shop page */
+/* nav sal on shop page in content container*/
 div.nav-sale {
     position: fixed;
     top: 168px;
@@ -25,10 +27,11 @@ div.nav-sale {
 /* ------------------------------------------------------------------------- */
 img.winkelwagen {
     height: 96px;
+    max-height: 96px;
 }
 
 span.badge-winkelwagen {
-    color: var(--eatart-logo-color-1);
+    color: var(--eatart-logo-color-2);
     font-family: Impact, Haettenschweiler,
                 'Arial Narrow Bold', sans-serif;
     font-size: 16px;

@@ -25,24 +25,32 @@
 
 
                 <h2>In Winkelwagen</h2>
-                @foreach ($items as $item)
-                {{-- {{dd($item)}} --}}
-                <article>
-                <h3>
-                    <img src="{{$item['picture']}}" alt="afbeelding van het item" height="80">
-                </h3>
-            </article>
+                @if (is_countable($items) && count($items) > 0)
+                    @foreach ($items as $item)
+                    <article>
+                    <h3>
+                        <img src="{{$item['picture']}}" alt="afbeelding van het item" height="80">
+                    </h3>
+                    </article>
+                    <article>
+                        <h3>
+                            Naam: {{$item['name']}}
+                        </h3>
+                    </article>
+                    <article>
+                        <h3>
+                            Prijs: {{$item['price']}}
+                        </h3>
+                    </article>
+                    @endforeach
+                @else
                 <article>
                     <h3>
-                        Naam: {{$item['name']}}
+                        Geen producten in winkelwagen
                     </h3>
                 </article>
-                <article>
-                    <h3>
-                        Prijs: {{$item['price']}}
-                    </h3>
-                </article>
-                @endforeach
+                @endif
+
 
 
 

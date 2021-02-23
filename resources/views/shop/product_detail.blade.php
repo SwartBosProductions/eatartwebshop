@@ -4,12 +4,8 @@
 <main class="main-shop container-fluid mx-auto" >
 
     <div class="nav-sale container-fluid p-2 my-2 mx-auto">
+
         <div class="row justify-content-center">
-
-            <div class="col-1 col-lg-2">
-                <a href="/shop">Terug naar de shop</a>
-            </div>
-
 
             <div class="col-10 col-lg-8 bg-light">
                 <div class="row">
@@ -27,13 +23,8 @@
                 </div>
             </div>
 
-            <div class="col-1 col-lg-2">
-                <x-shop.shoppingcart_icon>
-
-                </x-shop.shoppingcart_icon>
-            </div>
-
         </div>
+
     </div>
 
 

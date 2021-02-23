@@ -25,9 +25,36 @@
             @include('layouts.partials.header')
         </header>
 
-        <section>
-            @yield('content')
-        </section>
+        <main class="container-fluid mx-auto main-shop">
+
+            <div class="row">
+
+                <div class="col-2">
+                    {{-- if uri is shop ->hidden --}}
+                    <a href="/shop">Terug naar de shop</a>
+                </div>
+
+                <div class="col-8">
+                    logo eat art
+                </div>
+
+
+                <div class="col-2">
+                    <div class="row justify-content-end mr-4">
+                        {{-- if page order/shoppingcart -> hidden --}}
+                        <x-shop.shoppingcart_icon>
+
+                        </x-shop.shoppingcart_icon>
+                    </div>
+                </div>
+
+            </div>
+
+            <section>
+                @yield('content')
+            </section>
+
+        </main>
 
         <footer>
             @include('layouts.partials.footer')

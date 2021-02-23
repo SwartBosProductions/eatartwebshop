@@ -50,9 +50,14 @@
 
                 </div>
 
-                <div class="row justify-content-center">
-
+                <div class="row justify-content-center my-2">
                     <div class=" col-10 col-lg-8 bg-light text-center">
+                        <h3>
+                            Collectie:
+                        </h3>
+                        <h4>
+                            <i> Valentijn collectie 2021</i>
+                        </h4>
 
                         @foreach ($products as $product)
                         <section>
@@ -63,6 +68,29 @@
                         </section>
                         @endforeach
 
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center">
+
+
+
+                    <div class=" col-10 col-lg-8 bg-light text-center">
+                        <h3>
+                            Vrijwerk :
+                        </h3>
+                        <h4>
+                            <i> 1e semester vak:toegepast design 2021 </i>
+                        </h4>
+                        @foreach ($products as $product)
+                        <section>
+                            <h3>
+                                {{$product->serie_name}}
+                            </h3>
+                            <img src="{{$product->picture}}" alt="voorbeeld afbeelding van serie product" height="160">
+                        </section>
+                        @endforeach
                     </div>
 
                 </div>

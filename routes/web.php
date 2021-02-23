@@ -103,6 +103,5 @@ Route::middleware('auth')->prefix('shop')->group(function () {
 
 // GROUP USERPROFILE
 // user basic views setup
-Route::get('/user/profile', function () {
-    return view('/user/profile');
-})->name('user-profile');
+Route::get('/user/profile', 'App\Http\Controllers\UserController@show')->name('user-profile');
+Route::get('/user/profile/edit', 'App\Http\Controllers\UserController@edit')->name('user-profile-edit');

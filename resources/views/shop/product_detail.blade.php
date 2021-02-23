@@ -3,13 +3,13 @@
 @section('content')
 
 
-    <div class="main-shop-content container-fluid p-2 my-2 mx-auto">
+    <div class="main-shop-content container-fluid p-1 my-1 mx-auto">
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-3">
 
-            <div class="col-10 col-lg-8 bg-light">
-                <div class="row">
-                    <div class="col-10 col-lg-8 bg-light">
+            <div class="col-10 col-lg-8">
+                <div class="row p-2 serie-detail-content">
+                    <div class="col-10 col-lg-8">
                         <h2>
                             Serie: {{$serie_name}}
                         </h2>
@@ -27,11 +27,11 @@
 
 
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center my-1">
 
             <div class=" col-10 col-lg-8 bg-light text-center">
 
-                <div class="row p-2">
+                <div class="row p-2 product-detail-content">
 
                     {{-- @foreach product in serie current id --}}
                     @foreach ($products as $product)

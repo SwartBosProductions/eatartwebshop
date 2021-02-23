@@ -11472,8 +11472,18 @@ main.main-shop {
   top: 124px;
 }
 
-div.main-shop-content {
-  height: 524px;
+div.serie-detail-content {
+  height: 15vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgba(245, 245, 245, 0.8);
+  border: 3px solid black;
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6);
+}
+
+div.product-detail-content {
+  height: 40vh;
   overflow-x: hidden;
   overflow-y: scroll;
 }

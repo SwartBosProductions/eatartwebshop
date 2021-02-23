@@ -12,11 +12,13 @@ html{
 }
 
 body.body-auth {
-    offset: relative;
-    top: 10%;
-    height: 80%;
-    height: 80vh;
-    overflow-y: hidden;
+    /* offset: relative;
+    top: 10%; */
+    height: 100%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
 }
 
 main.main-guest {
@@ -10885,9 +10887,13 @@ html {
 body {
   background-image: url(/images/osb_unsplash.jpg?f34abd17d0579d035ad3dc4661a0e191);
   /* background-repeat: no-repeat; */
-  background-size: stretch;
-  background-position: center;
+  /* background-size: stretch;
+  background-position: center; */
   font-family: var(--eatart-font-1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* ****************************** */

@@ -127,4 +127,9 @@ class ProductController extends Controller
     {
         //
     }
+
+    public function showCart()
+    {
+        return view('cart');
+    }
 }

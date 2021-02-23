@@ -1,19 +1,15 @@
 @extends ('layouts.shop')
 
 @section('content')
-<main class="main-shop container-fluid mx-auto" >
 
-    <div class="nav-sale container-fluid p-2 my-2 mx-auto">
+
+    <div class="main-shop-content container-fluid p-2 my-2 mx-auto">
+
         <div class="row justify-content-center">
-
-            <div class="col-1 col-lg-2">
-                <a href="/shop">Terug naar de shop</a>
-            </div>
-
 
             <div class="col-10 col-lg-8 bg-light">
                 <div class="row">
-                    <div class="    col-10 col-lg-8 bg-light">
+                    <div class="col-10 col-lg-8 bg-light">
                         <h2>
                             Serie: {{$serie_name}}
                         </h2>
@@ -27,17 +23,10 @@
                 </div>
             </div>
 
-            <div class="col-1 col-lg-2">
-                <x-shop.shoppingcart_icon>
-
-                </x-shop.shoppingcart_icon>
-            </div>
-
         </div>
-    </div>
 
 
-    <div class="main-shop-content container-fluid p-2 my-2 mx-auto">
+
         <div class="row justify-content-center">
 
             <div class=" col-10 col-lg-8 bg-light text-center">
@@ -66,6 +55,7 @@
                                 </h4>
                                 <h4>
                                     * Meer info & koopknop
+                                    <a href="{{ route('addToCart', ['id' => $product->id]) }}">Voeg toe aan winkelwagen</a>
                                 </h4>
                             </div>
                         </section>
@@ -80,5 +70,4 @@
         </div>
     </div>
 
-</main>
 @endsection

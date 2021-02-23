@@ -1,14 +1,9 @@
-/* -------------------------------------------------------------- */
-/* shop main content styles */
-
+/* ------------------------------------------------------------------------- */
+/* shop all pages main content styles
+/* ------------------------------------------------------------------------- */
 main.main-shop {
     position: relative;
-    top: 248px;
-}
-
-div.nav-sale {
-    position: fixed;
-    top: 168px;
+    top: 124px;
 }
 
 div.main-shop-content {
@@ -17,15 +12,41 @@ div.main-shop-content {
     overflow-y: scroll;
 }
 
-/* -------------------------------------------------------------- */
-/* winkelwagen icon style */
 
+/* ------------------------------------------------------------------------- */
+/* shop all pages main content styles
+/* ------------------------------------------------------------------------- */
+/* top all pages shop */
+img.shop-eatart-logo {
+    height:72px;
+    /* position: relative; */
+}
+
+h2.h2-shop{
+    font-family: var(--eatart-font-4);
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--eatart-logo-color-2);
+    text-shadow: -1px 1px 0.5px black;
+}
+
+
+/* nav sal on shop page in content container*/
+div.nav-sale {
+    position: fixed;
+    top: 168px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Winkel wagen geeltje
+/* ------------------------------------------------------------------------- */
 img.winkelwagen {
     height: 96px;
+    max-height: 96px;
 }
 
 span.badge-winkelwagen {
-    color: var(--eatart-logo-color-1);
+    color: var(--eatart-logo-color-2);
     font-family: Impact, Haettenschweiler,
                 'Arial Narrow Bold', sans-serif;
     font-size: 16px;
@@ -34,5 +55,6 @@ span.badge-winkelwagen {
     background-color: black;
 }
 
-/* -------------------------------------------------------------- */
-/*  */
+/* ------------------------------------------------------------------------- */
+/*
+/* ------------------------------------------------------------------------- */

@@ -10945,7 +10945,6 @@ div.brand-a1 a.eatart-a1 {
 
 .eatart-a1 {
   display: inline-block;
-  font-family: "Amatic SC";
   font-size: 70px;
   color: #333;
   transition: all 1s ease-out;
@@ -11475,17 +11474,72 @@ main.main-shop {
 div.serie-detail-content {
   height: 15vh;
   overflow-x: hidden;
-  overflow-y: scroll;
-  background-color: rgba(245, 245, 245, 0.8);
+  overflow-y: hidden;
+  background-color: rgba(245, 245, 245, 0.6);
   border: 3px solid black;
-  border-radius: 16px 16px 16px 16px;
-  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 0px 25px 0px 0px;
+  box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.6);
+}
+
+h2.h2-product-serie {
+  font-family: var(--eatart-font-3);
+}
+
+h3.h3-product-designer {
+  font-family: var(--eatart-font-3);
 }
 
 div.product-detail-content {
   height: 40vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  background-color: rgba(245, 245, 245, 0.6);
+  border: 3px solid black;
+  border-radius: 0px 0px 0px 25px;
+  box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.6);
+}
+
+img.img-inlist-product {
+  height: 30vh;
+  background-color: rgb(245, 245, 245);
+  border: 2px solid black;
+}
+
+div.row.product-detail {
+  height: 20vh;
+  background-color: rgb(245, 245, 245);
+  border: 2px solid black;
+}
+
+h3.h3-product-detail {
+  background-color: rgba(245, 245, 245, 0.2);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-family: var(--eatart-font-3);
+}
+
+h4.h4-product-detail {
+  font-family: var(--eatart-font-2);
+  text-decoration: underline;
+}
+
+h4.h4-product-price {
+  font-family: var(--eatart-font-3);
+}
+
+p.p-product-description {
+  font-family: var(--eatart-font-2);
+}
+
+/* voeg toe aan winkelwagen button & effect */
+div a.product-buy {
+  color: black;
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 0, 0.5);
 }
 
 /* ------------------------------------------------------------------------- */

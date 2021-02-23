@@ -1,3 +1,6 @@
+/* ------------------------------------------------------------------------- */
+/* auth all pages complementary style over Laravel standaard
+/* ------------------------------------------------------------------------- */
 html{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -46,7 +49,7 @@ div.reg-body {
 
 div.form-group label.auth-label {
     font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-    'Arial Narrow Bold', sans-serif;
+                'Arial Narrow Bold', sans-serif;
 }
 
 h2.h2-auth {
@@ -61,14 +64,14 @@ h2.h2-auth {
 h3.h3-auth {
     color: rgb(211,211,211);
     font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-    'Arial Narrow Bold', sans-serif;
+                'Arial Narrow Bold', sans-serif;
 
 }
 
 p.p-auth {
     color: rgb(211,211,211);
     font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-    'Arial Narrow Bold', sans-serif;
+                'Arial Narrow Bold', sans-serif;
 
 }
 

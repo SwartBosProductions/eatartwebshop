@@ -1,3 +1,6 @@
+/* ------------------------------------------------------------------------- */
+/* auth all pages complementary style over Laravel standaard
+/* ------------------------------------------------------------------------- */
 html{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -47,7 +50,7 @@ div.reg-body {
 
 div.form-group label.auth-label {
     font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-    'Arial Narrow Bold', sans-serif;
+                'Arial Narrow Bold', sans-serif;
 }
 
 h2.h2-auth {
@@ -62,14 +65,14 @@ h2.h2-auth {
 h3.h3-auth {
     color: rgb(211,211,211);
     font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-    'Arial Narrow Bold', sans-serif;
+                'Arial Narrow Bold', sans-serif;
 
 }
 
 p.p-auth {
     color: rgb(211,211,211);
     font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-    'Arial Narrow Bold', sans-serif;
+                'Arial Narrow Bold', sans-serif;
 
 }
 
@@ -79,7 +82,9 @@ div div.form-group a.a-auth {
                 'Arial Narrow Bold', sans-serif;
 }
 
-
+/* ------------------------------------------------------------------------- */
+/* admin all pages header and nav styles
+/* ------------------------------------------------------------------------- */
 main.main-admin {
     position: relative;
     top: 124px;
@@ -109,15 +114,17 @@ div div.btn-group-admin-options a.btn-group-admin-options,
 }
 
 /* ------------------------------------------------------------------------- */
-/* tabel basic style all admin pages
+/* admin all pages content tabel
 /* ------------------------------------------------------------------------- */
 .table-wrapper {
     /* min-width: 1000px; */
     /* to scroll ?? */
 }
+
 .table-title {
     min-width: 100%;
 }
+
 .table-title h2 {
     font-size: 16px;
 }
@@ -126,6 +133,7 @@ div div.btn-group-admin-options a.btn-group-admin-options,
     position: relative;
     float: left;
 }
+
 .search-box input {
     height: 34px;
     border-radius: 20px;
@@ -133,9 +141,11 @@ div div.btn-group-admin-options a.btn-group-admin-options,
     box-shadow: none;
     background-color: rgb(211, 211, 211);
 }
+
 .search-box input:focus {
     border-color: var(--nhlstenden-color-1);
 }
+
 .search-box i {
     color: #a0a5b1;
     position: absolute;
@@ -143,15 +153,19 @@ div div.btn-group-admin-options a.btn-group-admin-options,
     top: 8px;
     left: 10px;
 }
+
 table.table tr th, table.table tr td {
     border-color: rgb(211, 211, 211);
 }
+
 table.table-striped tbody tr:nth-of-type(odd) {
     background-color: #fcfcfc;
 }
+
 table.table-striped.table-hover tbody tr:hover {
     background: #f5f5f5;
 }
+
 table.table th i {
     font-size: 8px;
     cursor: pointer;
@@ -165,25 +179,32 @@ table.table td {
 table.table td:last-child {
     width: 130px;
 }
+
 table.table td a {
     color: #a0a5b1;
     display: inline-block;
 }
+
 table.table td a.view {
     color: var(--nhlstenden-color-1);
 }
+
 table.table td a.edit {
     color: var(--nhlstenden-color-2);
 }
+
 table.table td a.delete {
     color: var(--nhlstenden-color-3);
 }
+
 table.table td i {
     font-size: 16px;
 }
+
 .pagination {
     float: right;
 }
+
 .pagination li a {
     border: none;
     font-size: 95%;
@@ -198,9 +219,11 @@ table.table td i {
     font-family: var(--eatart-font-2), Impact, Haettenschweiler,
     'Arial Narrow Bold', sans-serif;
 }
+
 .pagination li a:hover {
     color: #666;
 }
+
 .pagination li.active a {
     background: var(--eatart-logo-color-2)!important;
     color: black !important;
@@ -209,16 +232,20 @@ table.table td i {
     font-size: 16px;
     text-decoration: none;
 }
+
 .pagination li.active a:hover {
     background: var(--eatart-logo-color-2);
 }
+
 .pagination li.disabled i {
     color: whitesmoke;
 }
+
 .pagination li i {
     font-size: 16px;
     padding-top: 6px
 }
+
 .hint-text {
     float: left;
     margin-top: 6px;
@@ -226,10 +253,8 @@ table.table td i {
 }
 
 /* ------------------------------------------------------------------------- */
-/* tabel style product administration
+/* nav in table
 /* ------------------------------------------------------------------------- */
-
-/* nav in table products admin */
 div div.btn-group-admin-tab1 a.btn-group-admin-tab1,
     a.btn-group-admin-tab1 {
         font-family: var(--eatart-font-2);
@@ -248,7 +273,6 @@ div div.btn-group-admin-tab2 a.btn-group-admin-tab2,
         color: black;
         background-color: rgb(161, 161, 161);
         border: 1px solid var(--nhlstenden-color-1);
-
 }
 
 div div.btn-group-admin-tabnew a.btn-group-admin-tabnew,
@@ -259,7 +283,6 @@ div div.btn-group-admin-tabnew a.btn-group-admin-tabnew,
         color: black;
         background-color: rgb(161, 161, 161);
         border: 1.5px solid var(--nhlstenden-color-2);
-
 }
 
 @charset "UTF-8";
@@ -10838,7 +10861,7 @@ main.main-forestblack {
 }
 
 /* ----------------------------------------------------------------*/
-/* ----------------------------------------------- --*/
+/* --------------------------------------------------*/
 /* ---- Basic all pages style for Eat Art webshop ---*/
 /* ---------------------------------------------- ---*/
 /* ---- - only overall web style -! -----------------*/
@@ -10846,9 +10869,9 @@ main.main-forestblack {
 /* ****************************** */
 /* **** Screen landscape/portrait */
 /* ****************************** */
-/* ****************************** */
+/* *********************************** */
 /* **** HTML&BODY all app pages ****** */
-/* ****************************** */
+/* *********************************** */
 html {
   /* box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10912,11 +10935,6 @@ div.brand-a1 a.eatart-a1 {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.btn-inlog-register {
-  /* position: relative;
-  cursor: pointer; */
 }
 
 .eatart-a1 {
@@ -10989,12 +11007,10 @@ div.brand-a1 a.eatart-a1 {
     width: 0;
   }
 }
-/* *********************************** */
-/* **** Body Parts all app pages ***** */
-/* *********************************** */
 /* ****************************** */
 /* **** Footer all app pages***** */
 /* ****************************** */
+/* Footer background */
 div div.footer-bg {
   background-color: rgba(0, 0, 0, 0.9);
   border: 4px solid;
@@ -11005,6 +11021,7 @@ div div.footer-bg {
   max-height: 76px;
 }
 
+/* Footer left part NHL-Stenden */
 a img.footer-logo-nhlstenden {
   height: 50px;
   background-color: black;
@@ -11027,7 +11044,7 @@ a img.footer-icon:hover {
   text-decoration: none;
 }
 
-/* at screen size xs hidden */
+/* Footer right part powerd by ForestBlack */
 div.app-pwdby div.footer-all-text {
   color: grey;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -11040,21 +11057,23 @@ a img.footer-forestblack-logo {
   height: 48px;
 }
 
+/* ------------------------------------------------------------------------- */
+/* public all pages header and nav styles top
+/* ------------------------------------------------------------------------- */
 main.main-public {
   position: relative;
   top: 124px;
 }
 
-/* ----------------------------------------- */
 a.main-home-button {
   font-family: var(--eatart-font-2);
   font-weight: bolder;
   color: black;
   background-color: whitesmoke;
   border: 2px solid black;
+  /* position: fixed; */
 }
 
-/* ----------------------------------------- */
 div div.btn-group-sitenav a.btn-group-sitenav {
   font-family: var(--eatart-font-2);
   font-weight: bolder;
@@ -11065,7 +11084,6 @@ div div.btn-group-sitenav a.btn-group-sitenav {
 
 div div.btn-group-sitenav a.btn-group-sitenav img {
   height: 24px;
-  /* position: relative; */
 }
 
 div div.btn-group-sitenav a.btn-group-sitenav p {
@@ -11077,93 +11095,9 @@ div div.btn-group-sitenav a.btn-group-sitenav p {
   -moz-transform: rotate(-30deg);
 }
 
-/* ----------------------------------------- */
-div.public-shop-btnbg, div.public-shop-btnarea {
-  /* background-color:whitesmoke; */
-  border: 1px solid black;
-  background-color: rgb(211, 211, 211);
-  box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
-}
-
-div.public-shop-btntoptext {
-  color: black;
-  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: var(--eatart-logo-color-2);
-  border: 0.2px solid black;
-}
-
-div.public-shop-btntext1 {
-  color: white;
-  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-div.public-shop-btntext2 {
-  color: var(--eatart-logo-color-2);
-  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-div.public-shop-btn {
-  background-color: whitesmoke;
-  background-image: url(/images/eatart-de_kast.png);
-  background-size: cover;
-  background-position: center;
-  border: 2.5px solid black;
-  height: 120px;
-  /* z-index: 9; */
-}
-
-/* --------------------------------------------- */
-/* Sale area */
-div.public-sale-area {
-  font-family: var(--eatart-font-3);
-  font-weight: bold;
-  color: chartreuse;
-  background-color: deeppink;
-  border: 1px solid black;
-  box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
-}
-
-div img.side-logo-nhlstenden {
-  height: 120px;
-}
-
-div div.repro-side-title {
-  font-family: var(--nhlstenden-font-1);
-}
-
-div.public-repro-area {
-  font-family: var(--nhlstenden-font-1);
-  font-weight: bold;
-  font-size: 12px;
-  color: var(--nhlstenden-color-1);
-  background-color: white;
-  border: 1px solid black;
-  box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
-}
-
-div.public-repro-area a {
-  font-family: var(--nhlstenden-font-1);
-  font-weight: bold;
-  font-size: 12px;
-  color: var(--nhlstenden-color-1);
-}
-
-/* --------------------------------------------- */
-/* nav about/contact/ nieuws */
+/* ------------------------------------------------------------------------- */
+/* public nav about/contact/ nieuws left
+/* ------------------------------------------------------------------------- */
 div div.btn-group-about a.btn-group-about {
   font-family: var(--eatart-font-2);
   color: black;
@@ -11171,8 +11105,9 @@ div div.btn-group-about a.btn-group-about {
   border: 2px solid black;
 }
 
-/* ----------------------------------------- */
-/* landing-page HOME content */
+/* ------------------------------------------------------------------------- */
+/* landing-page HOME content
+/* ------------------------------------------------------------------------- */
 img.home-main-eatart-logo {
   height: 148px;
 }
@@ -11196,11 +11131,19 @@ div div h3.main-home-anno {
   color: black;
 }
 
-/* ------------------------------------------------------------- */
-/* m */
-/* ------------------------------------------------------------ */
-/* --------------------------------------------- */
-/* contact page */
+/* landingpage home carroussel */
+.carousel-item {
+  background-color: black;
+  max-height: 32vh;
+}
+
+.carousel-item img {
+  max-height: cover;
+}
+
+/* ------------------------------------------------------------------------- */
+/* contact page content
+/* ------------------------------------------------------------------------- */
 .btn-group-eatartsocial {
   font-family: var(--eatart-font-2);
   color: black;
@@ -11208,33 +11151,9 @@ div div h3.main-home-anno {
   border: 2px solid black;
 }
 
-/* --------------------------------------------------- */
-/* museum of eatart */
-div div img.museum-main-eatart-logo {
-  height: 72px;
-}
-
-div div h2.h2-museum {
-  color: black;
-  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 56px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-div div h2.h2-museum-of {
-  color: black;
-  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  font-style: italic;
-  text-transform: uppercase;
-}
-
-/* --------------------------------------------------- */
-/* upcomming eatart */
+/* ------------------------------------------------------------------------- */
+/* upcomming eatart  content
+/* ------------------------------------------------------------------------- */
 img.upcomming-main-eatart-logo {
   height: 72px;
 }
@@ -11271,16 +11190,33 @@ div div p.p-upcomming {
   text-transform: uppercase;
 }
 
-/* ----------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* museum of eatart content
+/* ------------------------------------------------------------------------- */
+div div img.museum-main-eatart-logo {
+  height: 72px;
+}
+
+div div h2.h2-museum {
+  color: black;
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 56px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div div h2.h2-museum-of {
+  color: black;
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
 /* polaroiod on museum of eatart */
-/* @IMPORT <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet"> */
-/* * {
-  box-sizing: border-box;
-} */
-/* body {
-  font-family: 'Poor Story', cursive;
-  background: #bdffbd;
-} */
 .wrapper {
   width: 100%;
   padding: 0 2rem;
@@ -11406,19 +11342,9 @@ div div p.p-upcomming {
   transition: all 0.35s;
 }
 
-/* -------------------------------------------- */
-/* landingpage home carroussel */
-.carousel-item {
-  background-color: black;
-  max-height: 32vh;
-}
-
-.carousel-item img {
-  max-height: cover;
-}
-
-/* ------------------------------------- */
-/* eat art fresh current */
+/* ------------------------------------------------------------------------- */
+/* eat art fresh current content
+/* ------------------------------------------------------------------------- */
 img.current-eatart-logo {
   height: 72px;
   /* position: relative; */
@@ -11445,16 +11371,99 @@ p.p-upcomming {
   text-transform: uppercase;
 }
 
-/* -------------------------------------------------------------- */
-/* shop main content styles */
+/* ------------------------------------------------------------------------- */
+/* de reservebank, zijn nu geparkeerd op contact page
+/* ------------------------------------------------------------------------- */
+div.public-shop-btnbg, div.public-shop-btnarea {
+  /* background-color:whitesmoke; */
+  border: 1px solid black;
+  background-color: rgb(211, 211, 211);
+  box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
+}
+
+div.public-shop-btntoptext {
+  color: black;
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--eatart-logo-color-2);
+  border: 0.2px solid black;
+}
+
+div.public-shop-btntext1 {
+  color: white;
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+div.public-shop-btntext2 {
+  color: var(--eatart-logo-color-2);
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+div.public-shop-btn {
+  background-color: whitesmoke;
+  background-image: url(/images/eatart-de_kast.png);
+  background-size: cover;
+  background-position: center;
+  border: 2.5px solid black;
+  height: 120px;
+  /* z-index: 9; */
+}
+
+/* --------------------------------------------- */
+/* Sale area */
+div.public-sale-area {
+  font-family: var(--eatart-font-3);
+  font-weight: bold;
+  color: chartreuse;
+  background-color: deeppink;
+  border: 1px solid black;
+  box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
+}
+
+div img.side-logo-nhlstenden {
+  height: 120px;
+}
+
+div div.repro-side-title {
+  font-family: var(--nhlstenden-font-1);
+}
+
+div.public-repro-area {
+  font-family: var(--nhlstenden-font-1);
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--nhlstenden-color-1);
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 8px 8px 10px rgba(111, 111, 111, 0.8);
+}
+
+div.public-repro-area a {
+  font-family: var(--nhlstenden-font-1);
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--nhlstenden-color-1);
+}
+
+/* ------------------------------------------------------------------------- */
+/* shop all pages main content styles
+/* ------------------------------------------------------------------------- */
 main.main-shop {
   position: relative;
   top: 248px;
-}
-
-div.nav-sale {
-  position: fixed;
-  top: 168px;
 }
 
 div.main-shop-content {
@@ -11463,8 +11472,18 @@ div.main-shop-content {
   overflow-y: scroll;
 }
 
-/* -------------------------------------------------------------- */
-/* winkelwagen icon style */
+/* ------------------------------------------------------------------------- */
+/* shop all pages main content styles
+/* ------------------------------------------------------------------------- */
+/* nav sal on shop page */
+div.nav-sale {
+  position: fixed;
+  top: 168px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Winkel wagen geeltje
+/* ------------------------------------------------------------------------- */
 img.winkelwagen {
   height: 96px;
 }
@@ -11478,13 +11497,9 @@ span.badge-winkelwagen {
   background-color: black;
 }
 
-/* -------------------------------------------------------------- */
-/*  */
-body.body-user {
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-}
-
+/* ------------------------------------------------------------------------- */
+/*
+/* ------------------------------------------------------------------------- */
 .user-forum-pos {
   min-height: 100%;
   min-height: 100vh;

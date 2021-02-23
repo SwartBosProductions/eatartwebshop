@@ -25,9 +25,13 @@ html{
 body {
     background-image: url(../../images/background/osb_unsplash.jpg);
     /* background-repeat: no-repeat; */
-    background-size: stretch;
-    background-position: center;
+    /* background-size: stretch;
+    background-position: center; */
     font-family: var( --eatart-font-1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* ****************************** */

@@ -11248,6 +11248,19 @@ div div h2.h2-upcomming {
   text-transform: uppercase;
 }
 
+div div h2.h2-upcomming {
+  color: var(--eatart-color-2) !important;
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 56px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.h2-upcomming-marked {
+  color: var(--eatart-color-2);
+}
+
 div div p.p-upcomming {
   color: black;
   font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;

@@ -34,16 +34,17 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             'first_name' => 'required|string|max:100',
-            'insertion' => 'string|max:45',
+            'insertion' => 'nullable|string|max:45',
             'last_name' => 'required|string|max:100',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|confirmed|min:8',
             'birthday' => 'required|date',
             'street' => 'required|string|max:255',
             'house_num' => 'required|string|max:5',
-            'house_num_addition' => 'string|max:5',
+            'house_num_addition' => 'nullable|string|max:5',
             'postal_code' => 'required|string|max:7',
             'city' => 'required|string|max:255',
+            'conditions_confirmed' => 'required'
         ]);
 
         Auth::login($user = User::create([

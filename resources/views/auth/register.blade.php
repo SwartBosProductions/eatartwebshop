@@ -28,7 +28,7 @@
                     </div>
                     <div class="row">
                         <p class="p-auth">
-                            (Met deze gegevens kan je straks gebruik maken van de Webshop)
+                            (Met deze gegevens kan je straks gebruikmaken van de Webshop)
                         </p>
                     </div>
                     <!-- Email Address -->
@@ -79,24 +79,20 @@
                                 <div class="form-group">
                                     <x-auth.label for="usergroup_id"
                                         :value="__('Relatie tot NHL-Stenden')" />
-                                    <x-auth.input id="usergroup_id" list="relatio-list"
-                                        name="usergroup_id" :value="old('usergroup_id')" required/>
-                                        <datalist id="relatio-list">
-                                            <option value=" - - ">
-
-                                                {{-- for each funtie voor overige invoer opties --}}
-
-                                            <option value="Geen relatie met NHL-Stenden">
-                                            <option value="outsider">
-                                            <option value="student">
-                                            <option value="staff">
-                                        </datalist>
+                                        <select id="usergroup_id" name="usergroup_id" required>
+                                            <option value=""> - - </option>
+                                            <option value="1">Personeel</option>
+                                            <option value="2">Student</option>
+                                            <option value="3">Geen relatie tot NHL</option>
+                                            </select>
                                 </div>
                             </div>
-                            <div>
-                                <x-auth.input id="role_id" type="hidden" name="role_id" value="3"/>
-                            </div>
+
                         </div>
+                    </div>
+                    {{-- role hidden input (appeared in datalist-dropdown before) --}}
+                    <div>
+                        <x-auth.input id="role_id" type="hidden" name="role_id" value="3"/>
                     </div>
                     <!-- Name -->
                     <div class="row justify-content-between">
@@ -144,7 +140,7 @@
                     </div>
                     <div class="row">
                         <h3 class="h3-auth">
-                            Adres gegevens :
+                            Adresgegevens :
                         </h3>
                     </div>
                     <div class="row">
@@ -218,12 +214,16 @@
                 <div class="row d-flex justify-content-end align-items-baseline mr-2">
                     <div class="form-group">
                         <div class="form-check">
-                            <x-auth.checkbox id="conditions_confirm"
-                                name="conditions_confirm" required/>
+                            <x-auth.checkbox id="conditions_confirmed"
+                                name="conditions_confirmed"/>
                             <a href="/conditions" class="a-auth">
-                                <label class="form-check-label" for="conditions_confirm">
-                                    {{ __('Ga je akkoord met de voorwaarden') }}
-                                </label>
+                                <label class="form-check-label" for="conditions_confirmed">
+                                    Ga je akkoord met&nbsp;
+                                </label><a href="/conditions">onze voorwaarden</a>?
+
+                                {{-- <label class="form-check-label" for="conditions_confirm">
+                                    {{ __('Ga je akkoord met onze voorwaarden') }}
+                                </label> --}}
                             </a>
                         </div>
                     </div>

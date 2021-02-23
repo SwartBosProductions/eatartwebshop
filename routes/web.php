@@ -74,6 +74,10 @@ Route::get('/contact', function () {
     return view('public/contact');
 })->name('contact');
 
+Route::get('/conditions', function () {
+    return view('public/conditions');
+})->name('conditions');
+
 Route::get('/current', 'App\Http\Controllers\ProductController@indexCurrent')->name('current');
 
 Route::get('/museum', 'App\Http\Controllers\ProductController@indexMuseum')->name('museum');

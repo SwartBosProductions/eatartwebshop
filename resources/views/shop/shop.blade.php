@@ -2,19 +2,6 @@
 @extends ('layouts.shop')
 
 @section('content')
-<main class="container-fluid mx-auto main-shop">
-
-    <div class="container-fluid p-2 my-2 mx-auto nav-sale">
-        <div class="row justify-content-end mr-4">
-
-            <div class="col-2">
-                <x-shop.shoppingcart_icon>
-
-                </x-shop.shoppingcart_icon>
-            </div>
-
-        </div>
-    </div>
 
     <div class="container-fluid p-2 my-2 mx-auto main-shop-content">
         <div class="row justify-content-center">
@@ -62,5 +49,5 @@
         </div>
     </div>
 
-</main>
+
 @endsection

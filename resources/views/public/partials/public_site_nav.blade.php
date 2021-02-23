@@ -1,6 +1,6 @@
 <div class="container-fluid m-0 p-0">
-    <nav class="row navbar navbar-dark justify-content-center mx-0">
-        <div class="col-3">
+    <nav class="row justify-content-center mx-0">
+        <div class="col-2">
             {{-- spacer --}}
         </div>
         <div class="col-6 pt-2">
@@ -19,8 +19,8 @@
                 </a>
             </div>
         </div>
-        <div class="col-3">
-            {{-- spacer --}}
+        <div class="col-2">
+
         </div>
     </nav>
 </div>

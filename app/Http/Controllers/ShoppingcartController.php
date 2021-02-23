@@ -16,7 +16,7 @@ class ShoppingcartController extends Controller
     public function index()
     {
         $cartItems = session()->get('cart');
-        dd($cartItems);
+
         return view('shop/shoppingcart', ['items' => $cartItems]);
     }
 

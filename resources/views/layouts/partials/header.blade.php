@@ -15,8 +15,8 @@
                         @auth
                             {{-- if admin page hide/inactive button --}}
                             <div class="btn p-2 m-1 btn-inlog-register">
-                                <a href="{{ url('/user/profile') }}" class="eatart-a1 mx-2">
-                                    Gebruiker pagina
+                                <a href="{{route('user-profile')}}" class="eatart-a1 mx-2">
+                                    {{Auth::user()->full_name}}
                                     {{-- get first/last name from database --}}
                                 </a>
                             </div>

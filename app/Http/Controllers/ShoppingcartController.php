@@ -27,28 +27,34 @@ class ShoppingcartController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function addToCart(int $id)
+    public function addToCart(Request $request, $id)
     {
-        $cart = session()->has('cart') ? session()->get('cart') : [];
-
         $product = Product::find($id);
 
         if (!$product) {
             abort(404, "Het product dat je probeert toe te voegen bestaat niet.");
         }
 
-        $cart[] = [
+        $orderedProduct = [
+            'id' => $product->id,
             'name' => $product->product_name,
             'price' => $product->price,
             'picture' => $product->picture
         ];
-        // kijk naar andere methoden, zoals push (bij array opdrukken)
-        session()->put(['cart' => $cart]);
-        // flash message dat product is toegevoegd
+        // dd(session('cart'));
+        if ($request->session()->has('cart')) {
+            $request->session()->push('cart', $orderedProduct);
+        } else {
+            $request->session()->put('cart', [$orderedProduct]);
+        }
+        $items = $request->session()->get('cart');
+
+        // flash message dat product is toegevoegd, of naar view shoppingblade met knoppen: 'Bestellen' en 'Verder winkelen'.
         // koop-knop moeten we uitschakelen want uniek product
         // winkelwagenlogo moet icoontje krijgen met productenteller
         // tsjek routing koopknop.
-        return back();
+        // dd(session('cart'));
+        return view('shop/shoppingcart', ['items' => $items]);
     }
 
     /**

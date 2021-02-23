@@ -1,10 +1,10 @@
-
+/* ------------------------------------------------------------------------- */
+/* public all pages header and nav styles top
+/* ------------------------------------------------------------------------- */
 main.main-public {
     position: relative;
     top: 124px;
 }
-
-/* ----------------------------------------- */
 
 a.main-home-button {
     font-family: var(--eatart-font-2);
@@ -12,9 +12,8 @@ a.main-home-button {
     color: black;
     background-color: whitesmoke;
     border: 2px solid black;
+    /* position: fixed; */
 }
-
-/* ----------------------------------------- */
 
 div div.btn-group-sitenav a.btn-group-sitenav {
     font-family: var(--eatart-font-2);
@@ -26,7 +25,7 @@ div div.btn-group-sitenav a.btn-group-sitenav {
 
 div div.btn-group-sitenav a.btn-group-sitenav img{
     height:24px;
-    /* position: relative; */
+
 }
 
 div div.btn-group-sitenav a.btn-group-sitenav p{
@@ -38,7 +37,291 @@ div div.btn-group-sitenav a.btn-group-sitenav p{
     -moz-transform: rotate(-30deg);
 }
 
-/* ----------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* public nav about/contact/ nieuws left
+/* ------------------------------------------------------------------------- */
+div div.btn-group-about a.btn-group-about {
+    font-family: var(--eatart-font-2);
+    color: black;
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+/* ------------------------------------------------------------------------- */
+/* landing-page HOME content
+/* ------------------------------------------------------------------------- */
+img.home-main-eatart-logo {
+    height: 148px;
+}
+
+div div a.main-webshop-btn {
+    text-decoration: none;
+}
+
+div div h2.main-webshop-btn {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 64px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div div h3.main-home-anno {
+    font-family: var(--eatart-font-3);
+    font-size: 16px;
+    color: black;
+}
+
+/* landingpage home carroussel */
+
+.carousel-item  {
+    background-color: black;
+    max-height: 32vh;
+}
+
+.carousel-item img {
+    max-height: cover;
+}
+
+/* ------------------------------------------------------------------------- */
+/* contact page content
+/* ------------------------------------------------------------------------- */
+.btn-group-eatartsocial {
+    font-family: var(--eatart-font-2);
+    color: black;
+    background-color: var(--eatart-logo-color-1);
+    border: 2px solid black;
+}
+
+/* ------------------------------------------------------------------------- */
+/* upcomming eatart  content
+/* ------------------------------------------------------------------------- */
+img.upcomming-main-eatart-logo {
+    height: 72px;
+}
+
+div div h2.h2-upcomming {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 56px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div div h2.h2-upcomming {
+    color: var(--eatart-color-2)!important;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 56px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div.h2-upcomming-marked {
+    color: var(--eatart-color-2);
+}
+
+div div p.p-upcomming {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------------------- */
+/* museum of eatart content
+/* ------------------------------------------------------------------------- */
+div div img.museum-main-eatart-logo {
+    height: 72px;
+}
+
+div div h2.h2-museum {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 56px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div div h2.h2-museum-of {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* polaroiod on museum of eatart */
+
+.wrapper {
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+}
+.polaroid {
+    background: rgb(252, 237, 209);
+    padding: 0.5rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+.polaroid > img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.4em;
+    /* filter: grayscale(100%); */
+    /* filter: sepia(60%); */
+}
+.caption {
+    font-family: var(--eatart-font-2);
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.2em;
+    height: 2.6em;
+    max-height: 2.4em;
+}
+
+.item {
+    width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+    /* filter: grayscale(100%); */
+    filter: sepia(60%);
+}
+
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+
+.polaroid > img:hover{
+    /* filter: grayscale(0%); */
+}
+
+.item:hover {
+    filter: none;
+    transform: scale(1, 1) rotate(0deg) !important;
+    transition: all 0.35s;
+    /* filter: grayscale(0%); */
+    filter: sepia(10%);
+}
+
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
+
+/* ------------------------------------------------------------------------- */
+/* eat art fresh current content
+/* ------------------------------------------------------------------------- */
+img.current-eatart-logo {
+    height:72px;
+    /* position: relative; */
+}
+
+h2.h2-current{
+    font-family: var(--eatart-font-2);
+    font-weight: bold;
+    font-size: 24px;
+    color: red;
+    text-shadow: 2px 1px 6px red;
+    transform: rotate(-30deg)!important;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+}
+
+p.p-upcomming {
+    color: black;
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------------------- */
+/* de reservebank, zijn nu geparkeerd op contact page
+/* ------------------------------------------------------------------------- */
 div.public-shop-btnbg, div.public-shop-btnarea {
     /* background-color:whitesmoke; */
     border: 1px solid black;
@@ -126,313 +409,4 @@ div.public-repro-area a {
     font-weight: bold;
     font-size: 12px;
     color:var(--nhlstenden-color-1);
-}
-
-/* --------------------------------------------- */
-/* nav about/contact/ nieuws */
-
-div div.btn-group-about a.btn-group-about {
-    font-family: var(--eatart-font-2);
-    color: black;
-    background-color: whitesmoke;
-    border: 2px solid black;
-}
-
-/* ----------------------------------------- */
-/* landing-page HOME content */
-
-img.home-main-eatart-logo {
-    height: 148px;
-}
-
-div div a.main-webshop-btn {
-    text-decoration: none;
-}
-
-
-div div h2.main-webshop-btn {
-    color: black;
-    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-                'Arial Narrow Bold', sans-serif;
-    font-size: 64px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-div div h3.main-home-anno {
-    font-family: var(--eatart-font-3);
-    font-size: 16px;
-    color: black;
-}
-
-/* ------------------------------------------------------------- */
-/* m */
-
-
-
-
-/* ------------------------------------------------------------ */
-
-
-
-/* --------------------------------------------- */
-/* contact page */
-.btn-group-eatartsocial {
-    font-family: var(--eatart-font-2);
-    color: black;
-    background-color: var(--eatart-logo-color-1);
-    border: 2px solid black;
-}
-
-/* --------------------------------------------------- */
-
-/* museum of eatart */
-div div img.museum-main-eatart-logo {
-    height: 72px;
-}
-
-div div h2.h2-museum {
-    color: black;
-    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-                'Arial Narrow Bold', sans-serif;
-    font-size: 56px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-div div h2.h2-museum-of {
-    color: black;
-    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-                'Arial Narrow Bold', sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-}
-
-/* --------------------------------------------------- */
-
-/* upcomming eatart */
-img.upcomming-main-eatart-logo {
-    height: 72px;
-}
-
-div div h2.h2-upcomming {
-    color: black;
-    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-                'Arial Narrow Bold', sans-serif;
-    font-size: 56px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-div div h2.h2-upcomming {
-    color: var(--eatart-color-2)!important;
-    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-                'Arial Narrow Bold', sans-serif;
-    font-size: 56px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-div.h2-upcomming-marked {
-    color: var(--eatart-color-2);S
-}
-
-div div p.p-upcomming {
-    color: black;
-    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-                'Arial Narrow Bold', sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-/* ----------------------------------- */
-/* polaroiod on museum of eatart */
-/* @IMPORT <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet"> */
-
-/* * {
-  box-sizing: border-box;
-} */
-
-/* body {
-  font-family: 'Poor Story', cursive;
-  background: #bdffbd;
-} */
-
-.wrapper {
-  width: 100%;
-  padding: 0 2rem;
-  text-align: center;
-}
-.polaroid {
-  background: rgb(252, 237, 209);
-  padding: 0.5rem;
-  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
-}
-.polaroid > img{
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.4em;
-  /* filter: grayscale(100%); */
-  /* filter: sepia(60%); */
-
-
-}
-.caption {
-    font-family: var(--eatart-font-2);
-    font-size: 0.8rem;
-    text-align: center;
-    line-height: 1.2em;
-    height: 2.6em;
-    max-height: 2.4em;
-}
-.item {
-  width: 30%;
-  display: inline-block;
-  margin-top: 2rem;
-  /* filter: grayscale(100%); */
-  filter: sepia(60%);
-}
-.item .polaroid:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transition: all 0.35s;
-}
-.item:nth-of-type(4n+1) {
-  transform: scale(0.8, 0.8) rotate(5deg);
-  transition: all 0.35s;
-}
-.item:nth-of-type(4n+1) .polaroid:before {
-  transform: rotate(6deg);
-  height: 20%;
-  width: 47%;
-  bottom: 30px;
-  right: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
-}
-.item:nth-of-type(4n+2) {
-  transform: scale(0.8, 0.8) rotate(-5deg);
-  transition: all 0.35s;
-}
-.item:nth-of-type(4n+2) .polaroid:before {
-  transform: rotate(-6deg);
-  height: 20%;
-  width: 47%;
-  bottom: 30px;
-  left: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
-}
-.item:nth-of-type(4n+4) {
-  transform: scale(0.8, 0.8) rotate(3deg);
-  transition: all 0.35s;
-}
-.item:nth-of-type(4n+4) .polaroid:before {
-  transform: rotate(4deg);
-  height: 20%;
-  width: 47%;
-  bottom: 30px;
-  right: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
-}
-.item:nth-of-type(4n+3) {
-  transform: scale(0.8, 0.8) rotate(-3deg);
-  transition: all 0.35s;
-}
-.item:nth-of-type(4n+3) .polaroid:before {
-  transform: rotate(-4deg);
-  height: 20%;
-  width: 47%;
-  bottom: 30px;
-  left: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
-}
-
-.polaroid > img:hover{
-    /* filter: grayscale(0%); */
-  }
-
-.item:hover {
-    filter: none;
-    transform: scale(1, 1) rotate(0deg) !important;
-    transition: all 0.35s;
-    /* filter: grayscale(0%); */
-    filter: sepia(10%);
-}
-
-
-
-.item:hover .polaroid:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transform: rotate(0deg);
-  height: 90%;
-  width: 90%;
-  bottom: 0%;
-  right: 5%;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
-  transition: all 0.35s;
-}
-
-
-
-/* -------------------------------------------- */
-/* landingpage home carroussel */
-
-.carousel-item  {
-    background-color: black;
-    max-height: 32vh;
-}
-
-.carousel-item img {
-    max-height: cover;
-}
-
-
-
-/* ------------------------------------- */
-/* eat art fresh current */
-
-img.current-eatart-logo {
-    height:72px;
-    /* position: relative; */
-}
-
-h2.h2-current{
-    font-family: var(--eatart-font-2);
-    font-weight: bold;
-    font-size: 24px;
-    color: red;
-    text-shadow: 2px 1px 6px red;
-    transform: rotate(-30deg)!important;
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-}
-
-p.p-upcomming {
-    color: black;
-    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
-                'Arial Narrow Bold', sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
 }

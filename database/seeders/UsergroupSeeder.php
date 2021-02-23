@@ -15,9 +15,9 @@ class UsergroupSeeder extends Seeder
     public function run()
     {
         DB::table('usergroups')->insert([
-            ['usergroupname' => 'staff'],
+            ['usergroupname' => 'personeel'],
             ['usergroupname' => 'student'],
-            ['usergroupname' => 'outsider']
+            ['usergroupname' => 'geen']
         ]);
     }
 }

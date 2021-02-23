@@ -66,6 +66,7 @@
                                 </h4>
                                 <h4>
                                     * Meer info & koopknop
+                                    <a href="{{ route('addToCart', ['id' => $product->id]) }}">Voeg toe aan winkelwagen</a>
                                 </h4>
                             </div>
                         </section>

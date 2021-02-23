@@ -4,27 +4,50 @@ namespace App\Http\Controllers;
 
 use App\Models\Shoppingcart;
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ShoppingcartController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display the shopping cart blade.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $cartItems = session()->get('cart');
+        dd($cartItems);
+        return view('shop/shoppingcart', ['items' => $cartItems]);
     }
 
+
+
     /**
-     * Show the form for creating a new resource.
+     * Add a product to the Shopping Cart Session
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function addToCart(int $id)
     {
-        //
+        $cart = session()->has('cart') ? session()->get('cart') : [];
+
+        $product = Product::find($id);
+
+        if (!$product) {
+            abort(404, "Het product dat je probeert toe te voegen bestaat niet.");
+        }
+
+        $cart[] = [
+            'name' => $product->product_name,
+            'price' => $product->price,
+            'picture' => $product->picture
+        ];
+        session()->put(['cart' => $cart]);
+        // flash message dat product is toegevoegd
+        // koop-knop moeten we uitschakelen want uniek product
+        // winkelwagenlogo moet icoontje krijgen met productenteller
+        dd(session('cart'));
+        return back();
     }
 
     /**

@@ -7,12 +7,13 @@ html{
     border: 0px solid transparent;
     align-items: center;
 }
+
 body.body-auth {
     offset: relative;
     top: 10%;
     height: 80%;
     height: 80vh;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 main.main-guest {
@@ -36,12 +37,53 @@ div.card {
     border-radius: 0px 25px 0px 25px;
     box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.6);
     color: var(--eatart-logo-color-2);
+    height: 60%;
+    height: 60vh;
+}
+
+div.card-body {
+    overflow-y: scroll;
 }
 
 div.form-group label.auth-label {
     font-family: var(--eatart-font-4), Impact, Haettenschweiler,
     'Arial Narrow Bold', sans-serif;
 }
+
+h2.h2-auth {
+    color: var(--eatart-logo-color-2);
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3.h3-auth {
+    color: rgb(211,211,211);
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+
+}
+
+p.p-auth {
+    color: rgb(211,211,211);
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+
+}
+
+div div.form-group a.a-auth {
+    color: var(--eatart-logo-color-2);
+    font-family: var(--eatart-font-4), Impact, Haettenschweiler,
+                'Arial Narrow Bold', sans-serif;
+    /* text-decoration: underline!important; */
+}
+
+/* input#conditions_confirmation{
+    background-color: black;
+    color: var(--eatart-logo-color-2);
+} */
 
 
 main.main-admin {

@@ -42,11 +42,12 @@ class ShoppingcartController extends Controller
             'price' => $product->price,
             'picture' => $product->picture
         ];
+        // kijk naar andere methoden, zoals push (bij array opdrukken)
         session()->put(['cart' => $cart]);
         // flash message dat product is toegevoegd
         // koop-knop moeten we uitschakelen want uniek product
         // winkelwagenlogo moet icoontje krijgen met productenteller
-        dd(session('cart'));
+        // tsjek routing koopknop.
         return back();
     }
 

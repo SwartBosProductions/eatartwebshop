@@ -99,7 +99,13 @@
         </div>
 
         <div class="col-2 pl-0">
-                {{-- spacer left public --}}
+            {{-- ?? werkt nog niet --}}
+            {{-- <div class="row justify-content-end mr-4">
+                @if (is_countable($items ?? '') && count($items ?? '') > 0)
+                    <x-shop.shoppingcart_icon>
+                    </x-shop.shoppingcart_icon>
+                @endif
+            </div> --}}
         </div>
 
     </div>

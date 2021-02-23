@@ -17,7 +17,7 @@ class UsergroupSeeder extends Seeder
         DB::table('usergroups')->insert([
             ['usergroupname' => 'personeel'],
             ['usergroupname' => 'student'],
-            ['usergroupname' => 'niet-NHL']
+            ['usergroupname' => 'geen']
         ]);
     }
 }

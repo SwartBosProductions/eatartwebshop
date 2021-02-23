@@ -32,12 +32,12 @@
 
         <div class="row justify-content-center my-1">
 
-            <div class=" col-10 col-lg-8 text-center">
+            <div class=" col-12 col-lg-8 text-center">
 
-                <div class="row p-2 product-detail-content">
-                    <div class="col-12 pt-0">
+                <div class="row p-2">
+                    <div class="col-12 p-2 product-detail-content">
                         @foreach ($products as $product)
-                        <div class="row my-2">
+                        <div class="row my-2 product-scroll-center" data-spy="scroll">
 
                             <div class="col-4">
                                 <div class="row">

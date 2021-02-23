@@ -45,7 +45,7 @@ img.img-inlist-product {
 
 div.row.product-detail {
     height: 20vh;
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(245, 245, 245, 0.8);
     border: 2px solid black;
 }
 

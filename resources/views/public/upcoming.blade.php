@@ -47,6 +47,15 @@
                                 </sub>
                             </h4>
                             </i>
+                            {{-- paas collectie pictures --}}
+                            @foreach ($products as $product)
+                            <section>
+                                <h3>
+                                    {{$product->serie_name}}
+                                </h3>
+                                <img src="{{$product->picture}}" alt="voorbeeld afbeelding van serie product" height="160">
+                            </section>
+                            @endforeach
                         </div>
                     </div>
                     <div class="row justify-content-center my-2">
@@ -60,7 +69,7 @@
                                     lockdown 2020/2021
                                 </sub>
                             </p>
-                            {{-- only for upcomming series -> list --}}
+                            {{-- thuiswerk in uitvoering pictures --}}
                             @foreach ($products as $product)
                             <section>
                                 <h3>

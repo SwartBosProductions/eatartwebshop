@@ -41,6 +41,11 @@
                                 <p>
                                     Folkert
                                 </p>
+                                <p>
+                                    De stabiele, consequete 2 pitter met het gedrag van een diesel,<br>
+                                     en dan op een duurzame energie bron !<br>
+                                     Doh!
+                                </p>
                             </article>
                             <article>
                                 <h4>

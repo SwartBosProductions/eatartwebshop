@@ -3856,7 +3856,7 @@ $(document).ready(function () {
 
 // public pages inlog en register button on header animation
 // nog afmaken voor de leuk een keer
-var btn = document.querySelector('.btn-inlog-register');
+var btn = document.querySelector('.btn-product-buy');
 btn.addEventListener('click', function () {
   btn.classList.add('anim');
   setTimeout(function () {

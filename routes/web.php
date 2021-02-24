@@ -97,8 +97,8 @@ Route::middleware('auth')->prefix('shop')->group(function () {
     Route::get('/{serie_name}/products', 'App\Http\Controllers\ProductController@show')->name('shop-product');
 
     Route::get('/shoppingcart', 'App\Http\Controllers\ShoppingcartController@index')->name('shop-cart');
-
     Route::get('shoppingcart/{id}', 'App\Http\Controllers\ShoppingcartController@addToCart')->name('addToCart');
+    Route::get('shoppingcart/{id}/remove', 'App\Http\Controllers\ShoppingcartController@removeFromCart')->name('removeFromCart');
 
     Route::get('/order', function () {
         return view('/shop/order');

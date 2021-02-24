@@ -50,49 +50,41 @@
 
                 </div>
 
-                <div class="row justify-content-center my-2">
-                    <div class=" col-10 col-lg-8 bg-light text-center">
+                <div class="row justify-content-center my-1">
+                    <div class=" col-10 text-center">
                         <h3>
                             Collectie:
                         </h3>
                         <h4>
                             <i> Valentijn collectie 2021</i>
                         </h4>
-
-                        @foreach ($products as $product)
-                        <section>
-                            <h3>
-                                {{$product->serie_name}}
-                            </h3>
-                            <img src="{{$product->picture}}" alt="voorbeeld afbeelding van serie product" height="160">
-                        </section>
-                        @endforeach
-
                     </div>
                 </div>
 
 
-                <div class="row justify-content-center">
-
-
-
-                    <div class=" col-10 col-lg-8 bg-light text-center">
-                        <h3>
-                            Vrijwerk :
-                        </h3>
-                        <h4>
-                            <i> 1e semester vak:toegepast design 2021 </i>
-                        </h4>
+                <div class="row justify-content-center my-1">
+                    <div class=" col-10 text-center current-content">
+                        <div class="row d-flex justify-content-center">
                         @foreach ($products as $product)
-                        <section>
-                            <h3>
-                                {{$product->serie_name}}
-                            </h3>
-                            <img src="{{$product->picture}}" alt="voorbeeld afbeelding van serie product" height="160">
-                        </section>
-                        @endforeach
-                    </div>
 
+                        <div class="col-5 m-3 current-item">
+                            <a href="#" class="eatart-a1">
+                                <div class="row justify-content-center">
+                                    <h3 class="p-2">
+                                        {{$product->serie_name}}
+                                    </h3>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <img src="{{$product->picture}}"
+                                        alt="voorbeeld afbeelding van serie product"
+                                        class="current-img mb-2">
+                                </div>
+                            </a>
+                        </div>
+
+                        @endforeach
+                        </div>
+                    </div>
                 </div>
 
             </div>

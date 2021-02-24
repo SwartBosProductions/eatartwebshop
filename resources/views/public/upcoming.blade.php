@@ -30,56 +30,50 @@
                                     WebShop
                                 </div>
                             </h2>
-                            <p class="p-upcomming">collecties waar nu aan gewerkt word</p>
                         </div>
                     </div>
-                    <div class="row justify-content-center my-2">
-                        <div class=" col-10 col-lg-8 bg-light text-center">
-                            {{-- special series -> list --}}
-                            <h3>
-                                >>> Paas collectie <<<
-                            </h3>
-                            <i>
-                            <h4>
-                                Extra
-                                <sub>
-                                    voor de liefhebber !
-                                </sub>
-                            </h4>
-                            </i>
-                            {{-- paas collectie pictures --}}
+
+
+                    <div class="row justify-content-center my-1">
+                        <div class=" col-10 text-center current-content">
+                            <div class="row justify-content-center my-1">
+                                <div class=" col-10 col-lg-8 text-center">
+                                    <h3 class="h3-upcomming">
+                                        >>> Werk in uitvoering <<<
+                                    </h3>
+                                    <p class="p-upcomming">
+                                        collectie thuiswerk
+                                        <sub>
+                                            lockdown 2020/2021
+                                        </sub>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row d-flex justify-content-center">
                             @foreach ($products as $product)
-                            <section>
-                                <h3>
-                                    {{$product->serie_name}}
-                                </h3>
-                                <img src="{{$product->picture}}" alt="voorbeeld afbeelding van serie product" height="160">
-                            </section>
+
+                            <div class="col-5 m-3 current-item">
+                                <a href="#" class="eatart-a1">
+                                    <div class="row justify-content-center">
+                                        <h3 class="p-2">
+                                            {{$product->serie_name}}
+                                        </h3>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <img src="{{$product->picture}}"
+                                            alt="voorbeeld afbeelding van serie product"
+                                            class="current-img mb-2">
+                                    </div>
+                                </a>
+                            </div>
+
                             @endforeach
+                            </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center my-2">
-                        <div class=" col-10 col-lg-8 bg-light text-center">
-                            <h3 class="h3-upcomming">
-                                >>> Werk in uitvoering <<<
-                            </h3>
-                            <p class="p-upcomming">
-                                collectie thuiswerk
-                                <sub>
-                                    lockdown 2020/2021
-                                </sub>
-                            </p>
-                            {{-- thuiswerk in uitvoering pictures --}}
-                            @foreach ($products as $product)
-                            <section>
-                                <h3>
-                                    {{$product->serie_name}}
-                                </h3>
-                                <img src="{{$product->picture}}" alt="voorbeeld afbeelding van serie product" height="160">
-                            </section>
-                            @endforeach
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
         </div>

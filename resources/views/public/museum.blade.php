@@ -43,22 +43,27 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-8 text-center">
+                    <div class="col-12 px-2 pt-0 pb-2 museum-content">
 
                         <div class="wrapper">
 
-                            <div class="row">
+                            <div class="row my-2 museum-scroll-center" data-spy="scroll">
                                 {{-- for each row collection name zwarte text op background hout --}}
 
                                 @foreach ($products as $product)
-                                <div class="col-10 col-lg-6 item">
-                                    <div class="polaroid">
-                                        <img src="{{$product->picture}}">
-                                        <div class="caption p-1">
-                                            {{$product->serie_name}}
+
+                                <div class="col-10 col-lg-4 item">
+                                    {{-- link to see whole serie --}}
+                                    <a href="">
+                                        <div class="polaroid">
+                                            <img src="{{$product->picture}}">
+                                            <div class="caption p-1">
+                                                {{$product->serie_name}}
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
+
                                 @endforeach
 
                             </div>

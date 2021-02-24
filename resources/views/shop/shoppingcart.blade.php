@@ -48,16 +48,16 @@
                             </div>
 
                             <div class="col-6 py-4">
-                                misschien hier nog wat info over product
-                                {{-- <div class="row p-2 product-detail">
+
+                                <div class="row p-2 product-detail">
                                     <h4 class="h4-product-detail">
-                                        <strong>Beschrijving : </strong>
-                                        {{$product ?? ''->product_name  }}
+                                        <strong>Designer : </strong>
+                                        {{$item['designer']}}
                                     </h4>
                                     <p class="p-product-description">
-                                        {{$product ?? ''->description}}
+                                        {{$item['description']}}
                                     </p>
-                                </div> --}}
+                                </div>
                             </div>
 
                             <div class="col-2 py-4">
@@ -68,13 +68,15 @@
                                     </h4>
                                 </div>
                                 <div class="row p-0 m-0 justify-content-end">
-                                    <sup class=""">
+                                    <sup class="">
                                         excl. BTW
                                     </sup>
                                 </div>
                                 <div class="row p-1 mt-2 justify-content-center">
-                                    <x-shop.delete-cart-button>
-                                    </x-shop.delete-cart-button>
+                                    {{-- Lelijk linkje om backend mee te testen --}}
+                                    <a href="{{ route('removeFromCart', ['id' => $item['id']]) }}">Verwijderen</a>
+                                    {{-- <x-shop.delete-cart-button>
+                                    </x-shop.delete-cart-button> --}}
                                 </div>
                             </div>
 

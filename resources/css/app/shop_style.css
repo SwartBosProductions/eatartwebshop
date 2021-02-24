@@ -7,7 +7,7 @@ main.main-shop {
 }
 
 div.serie-detail-content {
-    height:15vh;
+    height:12vh;
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: rgba(245, 245, 245, 0.6);
@@ -35,12 +35,9 @@ div.product-detail-content {
 }
 
 div,product-scroll-center {
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
+    /* ?? scroll spy zou leuk zijn die werkt */
 }
-
-
-
-
 
 div.product-detail-content {
     max-height: 40vh;
@@ -49,7 +46,6 @@ div.product-detail-content {
 div.product-detail-content::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
   background-color: rgba(245, 245, 245, 0.04);
   box-shadow: whitesmoke;
   margin: 10px;
@@ -64,35 +60,10 @@ div.product-detail-content::-webkit-scrollbar
 
 div.product-detail-content::-webkit-scrollbar-thumb
 {
-  border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px  black;
   background-color: whitesmoke;
   box-shadow: whitesmoke;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -104,7 +75,7 @@ img.img-inlist-product {
 
 div.row.product-detail {
     height: 20vh;
-    background-color: rgba(245, 245, 245, 0.8);
+    background-color: rgba(245, 245, 245, 0.6);
     border: 2px solid black;
 }
 
@@ -113,15 +84,20 @@ h3.h3-product-detail {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     font-family: var(--eatart-font-3);
+    text-shadow: 0.8px 1.6px 0.4px gray;
+
 }
 
 h4.h4-product-detail {
     font-family: var(--eatart-font-2);
     text-decoration: underline;
+    text-shadow: 0.8px 1.6px 0.4px gray;
 }
 
 h4.h4-product-price {
     font-family: var(--eatart-font-3);
+    text-shadow: 0.8px 1.6px 0.4px gray;
+
 }
 
 p.p-product-description {

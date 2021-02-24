@@ -84,6 +84,70 @@ class SaleSeeder extends Seeder
                 'product_id' => 7,
                 'sale_id' => 1,
             ],
+            [
+                'product_id' => 25,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 26,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 27,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 28,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 29,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 30,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 31,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 32,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 33,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 34,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 35,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 36,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 37,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 38,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 39,
+                'sale_id' => 2,
+            ],
+            [
+                'product_id' => 40,
+                'sale_id' => 2,
+            ],
         ]);
     }
 }

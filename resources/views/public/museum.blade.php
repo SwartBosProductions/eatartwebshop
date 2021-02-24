@@ -30,14 +30,14 @@
                 <div class="row justify-content-center">
 
                     <div class=" col-10 col-lg-8 text-center">
-                        <h2 class="h2-museum">
+                        <h2 class="mb-1 h2-museum">
                             Museum
                         </h2>
-                        <h2 class="h2-museum-of">
+                        <h2 class="py-0 mb-0 h2-museum-of">
                             of
                         </h2>
                         <img src="{{url('images/eat art logo_vrijstaand_zw.png')}}"
-                        class="mx-auto museum-main-eatart-logo" alt="eat-art logo">
+                        class="mx-auto py-0 museum-main-eatart-logo" alt="eat-art logo">
                     </div>
 
                 </div>

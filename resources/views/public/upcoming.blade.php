@@ -26,9 +26,11 @@
                                 Verwacht in de
                                 <img src="{{url('images/eat art logo_vrijstaand_zw.png')}}"
                                 class="mx-auto upcomming-main-eatart-logo" alt="eat-art logo small">
+                                <a href="/shop">
                                 <div class="h2-upcomming-marked">
                                     WebShop
                                 </div>
+                                </a>
                             </h2>
                         </div>
                     </div>
@@ -43,6 +45,7 @@
                                     </h3>
                                     <p class="p-upcomming">
                                         collectie thuiswerk
+                                        <br>
                                         <sub>
                                             lockdown 2020/2021
                                         </sub>

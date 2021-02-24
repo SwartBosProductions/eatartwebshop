@@ -50,20 +50,19 @@
 
                 </div>
 
-                <div class="row justify-content-center my-1">
-                    <div class=" col-10 text-center">
-                        <h3>
-                            Collectie:
-                        </h3>
-                        <h4>
-                            <i> Valentijn collectie 2021</i>
-                        </h4>
-                    </div>
-                </div>
-
 
                 <div class="row justify-content-center my-1">
                     <div class=" col-10 text-center current-content">
+                        <div class="row justify-content-center my-1">
+                            <div class=" col-10 g-0 text-center">
+                                <h3>
+                                    Collectie:
+                                </h3>
+                                <h4>
+                                    <i> Valentijn collectie 2021</i>
+                                </h4>
+                            </div>
+                        </div>
                         <div class="row d-flex justify-content-center">
                         @foreach ($products as $product)
 

@@ -10810,7 +10810,16 @@ body#forestblack {
 main.main-forestblack {
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
-  top: 520px;
+  top: 60vh;
+}
+
+div.forestblack-text-box {
+  font-family: oswaldregular;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  text-shadow: -8px 12px 0.4px black;
+  border-radius: 4px;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* --------------------------------------------------------------- */
@@ -10927,6 +10936,14 @@ div a.header-brand-webshop {
 div a.header-brand-webshop sub {
   font-size: 12px;
   color: whitesmoke;
+}
+
+a.a-user-profile {
+  font-size: 12px;
+  color: white;
+  font-family: var(--eatart-font-2), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 div a.header-brand-webshop:hover {
@@ -11114,20 +11131,73 @@ div div.btn-group-about a.btn-group-about {
 /* landing-page HOME content
 /* ------------------------------------------------------------------------- */
 img.home-main-eatart-logo {
-  height: 148px;
+  height: 16vh;
 }
 
 div div a.main-webshop-btn {
   text-decoration: none;
 }
 
+.btn-go-shop::after,
+.btn-go-shop::before {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 8px;
+  background-color: black;
+  transition: all 4s ease-out;
+  content: "";
+}
+
+.btn-go-shop::before {
+  top: 0;
+  left: 0;
+}
+
+.btn-go-shop::after {
+  top: 100%;
+  right: 0;
+}
+
+.btn-go-shop:hover::after,
+.btn-go-shop:hover::before {
+  width: 100%;
+}
+
+.anim {
+  pointer-events: none;
+}
+
+.anim eatart-a1 {
+  transform: scaleY(0);
+}
+
+.btn-go-shop .anim::before,
+.btn-go-shop .anim::after {
+  top: 50%;
+  width: 50%;
+  -webkit-animation: hide 10s forwards;
+          animation: hide 10s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@keyframes hide {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0;
+  }
+}
 div div h2.main-webshop-btn {
-  color: black;
+  color: var(--eatart-logo-color-2);
   font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 64px;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  text-shadow: 1.6px 1.6px 4px black;
 }
 
 div div h3.main-home-anno {
@@ -11139,11 +11209,33 @@ div div h3.main-home-anno {
 /* landingpage home carroussel */
 .carousel-item {
   background-color: black;
-  max-height: 32vh;
+  max-height: 28%;
+  max-height: 28vh;
+  justify-content: space-around;
 }
 
 .carousel-item img {
-  max-height: cover;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+img.logo-in-carousel {
+  height: 80px;
+  max-height: 80px;
+  background-color: white;
+}
+
+.carousel-caption {
+  color: var(--nhlstenden-color-1);
+  background-color: rgba(245, 245, 245, 0.8);
+  text-shadow: 2px 2px 4px black;
+}
+
+.carousel-caption2 {
+  background-color: whitesmoke;
+  color: black;
+  text-shadow: 2px 2px 4px black;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -11164,16 +11256,22 @@ img.upcomming-main-eatart-logo {
 }
 
 div div h2.h2-upcomming {
-  color: var(--eatart-color-2) !important;
   font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 40px;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  text-shadow: 1.6px 1.6px 4px black;
 }
 
 div.h2-upcomming-marked {
-  color: var(--eatart-color-2);
+  color: var(--eatart-logo-color-2);
+  font-family: var(--eatart-font-4), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1.6px 1.6px 4px black;
 }
 
 div div p.p-upcomming {

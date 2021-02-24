@@ -11573,6 +11573,32 @@ div a.product-buy {
   background-color: rgba(255, 255, 0, 0.5);
 }
 
+a.shop-form-button {
+  font-size: 10px;
+  font-family: var(--eatart-font-2);
+  font-weight: bolder;
+  color: black;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  text-shadow: 0.4px 0.4px 0.4px red;
+  box-shadow: 0.8px 0.8px 0.4px red;
+}
+
+/* ------------------------------------------------------------------------- */
+/* shoppingcart main content styles
+/* ------------------------------------------------------------------------- */
+img.img-inlist-cart {
+  height: 8vh;
+  background-color: rgb(245, 245, 245);
+  border: 2px solid black;
+}
+
+h4.h4-cart-price {
+  font-size: 20px;
+  font-family: var(--eatart-font-3);
+  text-shadow: 0.8px 1.6px 0.4px gray;
+}
+
 /* ------------------------------------------------------------------------- */
 /* shop all pages main content styles
 /* ------------------------------------------------------------------------- */

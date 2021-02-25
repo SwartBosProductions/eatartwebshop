@@ -10810,7 +10810,7 @@ body#forestblack {
 main.main-forestblack {
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
-  top: 60vh;
+  top: 120vh;
 }
 
 div.forestblack-text-box {
@@ -10820,6 +10820,10 @@ div.forestblack-text-box {
   text-shadow: -8px 12px 0.4px black;
   border-radius: 4px;
   box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.spacer-onder {
+  height: 45vh;
 }
 
 /* --------------------------------------------------------------- */
@@ -11640,6 +11644,11 @@ div.public-repro-area a {
 .naarshop-a-sm:hover {
   color: var(--eatart-logo-color-2);
   font-size: 12px;
+}
+
+.bg-content-quick {
+  background-color: rgba(245, 245, 245, 0.4);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* ------------------------------------------------------------------------- */

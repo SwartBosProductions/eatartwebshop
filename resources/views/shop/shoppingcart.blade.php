@@ -74,9 +74,10 @@
                                 </div>
                                 <div class="row p-1 mt-2 justify-content-center">
                                     {{-- Lelijk linkje om backend mee te testen --}}
-                                    <a href="{{ route('removeFromCart', ['id' => $item['id']]) }}">Verwijderen</a>
-                                    {{-- <x-shop.delete-cart-button>
-                                    </x-shop.delete-cart-button> --}}
+                                    <a href="{{ route('removeFromCart', ['id' => $item['id']]) }}">
+                                    <x-shop.delete-cart-button>
+                                    </x-shop.delete-cart-button>
+                                </a>
                                 </div>
                             </div>
 

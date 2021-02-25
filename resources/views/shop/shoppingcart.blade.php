@@ -38,7 +38,7 @@
 
                                 <div class="col-4">
                                     <div class="row">
-                                        <h3 class="h3-product-detail py-2 px-3 my-2 justify-content-arround">
+                                        <h3 class="h3-cart-detail py-2 px-3 my-2">
                                         <img src="{{$item['picture']}}" alt="afbeelding van het product"
                                             class=" mx-4 p-2 img-inlist-cart">
                                             <br>
@@ -46,18 +46,18 @@
                                         </h3>
                                     </div>
                                 </div>
+                                <div class="col-5 py-4">
 
-                                <div class="col-6 py-4">
-                                    misschien hier nog wat info over product
-                                    {{-- <div class="row p-2 product-detail">
-                                        <h4 class="h4-product-detail">
-                                            <strong>Beschrijving : </strong>
-                                            {{$product ?? ''->product_name  }}
+                                    <div class="row p-2 cart-detail">
+                                        <h4 class="h4-cart-detail">
+                                            <strong>Designer : </strong>
+                                            {{$item['designer']}}
                                         </h4>
-                                        <p class="p-product-description">
-                                            {{$product ?? ''->description}}
+                                        <p class="p-cart-description">
+                                            {{$item['description']}}
                                         </p>
-                                    </div> --}}
+                                    </div>
+
                                 </div>
 
                                 <div class="col-2 py-4">
@@ -80,21 +80,9 @@
                                     </div>
                                 </div>
 
-
-
-                            <div class="col-6 py-4">
-
-                                <div class="row p-2 product-detail">
-                                    <h4 class="h4-product-detail">
-                                        <strong>Designer : </strong>
-                                        {{$item['designer']}}
-                                    </h4>
-                                    <p class="p-product-description">
-                                        {{$item['description']}}
-                                    </p>
-                                </div>
-
                             </div>
+
+
                             @endforeach
 
 
@@ -104,17 +92,19 @@
                                     <h3>
                                         Geen producten in winkelwagen !
                                     </h3>
-                            <div class="col-2 py-4">
-                                <div class="row p-1 product-price my-auto">
-                                    <h4 class="h4-cart-price p-2">
-                                        {{-- nice to have old fashion price stamp gun frame in fluor orange --}}
-                                        &euro; {{$item['price']}}
-                                    </h4>
                                 </div>
-                                <div class="row p-0 m-0 justify-content-end">
-                                    <sup class="">
-                                        excl. BTW
-                                    </sup>
+                                <div class="col-2 py-4">
+                                    <div class="row p-1 product-price my-auto">
+                                        <h4 class="h4-cart-price p-2">
+                                            {{-- nice to have old fashion price stamp gun frame in fluor orange --}}
+                                            &euro; {{$item['price']}}
+                                        </h4>
+                                    </div>
+                                    <div class="row p-0 m-0 justify-content-end">
+                                        <sup class="">
+                                            excl. BTW
+                                        </sup>
+                                    </div>
                                 </div>
                                 <div class="row p-1 mt-2 justify-content-center">
                                     {{-- Lelijk linkje om backend mee te testen --}}

@@ -116,17 +116,10 @@
                                 </div>
                                 <div class="row p-1 mt-2 justify-content-center">
                                     {{-- Lelijk linkje om backend mee te testen --}}
-<<<<<<< HEAD
-                                    <a href="{{ route('removeFromCart', ['id' => $item['id']]) }}">
+                                <a href="{{ route('removeFromCart', ['id' => $item['id']]) }}">
                                     <x-shop.delete-cart-button>
                                     </x-shop.delete-cart-button>
                                 </a>
-=======
-                                    <a href="{{ route('removeFromCart', ['id' => $item['id']]) }}">Verwijderen</a>
-                                    {{-- <x-shop.delete-cart-button>
-                                    </x-shop.delete-cart-button> --}}
-
->>>>>>> 927f84e7dd4a7445c694a198320a829fc27c0ee1
                                 </div>
                             </div>
                             @endif

@@ -21,7 +21,7 @@
                             </div>
                             <div class="btn p-2 m-1 btn-inlog-register">
                                 <a href="{{route('user-profile')}}" class="eatart-a1 mx-2">
-                                    Profiel pagina
+                                    Profielpagina
                                 </a>
                             </div>
                             <form action="{{ route('logout') }}" method="POST"

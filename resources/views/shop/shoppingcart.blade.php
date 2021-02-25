@@ -95,26 +95,6 @@
                                         Geen producten in winkelwagen !
                                     </h3>
                                 </div>
-                                <div class="col-2 py-4">
-                                    <div class="row p-1 product-price my-auto">
-                                        <h4 class="h4-cart-price p-2">
-                                            {{-- nice to have old fashion price stamp gun frame in fluor orange --}}
-                                            &euro; {{$item['price']}}
-                                        </h4>
-                                    </div>
-                                    <div class="row p-0 m-0 justify-content-end">
-                                        <sup class="">
-                                            excl. BTW
-                                        </sup>
-                                    </div>
-                                </div>
-                                <div class="row p-1 mt-2 justify-content-center">
-                                    {{-- Lelijk linkje om backend mee te testen --}}
-                                    <a href="{{ route('removeFromCart', ['id' => $item['id']]) }}">Verwijderen</a>
-                                    {{-- <x-shop.delete-cart-button>
-                                    </x-shop.delete-cart-button> --}}
-
-                                </div>
                             </div>
                             @endif
 

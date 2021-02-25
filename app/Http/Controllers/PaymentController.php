@@ -12,8 +12,10 @@ class PaymentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+
+        $request->session()->forget('cart');
         return view('shop/payment');
     }
 

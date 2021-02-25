@@ -84,7 +84,7 @@ Route::get('/museum', 'App\Http\Controllers\ProductController@indexMuseum')->nam
 
 Route::get('/upcoming', 'App\Http\Controllers\ProductController@indexUpcoming')->name('upcoming');
 
-Route::get('/{serie_name}/products', 'App\Http\Controllers\ProductController@show')->name('public-detail');
+Route::get('/{serie_name}/products', 'App\Http\Controllers\ProductController@showPublic')->name('public-detail');
 
 Route::get('/forestblack', function () {
     return view('forestblack/forestblack');
@@ -96,7 +96,7 @@ Route::get('/forestblack', function () {
 Route::middleware('auth')->prefix('shop')->group(function () {
     Route::get('', 'App\Http\Controllers\ProductController@indexShop')->name('shop');
 
-    Route::get('/{serie_name}/products', 'App\Http\Controllers\ProductController@show')->name('shop-product');
+    Route::get('/{serie_name}/products', 'App\Http\Controllers\ProductController@showShop')->name('shop-product');
 
     Route::get('/shoppingcart', 'App\Http\Controllers\ShoppingcartController@index')->name('shop-cart');
     Route::get('shoppingcart/{id}', 'App\Http\Controllers\ShoppingcartController@addToCart')->name('addToCart');

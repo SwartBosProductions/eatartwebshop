@@ -32,26 +32,26 @@
                         <h2>Nieuws</h2>
                         <article>
                             <h3>
-                                EatArt Nieuws Item 1
+                                DEMO DAY
                             </h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo sunt itaque, dolorem aliquid quo cum deleniti in doloremque doloribus vero aperiam consectetur consequatur. Voluptas quo excepturi, exercitationem doloribus odio aperiam.
+                                Vrijdag 26 februari is Demo Day: de presentatie van de tussenstand van ons EatArt-project. Je kunt meekijken via de Google Meet. We zijn om 11.30 uur aan de beurt, maar volg vooral alle demo's vanaf 9.15 uur.
                             </p>
                         </article>
                         <article>
                             <h3>
-                                EatArt Nieuws Item 1
+                                EatArt blijkt gezond
                             </h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo sunt itaque, dolorem aliquid quo cum deleniti in doloremque doloribus vero aperiam consectetur consequatur. Voluptas quo excepturi, exercitationem doloribus odio aperiam.
+                                Uit nieuw onderzoek van de universiteit van Harvard blijkt dat kunstconsumptie goed is voor lichaam en geest. Kunst-eters zijn gedurende een jaar lang vergeleken met fast-food-vreters en een controlegroep met een normaal dieet. Wat bleek? De kunsteters waren minder aangekomen en scoorden hoger op zowel geluk, creativiteit als intelligentie. Ook hadden zij een actiever liefdesleven. EatArt!
                             </p>
                         </article>
                         <article>
                             <h3>
-                                EatArt Nieuws Item 1
+                                Geruchten over livegang EatArt houden aan
                             </h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo sunt itaque, dolorem aliquid quo cum deleniti in doloremque doloribus vero aperiam consectetur consequatur. Voluptas quo excepturi, exercitationem doloribus odio aperiam.
+                                Meerdere anonieme bronnen rondom NHL Stenden en CodeGorilla bevestigen dat een livegang van de EatArt Webshop aanstaande is. Deze zou gepland staan voor komend najaar. Folkert en Jorrit van ForestBlack waren niet bereikbaar voor commentaar, zij hadden het te druk met het voorbereiden van Demo Day.
                             </p>
                         </article>
                     </div>

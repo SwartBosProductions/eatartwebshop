@@ -83,14 +83,43 @@
                                         </div>
                                     </div>
 
+                                    <div class="carousel-item">
+                                        <img class="d-block"
+                                            src="images/schilders.jpg" alt="Voorbeeld foto Eat Art product" height="240">
+                                        <div class="carousel-caption2">
+                                            <h5 class="ml-2">
+                                                Harde werker
+                                            </h5>
+                                        </div>
+                                    </div>
 
                                     <div class="carousel-item">
                                         <img class="d-block"
-                                            src="images/is-dit-kunst-of-kan-het-weg.png" alt="Voorbeeld foto Eat Art product">
-                                        <div class="carousel-caption2 d-none d-md-block">
+                                            src="images/beazy-XggVb8YySUM-unsplash.jpg" alt="Voorbeeld foto Eat Art product" height="240">
+                                        <div class="carousel-caption2">
                                             <h5 class="ml-2">
-                                                naam van serie
+                                                Nauwkeurige werker
                                             </h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img class="d-block"
+                                            src="images/omer-haktan-bulut-Gg2JCF4tAyk-unsplash.jpg" alt="Voorbeeld foto Eat Art product" height="240">
+                                        <div class="carousel-caption2">
+                                            <h5 class="ml-2">
+                                                Ruige werker
+                                            </h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img class="d-block"
+                                            src="images/is-dit-kunst-of-kan-het-weg.png" alt="Voorbeeld foto Eat Art product" height="300">
+                                        <div class="carousel-caption2 d-none d-md-block">
+                                            {{-- <h5 class="ml-2">
+                                                naam van serie
+                                            </h5> --}}
                                         </div>
                                     </div>
 

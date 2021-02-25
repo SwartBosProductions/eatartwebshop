@@ -1,6 +1,6 @@
 <div class="container-fluid m-0 p-0">
     <nav class="row navbar navbar-dark justify-content-center mx-0">
-        <div class="col-10 pt-2">
+        <div class="col-12 pt-2">
             <div class="row btn-group d-flex btn-group-admin-options">
                 <a href="/admin/users" type="button"
                     class="btn my-auto mx-2 px-0 btn-group-admin-options">

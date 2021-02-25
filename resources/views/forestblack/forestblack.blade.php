@@ -66,6 +66,9 @@
                                 <p>bosma.jorrit@gmail.com</p>
                                 <p>folkert@swartmail.nl</p>
                             </article>
+                            <div class="spacer-onder">
+
+                            </div>
                             <div class="pb-4">
                                 <article class="py-4">
                                     <a href="/about" style="color: #FFFFFF">

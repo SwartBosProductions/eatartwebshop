@@ -39,14 +39,17 @@
 
                 <div class="row justify-content-center mb-3 museum-content">
 
-                    <div class=" col-12 col-lg-10 text-center bg-content-quick">
-                        <article>
+                    <div class=" col-12 col-lg-10 pt-5 text-center bg-content-quick">
+                        <article class="">
                             <h3>
                                 EatArt: hoe het allemaal begon
                             </h3>
                             <p>
                                 Studenten Docent Beeldende Kunst en Vormgeving van NHL Stenden in Leeuwarden volgen in hun tweede jaar het vak Toegepaste Vormgeving. Het oorspronkelijke idee van EatArt was om een snackmachine te vullen met kunstvoorwerpen. Toen dit te bewerkelijk bleek is gekozen voor een prachtige kast in het Document Centre. Elke student maakt een serie van vier producten die als een 'kunstsnack' te koop zijn bij de repro.
                             </p>
+                        </article>
+                        <article class="my-2">
+                            <img src="images/zithoek.jpg" alt="foto zithoek bij copy center" height="400">
                         </article>
                         <article>
                             <h3>

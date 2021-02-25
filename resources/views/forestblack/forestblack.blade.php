@@ -14,13 +14,13 @@
 
         <div class="col-8">
 
-            <div class="row">
+            <div class="row ">
 
             </div>
 
-            <div class="row">
+            <section class="row">
                 <div class="content-forestblack container-fluid p-2 my-2 mx-auto">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center ">
                         <div class="col-10 col-lg-8 pt-4 text-center forestblack-text-box">
                                 <article class="py-4">
                                 <h3>ForestBlack</h3>
@@ -66,10 +66,24 @@
                                 <p>bosma.jorrit@gmail.com</p>
                                 <p>folkert@swartmail.nl</p>
                             </article>
+                            <div class="pb-4">
+                                <article class="py-4">
+                                    <a href="/about" style="color: #FFFFFF">
+                                        <h3>
+                                            <strong>
+                                                NOW ... <br> let's <i style="color: #FFFF00">EAT-ART !</i>
+                                            </strong>
+                                        </h3>
+                                    </a>
+                                </article>
+                            </div>
                         </div>
+
+
+
                     </div>
                 </div>
-            </div>
+            </section>
 
         </div>
 

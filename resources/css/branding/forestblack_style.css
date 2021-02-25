@@ -24,5 +24,14 @@ body#forestblack {
 main.main-forestblack {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
-    top: 520px;
+    top: 60vh;
+}
+
+div.forestblack-text-box {
+    font-family: oswaldregular;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    text-shadow: -8px 12px 0.4px black;
+    border-radius: 4px;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
 }

@@ -11280,6 +11280,8 @@ div div h3.main-home-anno {
   transition: all 0.35s;
 }
 
+/* -------------------------------------------------------------- */
+/* shop main content styles */
 main.main-shop {
   position: relative;
   top: 248px;
@@ -11296,6 +11298,8 @@ div.main-shop-content {
   overflow-y: scroll;
 }
 
+/* -------------------------------------------------------------- */
+/* winkelwagen icon style */
 img.winkelwagen {
   height: 96px;
 }
@@ -11309,6 +11313,8 @@ span.badge-winkelwagen {
   background-color: black;
 }
 
+/* -------------------------------------------------------------- */
+/*  */
 body.body-user {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);

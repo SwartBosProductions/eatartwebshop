@@ -14,8 +14,10 @@
                         </div>
                         <div class="col-6">
                             <div class="row mt-2 mr-1 justify-content-end">
+                                <a href="{{route('shop-order')}}">
                                 <x-shop.order-button>
                                 </x-shop.order-button>
+                            </a>
                             </div>
                         </div>
 

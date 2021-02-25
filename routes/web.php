@@ -84,6 +84,8 @@ Route::get('/museum', 'App\Http\Controllers\ProductController@indexMuseum')->nam
 
 Route::get('/upcoming', 'App\Http\Controllers\ProductController@indexUpcoming')->name('upcoming');
 
+Route::get('/{serie_name}/products', 'App\Http\Controllers\ProductController@show')->name('public-detail');
+
 Route::get('/forestblack', function () {
     return view('forestblack/forestblack');
 })->name('forestblackInfo');

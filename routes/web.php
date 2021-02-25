@@ -103,6 +103,8 @@ Route::middleware('auth')->prefix('shop')->group(function () {
     Route::get('shoppingcart/{id}/remove', 'App\Http\Controllers\ShoppingcartController@removeFromCart')->name('removeFromCart');
 
     Route::get('/order', 'App\Http\Controllers\OrderController@index')->name('shop-order');
+
+    Route::get('/payment', 'App\Http\Controllers\PaymentController@index')->name('payment');
 });
 
 // GROUP USERPROFILE

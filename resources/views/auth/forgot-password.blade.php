@@ -30,6 +30,8 @@
                 @csrf
 
                 <!-- Email Address -->
+                <div class="col-12 col-md-6">
+
                     <div class="form-group">
                         <x-auth.label for="email" :value="__('Email')" />
 
@@ -41,6 +43,7 @@
                             {{ __('Email Wachtwoord Reset Link') }}
                         </x-auth.button>
                     </div>
+                </div>
                 </form>
             </div>
         </div>

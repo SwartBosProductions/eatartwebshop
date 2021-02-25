@@ -34,12 +34,18 @@
                             <h3>
                                 EatArt
                             </h3>
-                            <p>
-                                Contact gegevens / map plugin?
-                            </p>
-                            <p>
-                                openingstijden fysieke shop
-                            </p>
+                            <p>Rengerslaan 10,</p>
+                            <p>8917DD Leeuwarden</p>
+                            <p>dc@nhlstenden.com</p>
+                            <p>tel: 058 - 2511810</p>
+
+                        </article>
+                            <article>
+                           <h3>Openingstijden fysieke shop:</h3>
+                            <p>ma t/m do: 10.00 - 16.00 uur </p>
+                            <p>vrijdags: 10.00 - 18.00 uur</p>
+                            <p>Gesloten in de schoolvakanties.</p>
+                            <p>Houdt rekening met mogelijk afwijkende toegang ivm coronamaatregelen.</p>
                         </article>
                         <article>
                                     <a href="https://www.facebook.com/eatart/" type="button" class="dropdown-item btn btn-group-eatartsocial">

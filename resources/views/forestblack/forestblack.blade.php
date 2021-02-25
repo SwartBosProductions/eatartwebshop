@@ -22,49 +22,49 @@
                 <div class="content-forestblack container-fluid p-2 my-2 mx-auto">
                     <div class="row justify-content-center">
                         <div class="col-10 col-lg-8 pt-4 text-center forestblack-text-box">
-                                                        <article class="py-4">
+                                <article class="py-4">
                                 <h3>ForestBlack</h3>
                                 <h3>
                                     SwartBosProductions
                                 </h3>
                                 <h3>Schwarzwald Produktionen</h3>
                                 <p>
-                                    ForestBlack bestaat uit Jorrit Bosma en Folkert Swart. Twee CodeGorilla's met een roemrucht verleden in de festivalwereld: Folkert als regelaar-in-chief en duurzame vernieuwer, Jorrit als rockaccordeonist.
+                                    ForestBlack bestaat uit Jorrit Bosma en Folkert Swart. <br>
+                                    Twee CodeGorilla's met een roemrucht verleden in de festivalwereld: <br>
+                                    Folkert als regelaar-in-chief en duurzame vernieuwer, Jorrit als rockaccordeonist.
                                 </p>
                             </article>
 
                             <article class="pt-4">
                                 <h3>
-                                    ForestBlack is :
+                                    ForestBlack staat voor:
                                 </h3>
                                 <p>
-                                    Jorrit
+                                    <strong>Impact</strong>: Websites die mensen vooruithelpen.
                                 </p>
                                 <p>
-                                    Folkert
+                                    <strong>Samen sterk</strong>: Elkaar scherp houden en beter maken.
                                 </p>
                                 <p>
-                                    De stabiele, consequete 2 pitter met het gedrag van een diesel,<br>
-                                     en dan op een duurzame energie bron !<br>
-                                     Doh!
+                                    <strong>Adaptief</strong>: Omgaan met tegenslagen en inspelen op de klant.
+
                                 </p>
                             </article>
-                            <article>
-                                <h4>
-                                    No Home-site to redirect, Sorry
-                                </h4>
+                            <article class="py-4">
+                                <h3>
+                                    Kortom:
+                                </h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
+                                    ForestBlack is een stabiele, consequente tweepitter met het gedrag van een diesel,<br>
+                                    maar dan wel op duurzame energie natuurlijk...<br>
+                                    To be continued
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
-                                </p>
+
+                            </article>
+                            <article class="py-4">
+                                <h3>Contact</h3>
+                                <p>bosma.jorrit@gmail.com</p>
+                                <p>folkert@swartmail.nl</p>
                             </article>
                         </div>
                     </div>

@@ -73,8 +73,10 @@
                                         </sup>
                                     </div>
                                     <div class="row p-1 mt-2 justify-content-center">
-                                        <x-shop.delete-cart-button>
-                                        </x-shop.delete-cart-button>
+                                        <a href="{{ route('removeFromCart', ['id' => $item['id']]) }}">
+                                            <x-shop.delete-cart-button>
+                                            </x-shop.delete-cart-button>
+                                        </a>
                                     </div>
                                 </div>
 

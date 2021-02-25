@@ -62,9 +62,9 @@ class ShoppingcartController extends Controller
     public function removeFromCart(Request $request, $id)
     {
         $cartItems = $request->session()->get('cart');
-        $itemToRemove = $cartItems->whereIn('id', $id)->get();
+        // $itemToRemove = $cartItems->whereIn('id', $id)->get();
         // whereIn werkt niet, cartItems is een non-associative array, moet daar overheen loopen met een foreach denk ik, misschien wel nested met nog een foreach, of wat Toby deed foreach $items as $key=>value.
-        dd($itemToRemove);
+        dd($cartItems);
     }
 
     /**

@@ -26,9 +26,20 @@
             </div>
 
             <div class="content-main-home container-fluid p-2 my-2 mx-auto">
+
                 <div class="row justify-content-center">
-                    <div class=" col-10 col-lg-8 bg-light text-center">
-                        <h2>About</h2>
+                    <div class=" col-10 col-lg-8 text-center">
+                        <img src="{{url('images/eat art logo_vrijstaand_zw.png')}}"
+                        class="mx-auto py-0 museum-main-eatart-logo" alt="eat-art logo">
+                        <h2 class="pt-0 pb-2 mb-2 h2-museum-of">
+                            Over Eat Art
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-3 museum-content">
+
+                    <div class=" col-12 col-lg-10 text-center bg-content-quick">
                         <article>
                             <h3>
                                 EatArt: hoe het allemaal begon
@@ -78,7 +89,9 @@
                             </p>
                         </article>
                     </div>
+
                 </div>
+
             </div>
 
         </div>

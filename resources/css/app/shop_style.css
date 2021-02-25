@@ -25,7 +25,7 @@ h3.h3-product-designer {
 }
 
 div.product-detail-content {
-    height: 40vh;
+    height: 36vh;
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: rgba(245, 245, 245, 0.6);
@@ -66,7 +66,7 @@ div.product-detail-content::-webkit-scrollbar-thumb
 }
 
 img.img-inlist-product {
-    height: 30vh;
+    height: 16vh;
     background-color: rgb(245, 245, 245);
     border: 2px solid black;
 }
@@ -82,12 +82,13 @@ h3.h3-product-detail {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     font-family: var(--eatart-font-3);
+    font-size: 16px;
     text-shadow: 0.8px 1.6px 0.4px gray;
-
 }
 
 h4.h4-product-detail {
     font-family: var(--eatart-font-2);
+    font-size: 16px;
     text-decoration: underline;
     text-shadow: 0.8px 1.6px 0.4px gray;
 }
@@ -99,6 +100,7 @@ h4.h4-product-price {
 
 p.p-product-description {
     font-family: var(--eatart-font-2);
+    font-size: 12px;
 
 }
 
@@ -136,10 +138,47 @@ img.img-inlist-cart {
     border: 2px solid black;
 }
 
+h3.h3-cart-detail {
+    background-color: rgba(245, 245, 245, 0.2);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-family: var(--eatart-font-3);
+    font-size: 16px;
+    text-shadow: 0.8px 1.6px 0.4px gray;
+}
+
+div.row.cart-detail {
+    height: 14vh;
+    background-color: rgba(245, 245, 245, 0.6);
+    border: 2px solid black;
+}
+
+h4.h4-cart-detail {
+    font-family: var(--eatart-font-2);
+    font-size: 12px;
+    text-decoration: underline;
+    text-shadow: 0.8px 1.6px 0.4px gray;
+}
+
+p.p-cart-description {
+    font-family: var(--eatart-font-2);
+    font-size: 10px;
+}
+
 h4.h4-cart-price {
     font-size: 20px;
     font-family: var(--eatart-font-3);
     text-shadow: 0.8px 1.6px 0.4px gray;
+}
+
+div.shop-del-cart-button {
+    font-size: 10px;
+    font-family: var(--eatart-font-2);
+    color: black;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    text-shadow: 0.8px 0.8px 1px red;
+    box-shadow: 0.8px 0.8px 1px red;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -184,5 +223,42 @@ span.badge-winkelwagen {
 }
 
 /* ------------------------------------------------------------------------- */
-/*
+/* shop scroll container
 /* ------------------------------------------------------------------------- */
+div.shop-content {
+    height: 40vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: rgba(245, 245, 245, 0.4);
+}
+
+div,museum-scroll-center {
+    /* scroll-snap-align: center; */
+    /* ?? scroll spy zou leuk zijn die werkt */
+}
+
+div.shop-content {
+    max-height: 40vh;
+}
+
+div.shop-content::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+  background-color: rgba(245, 245, 245, 0.04);
+  box-shadow: rgba(245, 245, 245, 0.4);
+  margin: 10px;
+}
+
+div.shop-content::-webkit-scrollbar
+{
+  width: 16px;
+  background-color: transparent;
+  border-color: var(--eatart-color-2);
+}
+
+div.shop-content::-webkit-scrollbar-thumb
+{
+  -webkit-box-shadow: inset 0 0 6px  black;
+  background-color: rgba(245, 245, 245, 0.4);
+  box-shadow: whitesmoke;
+}

@@ -54,7 +54,7 @@
 
                                 <div class="col-10 col-lg-4 item">
                                     {{-- link to see whole serie --}}
-                                    <a href="">
+                                    <a href="{{route('public-detail', ['serie_name' => $product->serie_name])}}">
                                         <div class="polaroid">
                                             <img src="{{$product->picture}}">
                                             <div class="caption p-1">

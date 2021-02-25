@@ -67,7 +67,7 @@
                         @foreach ($products as $product)
 
                         <div class="col-5 m-3 current-item">
-                            <a href="#" class="eatart-a1">
+                            <a href="{{route('public-detail', ['serie_name' => $product->serie_name])}}" class="eatart-a1">
                                 <div class="row justify-content-center">
                                     <h3 class="p-2">
                                         {{$product->serie_name}}

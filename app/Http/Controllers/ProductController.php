@@ -81,13 +81,23 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show($serie_name)
+    public function showShop($serie_name)
     {
-
         $products = new Product;
         $products = $products->getAllInSerie($serie_name);
 
         return view('shop/product_detail', [
+            'products' => $products,
+            'serie_name' => $serie_name,
+            'designer' => $products->first()->designer->user->full_name,
+        ]);
+    }
+    public function showPublic($serie_name)
+    {
+        $products = new Product;
+        $products = $products->getAllInSerie($serie_name);
+
+        return view('public/product_detail', [
             'products' => $products,
             'serie_name' => $serie_name,
             'designer' => $products->first()->designer->user->full_name,

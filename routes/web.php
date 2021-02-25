@@ -36,19 +36,20 @@ Route::get('/testshop', 'App\Http\Controllers\ProductController@indexShop');
 
 // GROUP ADMIN
 // admin basic views setup
-Route::get('/admin/dashboard', function () {
-    return view('/admin/dashboard');
-})->name('admin-dashboard');
+Route::middleware('auth', 'admin')->prefix('admin')->group(function () {
+    Route::get('/dashboard', function () {
+        return view('/admin/dashboard');
+    })->name('admin-dashboard');
 
-Route::get('/admin/announcements', function () {
-    return view('/admin/announcements');
-})->name('admin-announcments');
+    Route::get('/announcements', function () {
+        return view('/admin/announcements');
+    })->name('admin-announcments');
 
-Route::get('/admin/products', 'App\Http\Controllers\ProductController@index')->name('admin-products');
-Route::get('admin/products/{product}', 'App\Http\Controllers\ProductController@show');
+    Route::get('/products', 'App\Http\Controllers\ProductController@index')->name('admin-products');
+    Route::get('/products/{product}', 'App\Http\Controllers\ProductController@show');
 
-Route::get('/admin/users', 'App\Http\Controllers\UserController@index')->name('admin-users');
-
+    Route::get('/users', 'App\Http\Controllers\UserController@index')->name('admin-users');
+});
 
 // GROUP PUBLIC
 // public basic views setup
@@ -73,6 +74,10 @@ Route::get('/contact', function () {
     return view('public/contact');
 })->name('contact');
 
+Route::get('/conditions', function () {
+    return view('public/conditions');
+})->name('conditions');
+
 Route::get('/current', 'App\Http\Controllers\ProductController@indexCurrent')->name('current');
 
 Route::get('/museum', 'App\Http\Controllers\ProductController@indexMuseum')->name('museum');
@@ -86,21 +91,21 @@ Route::get('/forestblack', function () {
 
 // GROUP SHOP
 // shop basic views setup
-Route::get('/shop', 'App\Http\Controllers\ProductController@indexShop')->name('shop');
+Route::middleware('auth')->prefix('shop')->group(function () {
+    Route::get('', 'App\Http\Controllers\ProductController@indexShop')->name('shop');
 
-Route::get('/shop/{serie_name}/products', 'App\Http\Controllers\ProductController@show')->name('shop-product');
+    Route::get('/{serie_name}/products', 'App\Http\Controllers\ProductController@show')->name('shop-product');
 
-Route::get('/shop/shoppingcart', function () {
-    return view('/shop/shoppingcart');
-})->name('shop-cart');
+    Route::get('/shoppingcart', 'App\Http\Controllers\ShoppingcartController@index')->name('shop-cart');
+    Route::get('shoppingcart/{id}', 'App\Http\Controllers\ShoppingcartController@addToCart')->name('addToCart');
+    Route::get('shoppingcart/{id}/remove', 'App\Http\Controllers\ShoppingcartController@removeFromCart')->name('removeFromCart');
 
-Route::get('/shop/order', function () {
-    return view('/shop/order');
-})->name('shop-order');
+    Route::get('/order', function () {
+        return view('/shop/order');
+    })->name('shop-order');
+});
 
-
-// GROUP USER
+// GROUP USERPROFILE
 // user basic views setup
-Route::get('/user/profile', function () {
-    return view('/user/profile');
-})->name('user-profile');
+Route::get('/user/profile', 'App\Http\Controllers\UserController@show')->name('user-profile');
+Route::get('/user/profile/edit', 'App\Http\Controllers\UserController@edit')->name('user-profile-edit');

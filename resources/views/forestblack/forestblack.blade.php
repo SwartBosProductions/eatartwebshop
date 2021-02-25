@@ -21,9 +21,9 @@
             <div class="row">
                 <div class="content-forestblack container-fluid p-2 my-2 mx-auto">
                     <div class="row justify-content-center">
-                        <div class="col-10 col-lg-8 bg-light text-center">
+                        <div class="col-10 col-lg-8 pt-4 text-center forestblack-text-box">
                             <h2>About ForestBlack</h2>
-                            <article>
+                            <article class="py-4">
                                 <h3>
                                     CodeGorilla assignment 2
                                 </h3>
@@ -31,7 +31,8 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
                                 </p>
                             </article>
-                            <article>
+
+                            <article class="pt-4">
                                 <h3>
                                     ForestBlack is :
                                 </h3>
@@ -41,11 +42,28 @@
                                 <p>
                                     Folkert
                                 </p>
+                                <p>
+                                    De stabiele, consequete 2 pitter met het gedrag van een diesel,<br>
+                                     en dan op een duurzame energie bron !<br>
+                                     Doh!
+                                </p>
                             </article>
                             <article>
                                 <h4>
                                     No Home-site to redirect, Sorry
                                 </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
+                                </p>
                             </article>
                         </div>
                     </div>

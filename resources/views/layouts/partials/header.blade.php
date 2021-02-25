@@ -4,7 +4,7 @@
             <a href="/home" class="header-brand-webshop">
                 <img src="{{url('images/eat art logo_vrijstaand_tn.png')}}"
                 class="header-img-eatart" alt="eat-art logo small">
-                Webshop
+                {{-- Webshop --}}
                 {{-- <sub class="header-brand-webshop-more"> &nbsp; & more</sub> --}}
             </a>
         </div>
@@ -13,11 +13,15 @@
                 @if (Route::has('login'))
                     <div class="btn-group brand-a1" role="group">
                         @auth
-                            {{-- if admin page hide/inactive button --}}
+
+                            <div class="btn p-2 m-1 text-center">
+                                <a href="{{route('user-profile')}}" class="mx-2 a-user-profile">
+                                    {{Auth::user()->full_name}}
+                                </a>
+                            </div>
                             <div class="btn p-2 m-1 btn-inlog-register">
-                                <a href="{{ url('/user/profile') }}" class="eatart-a1 mx-2">
-                                    Gebruiker pagina
-                                    {{-- get first/last name from database --}}
+                                <a href="{{route('user-profile')}}" class="eatart-a1 mx-2">
+                                    Profiel pagina
                                 </a>
                             </div>
                             <form action="{{ route('logout') }}" method="POST"

@@ -102,9 +102,9 @@ Route::middleware('auth')->prefix('shop')->group(function () {
     Route::get('shoppingcart/{id}', 'App\Http\Controllers\ShoppingcartController@addToCart')->name('addToCart');
     Route::get('shoppingcart/{id}/remove', 'App\Http\Controllers\ShoppingcartController@removeFromCart')->name('removeFromCart');
 
-    Route::get('/order', function () {
-        return view('/shop/order');
-    })->name('shop-order');
+    Route::get('/order', 'App\Http\Controllers\OrderController@index')->name('shop-order');
+
+    Route::get('/payment', 'App\Http\Controllers\PaymentController@index')->name('payment');
 });
 
 // GROUP USERPROFILE

@@ -22,13 +22,14 @@
                 <div class="content-forestblack container-fluid p-2 my-2 mx-auto">
                     <div class="row justify-content-center">
                         <div class="col-10 col-lg-8 pt-4 text-center forestblack-text-box">
-                            <h2>About ForestBlack</h2>
-                            <article class="py-4">
+                                                        <article class="py-4">
+                                <h3>ForestBlack</h3>
                                 <h3>
-                                    CodeGorilla assignment 2
+                                    SwartBosProductions
                                 </h3>
+                                <h3>Schwarzwald Produktionen</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit modi laborum quod voluptates maxime magnam quas in ullam suscipit eius, reiciendis eveniet, cum tempore asperiores. Quasi modi ducimus totam.
+                                    ForestBlack bestaat uit Jorrit Bosma en Folkert Swart. Twee CodeGorilla's met een roemrucht verleden in de festivalwereld: Folkert als regelaar-in-chief en duurzame vernieuwer, Jorrit als rockaccordeonist.
                                 </p>
                             </article>
 

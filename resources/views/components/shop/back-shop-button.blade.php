@@ -4,7 +4,7 @@
     </a>
 @else
     <a {{ $attributes->merge(['href' => '/shop', 'class' => 'btn main-home-button my-auto', 'type' => 'button']) }}>
-        Terug naar de Shop
+        Terug <br> naar de Shop
     </a>
 @endif
 

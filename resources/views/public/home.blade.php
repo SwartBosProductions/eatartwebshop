@@ -69,7 +69,7 @@
 
                                     <div class="carousel-item active">
                                         <img class=""
-                                            src="images/eatart-de_kast.png" alt="Eat Art kast bij document-center">
+                                            src="images/eatart-de_kast.png" alt="Eat Art kast bij document-center" height="300">
                                         <div class="carousel-caption">
                                             <h5>
                                                 Ook te bezoeken !
@@ -85,7 +85,7 @@
 
                                     <div class="carousel-item">
                                         <img class="d-block"
-                                            src="images/schilders.jpg" alt="Voorbeeld foto Eat Art product" height="240">
+                                            src="images/schilders.jpg" alt="Voorbeeld foto Eat Art product" height="260">
                                         <div class="carousel-caption2">
                                             <h5 class="ml-2">
                                                 Harde werker
@@ -115,7 +115,7 @@
 
                                     <div class="carousel-item">
                                         <img class="d-block"
-                                            src="images/is-dit-kunst-of-kan-het-weg.png" alt="Voorbeeld foto Eat Art product" height="300">
+                                            src="images/is-dit-kunst-of-kan-het-weg.png" alt="Voorbeeld foto Eat Art product" height="200">
                                         <div class="carousel-caption2 d-none d-md-block">
                                             {{-- <h5 class="ml-2">
                                                 naam van serie

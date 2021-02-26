@@ -213,7 +213,7 @@ div div p.p-upcomming {
 /* museum of eatart content
 /* ------------------------------------------------------------------------- */
 div.museum-content {
-    height: 40vh;
+    height: 48vh;
     overflow-x: hidden;
     overflow-y: scroll;
 
@@ -225,7 +225,7 @@ div,museum-scroll-center {
 }
 
 div.museum-content {
-    max-height: 40vh;
+    max-height: 48vh;
 }
 
 div.museum-content::-webkit-scrollbar-track
@@ -288,7 +288,7 @@ div div h2.h2-museum-of {
     box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
 }
 .polaroid > img{
-    max-width: 100%;
+    max-width: 64%;
     height: auto;
     border-radius: 0.4em;
     /* filter: grayscale(100%); */
@@ -296,11 +296,11 @@ div div h2.h2-museum-of {
 }
 .caption {
     font-family: var(--eatart-font-2);
-    font-size: 0.8rem;
+    font-size: 1.6rem;
     text-align: center;
-    line-height: 1.2em;
+    line-height: 1.8em;
     height: 2.6em;
-    max-height: 2.4em;
+    max-height: 2.6em;
 }
 
 .item {

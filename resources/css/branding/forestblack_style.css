@@ -20,6 +20,13 @@ body#forestblack {
     height: 100vh;
     width: auto;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    -ms-overflow-style: none;
+}
 
 main.main-forestblack {
     background-color: rgba(0, 0, 0, 0.5);
@@ -29,6 +36,7 @@ main.main-forestblack {
 
 div.forestblack-text-box {
     font-family: oswaldregular;
+    font-size: 150%;
     background-color: rgba(0, 0, 0, 0.5);
     color: whitesmoke;
     text-shadow: -8px 12px 0.4px black;
@@ -37,5 +45,6 @@ div.forestblack-text-box {
 }
 
 .spacer-onder {
-    height: 45vh;
+    height: 48vh;
 }
+

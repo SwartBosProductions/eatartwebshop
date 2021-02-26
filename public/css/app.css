@@ -10807,6 +10807,14 @@ body#forestblack {
   width: auto;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
 main.main-forestblack {
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
@@ -10815,6 +10823,7 @@ main.main-forestblack {
 
 div.forestblack-text-box {
   font-family: oswaldregular;
+  font-size: 150%;
   background-color: rgba(0, 0, 0, 0.5);
   color: whitesmoke;
   text-shadow: -8px 12px 0.4px black;
@@ -10823,7 +10832,7 @@ div.forestblack-text-box {
 }
 
 .spacer-onder {
-  height: 45vh;
+  height: 48vh;
 }
 
 /* --------------------------------------------------------------- */
@@ -11292,7 +11301,7 @@ div div p.p-upcomming {
 /* museum of eatart content
 /* ------------------------------------------------------------------------- */
 div.museum-content {
-  height: 40vh;
+  height: 48vh;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -11303,7 +11312,7 @@ div, museum-scroll-center {
 }
 
 div.museum-content {
-  max-height: 40vh;
+  max-height: 48vh;
 }
 
 div.museum-content::-webkit-scrollbar-track {
@@ -11362,7 +11371,7 @@ div div h2.h2-museum-of {
 }
 
 .polaroid > img {
-  max-width: 100%;
+  max-width: 64%;
   height: auto;
   border-radius: 0.4em;
   /* filter: grayscale(100%); */
@@ -11371,11 +11380,11 @@ div div h2.h2-museum-of {
 
 .caption {
   font-family: var(--eatart-font-2);
-  font-size: 0.8rem;
+  font-size: 1.6rem;
   text-align: center;
-  line-height: 1.2em;
+  line-height: 1.8em;
   height: 2.6em;
-  max-height: 2.4em;
+  max-height: 2.6em;
 }
 
 .item {
@@ -11825,6 +11834,14 @@ div.shop-del-cart-button {
   border: 2px solid black;
   text-shadow: 0.8px 0.8px 1px red;
   box-shadow: 0.8px 0.8px 1px red;
+}
+
+div.shop-order-btn {
+  font-size: 12px;
+  font-family: var(--eatart-font-2);
+  color: black;
+  background-color: whitesmoke;
+  border: 2px solid black;
 }
 
 /* ------------------------------------------------------------------------- */

@@ -181,6 +181,14 @@ div.shop-del-cart-button {
     box-shadow: 0.8px 0.8px 1px red;
 }
 
+div.shop-order-btn {
+    font-size: 12px;
+    font-family: var(--eatart-font-2);
+    color: black;
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
 /* ------------------------------------------------------------------------- */
 /* shop all pages main content styles
 /* ------------------------------------------------------------------------- */
